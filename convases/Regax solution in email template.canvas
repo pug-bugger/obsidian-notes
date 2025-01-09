@@ -1,0 +1,15 @@
+{
+	"nodes":[
+		{"id":"e823d09242789ca9","type":"text","text":"new element","x":-80,"y":-60,"width":180,"height":50,"color":"3"},
+		{"id":"4e2f83ff5cd53ac6","type":"text","text":"old element","x":60,"y":-180,"width":160,"height":50},
+		{"id":"6f3337a53623d25b","x":166,"y":60,"width":109,"height":60,"color":"5","type":"text","text":"loop"},
+		{"id":"bbafc1fb59ef3fdd","x":246,"y":-7,"width":250,"height":60,"type":"text","text":""},
+		{"id":"619eb206b28ccc99","x":83,"y":171,"width":250,"height":60,"type":"text","text":""},
+		{"id":"6d4140bd2c0a360a","x":-117,"y":300,"width":400,"height":179,"type":"file","file":"obsidian-notes/daily-notes/2024-08-31.md"},
+		{"id":"217b50593fe16d8e","x":-517,"y":-199,"width":400,"height":400,"color":"4","type":"file","file":"obsidian-notes/job-notes/gpt-solutions/GPT solution of regex email template loop fn.md"}
+	],
+	"edges":[
+		{"id":"f7cbb6baadab4078","fromNode":"4e2f83ff5cd53ac6","fromSide":"bottom","toNode":"e823d09242789ca9","toSide":"top","color":"1"},
+		{"id":"5aa3977cee973380","fromNode":"6d4140bd2c0a360a","fromSide":"top","toNode":"619eb206b28ccc99","toSide":"left"}
+	]
+}
