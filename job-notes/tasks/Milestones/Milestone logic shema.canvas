@@ -1,0 +1,21 @@
+{
+	"nodes":[
+		{"id":"4b8636664aeee8d6","x":-125,"y":270,"width":995,"height":260,"color":"5","type":"group","label":"Check and execute completion funtions"},
+		{"id":"c00e9d0ca075e72d","x":-540,"y":-200,"width":629,"height":360,"color":"6","type":"group","label":"Create Milestone Records"},
+		{"id":"6d80420610a83eb8","x":-105,"y":290,"width":250,"height":60,"type":"text","text":"Any Booking update"},
+		{"id":"92090445b3c7a9f1","x":-105,"y":420,"width":250,"height":90,"type":"text","text":"Change Milestone Completed__c checkbox to true"},
+		{"id":"91061d2eba2a09b8","x":260,"y":290,"width":250,"height":60,"type":"text","text":"Check if pass Completion function returns true"},
+		{"id":"e3b652bca493d528","x":600,"y":423,"width":250,"height":87,"type":"text","text":"Milestone Trigger executes completion automation function"},
+		{"id":"ba97da5971074d1b","x":-520,"y":80,"width":219,"height":60,"type":"text","text":"Created Booking"},
+		{"id":"1a1e102191ee1e28","x":-181,"y":80,"width":250,"height":60,"type":"text","text":"Created Milestone Record"},
+		{"id":"1fa39bf5dc3956b8","x":-400,"y":-180,"width":219,"height":60,"type":"text","text":"Created Milestone Template"}
+	],
+	"edges":[
+		{"id":"a44ac636ec526882","fromNode":"ba97da5971074d1b","fromSide":"top","toNode":"1fa39bf5dc3956b8","toSide":"bottom","label":"Check for milestones template \nand creates if exist"},
+		{"id":"f7a6d8e697fe24f3","fromNode":"1fa39bf5dc3956b8","fromSide":"right","toNode":"1a1e102191ee1e28","toSide":"top"},
+		{"id":"1a2194b3f82b298d","fromNode":"6d80420610a83eb8","fromSide":"right","toNode":"91061d2eba2a09b8","toSide":"left"},
+		{"id":"80686fa43cfe211b","fromNode":"92090445b3c7a9f1","fromSide":"right","toNode":"e3b652bca493d528","toSide":"left"},
+		{"id":"76fb1d684ba7c81d","fromNode":"91061d2eba2a09b8","fromSide":"bottom","toNode":"e3b652bca493d528","toSide":"left"},
+		{"id":"abcb00f6f106ea6d","fromNode":"c00e9d0ca075e72d","fromSide":"bottom","toNode":"4b8636664aeee8d6","toSide":"left"}
+	]
+}

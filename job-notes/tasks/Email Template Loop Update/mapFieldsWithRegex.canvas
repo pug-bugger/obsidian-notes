@@ -1,0 +1,20 @@
+{
+	"nodes":[
+		{"id":"e910e726f37f5db2","type":"group","x":-380,"y":-260,"width":670,"height":240,"color":"3","label":"get fields"},
+		{"id":"6261db9046618056","type":"text","text":"fn: getSetOfFields","x":20,"y":-240,"width":250,"height":60,"color":"3"},
+		{"id":"f6d8e38058ea69ed","type":"text","text":"fn: getSetOfLoopFields","x":20,"y":-100,"width":250,"height":60,"color":"4"},
+		{"id":"ddc70d5762a1f074","type":"text","text":"Text to parse:\n```\nString testText = \n'<table>\\n'\n    + '<tr style=\"background-color: #D6EEEE;\">\\n'\n    + '<th>Service</th>\\n'\n    + '<th>Price</th>\\n'\n    + '</tr>\\n'\n    + '{LOOP Booking__c.Services__r[RecordType.DeveloperName='Planned_Income']}\\n'\n    + '<tr style=\"border-bottom: 1px solid #D6EEEE;\">\\n'\n    + '<td>{!this.Service_Type__c}</td>\\n'\n    + '<td>{!this.Price__c} €</td>\\n'\n    + '</tr>\\n'\n    + '{/LOOP}\\n'\n    + '</table>';\n```","x":341,"y":-431,"width":799,"height":443},
+		{"id":"4a4c04fe158171d2","type":"text","text":"output: \n```\nSet<String>{\n\t'Booking__c.Services__r.Service_Type__c',\n\t'Booking__c.Serivces__r.Price__c'\n}\n```","x":360,"y":0,"width":479,"height":256},
+		{"id":"95396e7086819187","type":"text","text":"Returns list of fields:\nBooking__c.Name\nBooking__c.RecordType.Name\nBooking__c.Stakes__r\\[Purpose__c='Shipper'\\].Account__r.Name\n","x":-20,"y":-600,"width":502,"height":140},
+		{"id":"c432684c5cd5a34d","type":"text","text":"fn: preselectFields","x":-360,"y":-180,"width":250,"height":60,"color":"5"},
+		{"id":"0848a4d15cbd7831","type":"text","text":"List of text (email templates) and set of object ids","x":-300,"y":-431,"width":250,"height":90,"color":"#766919"}
+	],
+	"edges":[
+		{"id":"5c77e370924baade","fromNode":"0848a4d15cbd7831","fromSide":"bottom","toNode":"c432684c5cd5a34d","toSide":"top","color":"3"},
+		{"id":"70ce5d022f93aaa8","fromNode":"c432684c5cd5a34d","fromSide":"right","toNode":"6261db9046618056","toSide":"left","color":"5"},
+		{"id":"01d72f1a5103d8fb","fromNode":"c432684c5cd5a34d","fromSide":"right","toNode":"f6d8e38058ea69ed","toSide":"left","color":"5"},
+		{"id":"136a1bbf3cee43d9","fromNode":"95396e7086819187","fromSide":"bottom","toNode":"6261db9046618056","toSide":"top"},
+		{"id":"4a9c71625b0f2968","fromNode":"ddc70d5762a1f074","fromSide":"left","toNode":"f6d8e38058ea69ed","toSide":"right"},
+		{"id":"0a27bdbcd413d873","fromNode":"4a4c04fe158171d2","fromSide":"left","toNode":"f6d8e38058ea69ed","toSide":"right"}
+	]
+}

@@ -1,0 +1,22 @@
+{
+	"nodes":[
+		{"id":"80e4525b99054224","type":"text","text":"TriggerHandler","x":-580,"y":-236,"width":250,"height":60,"color":"5"},
+		{"id":"09ba38ffafc5232a","type":"text","text":"Milestone Domain","x":33,"y":-620,"width":250,"height":60,"color":"3"},
+		{"id":"81dabee485944b34","type":"text","text":"method A","x":-53,"y":-460,"width":172,"height":60},
+		{"id":"f7ec7609f89531e6","type":"text","text":"method B","x":197,"y":-460,"width":172,"height":60},
+		{"id":"27946dd0b4398c0f","type":"text","text":"method A+B","x":-14,"y":-320,"width":172,"height":60},
+		{"id":"1232abe278901f48","type":"text","text":"method B","x":158,"y":-176,"width":172,"height":60},
+		{"id":"4341e4ddd1eaa5b0","x":-6,"y":0,"width":250,"height":60,"color":"4","type":"text","text":"Milestone Service"}
+	],
+	"edges":[
+		{"id":"f20cf2ad4f25d7da","fromNode":"80e4525b99054224","fromSide":"right","toNode":"27946dd0b4398c0f","toSide":"left","label":"after insert "},
+		{"id":"98ff367360551a36","fromNode":"80e4525b99054224","fromSide":"right","toNode":"1232abe278901f48","toSide":"left","label":"after insert and update"},
+		{"id":"e20b3398ae2ba265","fromNode":"09ba38ffafc5232a","fromSide":"bottom","toNode":"81dabee485944b34","toSide":"top","toEnd":"none","color":"3"},
+		{"id":"ad8caeb355302383","fromNode":"09ba38ffafc5232a","fromSide":"bottom","toNode":"f7ec7609f89531e6","toSide":"top","toEnd":"none","color":"3"},
+		{"id":"8de94ff46906f336","fromNode":"27946dd0b4398c0f","fromSide":"top","toNode":"81dabee485944b34","toSide":"bottom"},
+		{"id":"51bc915410da616e","fromNode":"27946dd0b4398c0f","fromSide":"top","toNode":"f7ec7609f89531e6","toSide":"bottom"},
+		{"id":"55fbff87c20395b2","fromNode":"4341e4ddd1eaa5b0","fromSide":"top","toNode":"27946dd0b4398c0f","toSide":"bottom","toEnd":"none","color":"4"},
+		{"id":"fce3af5eb1e3843d","fromNode":"4341e4ddd1eaa5b0","fromSide":"top","toNode":"1232abe278901f48","toSide":"bottom","toEnd":"none","color":"4"},
+		{"id":"f187afb28d6b7a04","fromNode":"1232abe278901f48","fromSide":"top","toNode":"f7ec7609f89531e6","toSide":"right"}
+	]
+}
