@@ -1,0 +1,1 @@
+link: https://www.npmjs.com/package/create-tauri-ui?ref=dailydev
