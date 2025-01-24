@@ -3,4 +3,6 @@
 - [ ] Create custom action button and add to related list (2)
 
 **Service__c to Invoice__c and Invoice_Line__c**
-Kiekvienas 
+Čia Invoice line yra service'as
+
+**!!!** `Čia pabandyti throw'inti error'ą.`
