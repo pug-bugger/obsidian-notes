@@ -7,4 +7,3 @@ spisok chto obiazatelno nuzhno sdelac chtob dobica etix celej:
 ...
 
 
-
