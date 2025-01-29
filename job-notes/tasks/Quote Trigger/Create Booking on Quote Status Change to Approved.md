@@ -1,7 +1,7 @@
 - [x] Strukturizuoju darba, bandau planuoti ir uzsirasyti (1h)
 - [x] Sukurti fflib trigger (1h)
 - [x] Parašyti mappingo functionalumą (8h)
-- [ ] testus parašyti (4h)
+<del>- [ ] testus parašyti (4h)</del>
 
 Trip 1
 Susikuria, jei yra užpilytas Origin
