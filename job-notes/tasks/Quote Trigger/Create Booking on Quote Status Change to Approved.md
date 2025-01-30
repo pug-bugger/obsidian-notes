@@ -1,6 +1,6 @@
-- [x] Strukturizuoju darba, bandau planuoti ir uzsirasyti (1h)
-- [x] Sukurti fflib trigger (1h)
-- [x] Parašyti mappingo functionalumą (8h)
+- [x] Strukturizuoju darba, bandau planuoti ir uzsirasyti (1h)   [completion:: 2025-01-30]
+- [x] Sukurti fflib trigger (1h)   [completion:: 2025-01-30]
+- [x] Parašyti mappingo functionalumą (8h)   [completion:: 2025-01-30]
 <del>- [ ] testus parašyti (4h)</del>
 
 Trip 1

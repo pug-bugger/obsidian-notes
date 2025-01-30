@@ -1,6 +1,6 @@
-- [x] Create VF page with controller to manipulate selected records (8) @completed(2025-01-29T14:41:19+02:00)
+- [x] Create VF page with controller to manipulate selected records (8) @completed(2025-01-29T14:41:19+02:00)   [completion:: 2025-01-30]
 <del>- [ ] Write tests (2)</del>
-- [x] Create custom action button and add to related list (2) @completed(2025-01-29T14:41:24+02:00)
+- [x] Create custom action button and add to related list (2) @completed(2025-01-29T14:41:24+02:00)   [completion:: 2025-01-30]
 
 **Service__c to Invoice__c and Invoice_Line__c**
 Čia Invoice line yra service'as
