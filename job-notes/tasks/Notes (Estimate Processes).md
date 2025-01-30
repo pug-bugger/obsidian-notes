@@ -1,7 +1,7 @@
 
 **Today Plans**
 
-
+1. finish milestone post completed triggers (stakes and booking status)
 
 **Now:**
 
@@ -29,5 +29,7 @@ Task: [Spot Quote mapinimas](https://bcline.lightning.force.com/lightning/r/a0NS
 Task: [Trigeris ant Service Exchange Rate'ams nustatyti](https://bcline.lightning.force.com/lightning/r/a0NSZ00000AgMPl2AN/view "Trigeris ant Service Exchange Rate'ams nustatyti")
 - [x] Fix code review
 - forget to deploy changes 
+
+Task: 
 
 ---
