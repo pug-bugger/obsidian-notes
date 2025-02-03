@@ -44,7 +44,7 @@ Task: [Reikia sukurti Milestone Post Complete klases](https://bcline.lightning.f
 - Updating milestone postcompleted DC_InformCustomerSeaFCLBookingUpdates class to update booking status. Done.
 - Waiting for Vilius help to found out test class error reason.
 
-##### 2025-01-30 (Today)
+##### 2025-01-30
 Task: Code Review
 * Review Routical task.
 * Replay to comments in my code.
@@ -71,3 +71,13 @@ Task: [Nuotraukų zoominimas](https://bcline.lightning.force.com/lightning/r/a0N
 
 Task: [Reikia sukurti Milestone Post Complete klases](https://bcline.lightning.force.com/lightning/r/a0NSZ00000AgU3y2AF/view "Reikia sukurti Milestone Post Complete klases")
 * Found the reason why test not working, it's because in implementation class I initialized selector by wrong way. Insert of Trip__c.SObject pass TripSelector.class, like in test class.
+
+##### 2025-02-03
+Task: Code review
+* nothing to code reviewing
+
+Task: [Spot Quote mapinimas](https://bcline.lightning.force.com/lightning/r/a0NSZ000009XYYn2AO/view "Spot Quote mapinimas")
+* Fixing testing failed subtask, for some reason validation turned off and trash button don't works properly, don't tested.
+* Fixed validation functionality (just forget return the required code after testing in sandbox)
+* Fixed handleDelete method, changed currentRouteNumberNewQuote variable to currentRouteNumberFullRoute, for some reason here was wrong variable.
+* 
