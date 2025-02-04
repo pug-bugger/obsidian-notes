@@ -98,3 +98,6 @@ On service after update event to invoiceRoolup calculate add `&& cmp.hasRecordTy
   * check entire gazelle component and added validation for collapsed required fields also, and quantity field 0 value handle.
   * Fixed default currentRouteNumber value set.
 * Tested entire spot quote functionality, emails sent successfully, records with right values and relationships are created, email activity created.
+##### Task: [Trigeris ant Service Exchange Rate'ams nustatyti](https://bcline.lightning.force.com/lightning/r/a0NSZ00000AgMPl2AN/view)
+* Fixed merge conflict.
+* Fixed by remove service trigger tests from services layer test class.
