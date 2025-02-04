@@ -101,3 +101,14 @@ On service after update event to invoiceRoolup calculate add `&& cmp.hasRecordTy
 ##### Task: [Trigeris ant Service Exchange Rate'ams nustatyti](https://bcline.lightning.force.com/lightning/r/a0NSZ00000AgMPl2AN/view)
 * Fixed merge conflict.
 * Fixed by remove service trigger tests from services layer test class.
+##### Task: [Code Review](https://bcline.lightning.force.com/lightning/r/a0N5J000004r4DaUAI/view)
+* Code reviewing.
+* Fixing gearset errors of [Invoice Generavimas iš Planned Income](https://bcline.lightning.force.com/lightning/r/a0NSZ00000AgIFh2AN/view) task. added read permission for service_type field and some places with service type.
+##### Task: [Nuotraukų zoominimas](https://bcline.lightning.force.com/lightning/r/a0NSZ000005H31p2AC/view "Nuotraukų zoominimas")
+* change close button background color to transparent and hover color to blue primary (--console-cur-main-bg)
+* Add listener on Escape button to close viewer.
+* Try to add event listener on double click to reset zoom. Use canvas-double-click but need to fix first click prevent.
+* Finished subtasks. Added convas-click event handler to prevent zoom in execution
+##### Task: [Trigeris, kai Quote tampa Approved ir susikuria Booking](https://bcline.lightning.force.com/lightning/r/a0NSZ000009XZ9t2AG/view)
+* Try to figure out why bookings etd and eta with wrong values. I think something wrong with trip trigger. Problem was in my impl class, swapped etd with eta.
+* removed related service dynamic list from booking flexi page.
