@@ -91,4 +91,10 @@ On service after update event to invoiceRoolup calculate add `&& cmp.hasRecordTy
 * Fixed PR merge conflict.
 * Fixed gearset error.
 ##### Task: [Spot Quote mapinimas](https://bcline.lightning.force.com/lightning/r/a0NSZ000009XYYn2AO/view)
-* After yesterday I will continue to fix inputs display fixing in rates section (next page) and fixing google input component display bug. 
+* After yesterday I will continue to fix inputs display fixing in rates section (next page) and fixing google input component display bug.
+* Fixed and tested:
+  * Fixed date display value.
+  * Fixed and tested google map value display.
+  * check entire gazelle component and added validation for collapsed required fields also, and quantity field 0 value handle.
+  * Fixed default currentRouteNumber value set.
+* Tested entire spot quote functionality, emails sent successfully, records with right values and relationships are created, email activity created.
