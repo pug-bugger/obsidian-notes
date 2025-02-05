@@ -8,7 +8,7 @@ Exploring
 
 
 
-#### 2025-01-29
+#### 01-29
 ##### Task: [Trigeris ant Service Exchange Rate'ams nustatyti](https://bcline.lightning.force.com/lightning/r/Task__c/a0NSZ00000AgMPl2AN/view)
 - [x] Create cmp variable to identify trip recorf type is changed.   [completion:: 2025-01-30]
 On service after update event to invoiceRoolup calculate add `&& cmp.hasRecordTypeChanged`
@@ -24,7 +24,7 @@ On service after update event to invoiceRoolup calculate add `&& cmp.hasRecordTy
 - Gearset does not pass because of I try to change `Service__c.Service_Type__c` picklist from local custom picklist to global `Service_Type`. Try to fix this by change it in partial manually (created global value set according to global picklist in sandbox and refresh the Gearset by push cahnges to PR).
 
 ---
-#### 2025-01-30
+#### 01-30
 ##### Task: [Spot Quote mapinimas](https://bcline.lightning.force.com/lightning/r/a0NSZ000009XYYn2AO/view "Spot Quote mapinimas")
 - fixed test class method. Set value gearset still throws error, can't change value.
 
@@ -44,7 +44,7 @@ On service after update event to invoiceRoolup calculate add `&& cmp.hasRecordTy
 - Updating milestone postcompleted DC_InformCustomerSeaFCLBookingUpdates class to update booking status. Done.
 - Waiting for Vilius help to found out test class error reason.
 
-#### 2025-01-30
+#### 01-30
 ##### Task: Code Review
 * Review Routical task.
 * Replay to comments in my code.
@@ -66,7 +66,7 @@ On service after update event to invoiceRoolup calculate add `&& cmp.hasRecordTy
 * Deployed changes to bitbucket.
 ##### Task: [Reikia sukurti Milestone Post Complete klases](https://bcline.lightning.force.com/lightning/r/a0NSZ00000AgU3y2AF/view "Reikia sukurti Milestone Post Complete klases")
 * Found the reason why test not working, it's because in implementation class I initialized selector by wrong way. Insert of Trip__c.SObject pass TripSelector.class, like in test class.
-#### 2025-02-03
+#### 02-03
 ##### Task: Code review
 * nothing to code reviewing
 ##### Task: [Spot Quote mapinimas](https://bcline.lightning.force.com/lightning/r/a0NSZ000009XYYn2AO/view "Spot Quote mapinimas")
@@ -86,7 +86,7 @@ On service after update event to invoiceRoolup calculate add `&& cmp.hasRecordTy
 * Started fixing fields display solution. Discussed with TL need I to fix that and how. After a couple of attempts, found the reason and solution.
 * Fixed date display value bug.
 * Fixing buttons and maps components display bugs and testing validation functionality.
-#### 2025-01-04
+#### 01-04
 ##### Task: [Trigeris, kai Quote tampa Approved ir susikuria Booking](https://bcline.lightning.force.com/lightning/r/a0NSZ000009XZ9t2AG/view)
 * Fixed PR merge conflict.
 * Fixed gearset error.
@@ -112,3 +112,30 @@ On service after update event to invoiceRoolup calculate add `&& cmp.hasRecordTy
 ##### Task: [Trigeris, kai Quote tampa Approved ir susikuria Booking](https://bcline.lightning.force.com/lightning/r/a0NSZ000009XZ9t2AG/view)
 * Try to figure out why bookings etd and eta with wrong values. I think something wrong with trip trigger. Problem was in my impl class, swapped etd with eta.
 * removed related service dynamic list from booking flexi page.
+#### 02-05
+##### Task: [(Bug) Truckų scrollas nepatogiai veikia kai dragini su pele](https://bcline.lightning.force.com/lightning/r/a0NSZ00000B4Jgr2AF/view "(Bug) Truckų scrollas nepatogiai veikia kai dragini su pele")
+* Started but task. Try to figure out, why it stops scrolling only then scrolling by dragging and cursor goes out to right side, but in messenger works good.
+* explore scrollbar component, check event prevent reason
+* Scrollbar have .scrollbar-thumb-area and visible then dragging the thumb. for some reason for navigation it not works.
+* Fixed by cahnge navigation bar css position to static.
+* Created test case
+##### Task: [Trigeris, kai Quote tampa Approved ir susikuria Booking](https://bcline.lightning.force.com/lightning/r/a0NSZ000009XZ9t2AG/view)
+* Discussed with TL how functionality should work.
+* Fixing trigger to map points planned_date__c to booking etd and eta.
+* Booking trigger sort points and get point with null planned date field value.
+* Fixing merge conflict and test classes
+##### Task: [❓trcuk dalies draginimas pele](https://bcline.lightning.force.com/lightning/r/a0NSZ000008UIsX2AW/view "❓trcuk dalies draginimas pele")
+- Explained to me the routical task.
+- Create container with moveable side to change container width.
+    - [ ] Container with moveable side by dragging.
+    - [ ] Save width in cache.
+    - [ ] max/min width range.
+* Update truck row layout
+	- [ ] update paddings/gaps between items.
+	- [ ] don't display items if don't fit.
+- Update ToolWrapper component
+	- [ ] updated
+- Add speed item
+	- [ ] added
+- Some questions:
+  - pločio keitimas yra dėl to kad paslėpti žemėlapį ar kad atvaizduoti sau tiek item'ų kiek reikia? (nuo šito priklauso ar pagal rem ar pagal procentus sidebar width nustatinėti)
