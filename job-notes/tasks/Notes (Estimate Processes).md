@@ -154,10 +154,13 @@ On service after update event to invoiceRoolup calculate add `&& cmp.hasRecordTy
 - Working on items hiding
 ##### Task: [(Patch) Update'ai Spot Quote'ui (reikalinga iki 2025-02-06)](https://bcline.lightning.force.com/lightning/r/a0NSZ00000BePNx2AN/view "(Patch) Update'ai Spot Quote'ui (reikalinga iki 2025-02-06)")
 * fixing partial spot quote
-  * [ ] free days picklist combined display
-  * [ ] hide where from and to map input fields
+  * [x] free days picklist combined display
+  * [x] hide where from and to map input fields
   * [ ] price valid default value
   * [ ] convert currency
-  * [ ] replace dot by comma
+  * [x] replace dot by comma
   * [ ] in final page display new created quote id
+* In new sandbox deployed partial code and fixed a, b, e and f points.
+* c - set default value, additionally agreed how should be displayed price valid in summary page.
+* d - fixed total calculated values, adding dynamic exchange rate according to selected currency.
 
