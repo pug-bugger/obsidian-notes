@@ -127,15 +127,37 @@ On service after update event to invoiceRoolup calculate add `&& cmp.hasRecordTy
 ##### Task: [❓trcuk dalies draginimas pele](https://bcline.lightning.force.com/lightning/r/a0NSZ000008UIsX2AW/view "❓trcuk dalies draginimas pele")
 - Explained to me the routical task.
 - Create container with moveable side to change container width.
-    - [ ] Container with moveable side by dragging.
+    - [x] Container with moveable side by dragging.
     - [ ] Save width in cache.
-    - [ ] max/min width range.
+    - [x] max/min width range.
 * Update truck row layout
-	- [ ] update paddings/gaps between items.
+	- [x] update paddings/gaps between items.
 	- [ ] don't display items if don't fit.
 - Update ToolWrapper component
-	- [ ] updated
+	- [ ] ~~updated~~
 - Add speed item
 	- [ ] added
 - Some questions:
   - pločio keitimas yra dėl to kad paslėpti žemėlapį ar kad atvaizduoti sau tiek item'ų kiek reikia? (nuo šito priklauso ar pagal rem ar pagal procentus sidebar width nustatinėti)
+- Wrote functionality to resize sidebar. set max and min container width. Working on mouse top event and make design properly.
+#### 02-06
+##### Task: [❓trcuk dalies draginimas pele](https://bcline.lightning.force.com/lightning/r/a0NSZ000008UIsX2AW/view)
+* Added `user-select: none` to prevent text selection during sidebar resizing.
+* Added event listener to stop resizing then mouse cursor is entered to map wrapper.
+* Working on styling of truck row items.
+* Changed truck row cards display to flex, removed @media functionality to always display items text.
+* TODO
+  - [ ] add speed item card
+  - [ ] hide item then no pace. (in progress)
+  - [ ] localStorage
+- No more need to implement same functionality to toolwrapper.
+- Working on items hiding
+##### Task: [(Patch) Update'ai Spot Quote'ui (reikalinga iki 2025-02-06)](https://bcline.lightning.force.com/lightning/r/a0NSZ00000BePNx2AN/view "(Patch) Update'ai Spot Quote'ui (reikalinga iki 2025-02-06)")
+* fixing partial spot quote
+  * [ ] free days picklist combined display
+  * [ ] hide where from and to map input fields
+  * [ ] price valid default value
+  * [ ] convert currency
+  * [ ] replace dot by comma
+  * [ ] in final page display new created quote id
+
