@@ -159,8 +159,17 @@ On service after update event to invoiceRoolup calculate add `&& cmp.hasRecordTy
   * [ ] price valid default value
   * [ ] convert currency
   * [x] replace dot by comma
-  * [ ] in final page display new created quote id
+  * [x] in final page display new created quote id
 * In new sandbox deployed partial code and fixed a, b, e and f points.
 * c - set default value, additionally agreed how should be displayed price valid in summary page.
 * d - fixed total calculated values, adding dynamic exchange rate according to selected currency.
+#### 02-07
+##### Task: [(Patch) Update'ai Spot Quote'ui (reikalinga iki 2025-02-06)](https://bcline.lightning.force.com/lightning/r/a0NSZ00000BePNx2AN/view "(Patch) Update'ai Spot Quote'ui (reikalinga iki 2025-02-06)")
+* Created PR to partial, deployed a, b, e and f.
+* Working on total calculations with todays exchange rate. Finished with spot quote, but 
+* Finished all task initial points + some changes from chat discussion. 
+* I guess this is not dev bug, but it is new functionality maybe. (patched task)
+* Deployed permissions set for Service__c.Service_Type field.
+* Writing logic for stake relationships on quote approve.
+
 
