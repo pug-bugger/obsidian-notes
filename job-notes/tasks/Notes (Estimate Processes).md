@@ -171,5 +171,12 @@ On service after update event to invoiceRoolup calculate add `&& cmp.hasRecordTy
 * I guess this is not dev bug, but it is new functionality maybe. (patched task)
 * Deployed permissions set for Service__c.Service_Type field.
 * Writing logic for stake relationships on quote approve.
-
-
+Gal jeigu cost arba price quantity yra 0 tada tiesiog nekurti quote line item?
+#### 02-10
+##### Task: [(Patch) Update'ai Spot Quote'ui (reikalinga iki 2025-02-07)](https://bcline.lightning.force.com/lightning/r/a0NSZ00000BePNx2AN/view "(Patch)  Update'ai Spot Quote'ui (reikalinga iki 2025-02-07)")
+* Quote Spot part. Changed sequence in DC_Application and quote line item has related with stake properly.
+* Quote trigger on status change to approved. Updating stake domain method to relate stake to service in one method with booking.
+* Added default payer lookup field fill value from customer lookup field in first page.
+* Writing unit tests and test cases.
+***lunch***
+* 
