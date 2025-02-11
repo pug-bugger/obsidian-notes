@@ -179,4 +179,16 @@ Gal jeigu cost arba price quantity yra 0 tada tiesiog nekurti quote line item?
 * Added default payer lookup field fill value from customer lookup field in first page.
 * Writing unit tests and test cases.
 ***lunch***
+* Wrote test case, deployed last changes and fixed PR gearset status.
+##### Task: [(Patch) trigeris prie quote](https://bcline.lightning.force.com/lightning/r/a0NSZ00000BmKCe2AN/view "(Patch)  trigeris prie quote")
+* Created quote line item trigger.
+* Created QLI trigger handler, CW, TEST Classes. Wrote basic trigger handler logic to get quote line item ids and pass them to quote line item service layer class.
+* Created service layer files. 
+* Created Selector class to select quote line item records with required fields by ids.
+* Writing service impl class logic, wrote method to select all quote line items by set of id and manipulate quote line item records (!! not moved manipulation code to domain layer)
+* Writing test class 
+*Test functionality in sandbox, write unit tests and test case.*
+#### 02-11
+##### Task: [(Patch) trigeris prie quote](https://bcline.lightning.force.com/lightning/r/a0NSZ00000BmKCe2AN/view)
+* Testing functionality in sandbox.
 * 
