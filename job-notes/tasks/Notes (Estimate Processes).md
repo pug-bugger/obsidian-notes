@@ -156,8 +156,8 @@ On service after update event to invoiceRoolup calculate add `&& cmp.hasRecordTy
 * fixing partial spot quote
   * [x] free days picklist combined display
   * [x] hide where from and to map input fields
-  * [ ] price valid default value
-  * [ ] convert currency
+  * [x] price valid default value
+  * [x] convert currency
   * [x] replace dot by comma
   * [x] in final page display new created quote id
 * In new sandbox deployed partial code and fixed a, b, e and f points.
@@ -191,4 +191,25 @@ Gal jeigu cost arba price quantity yra 0 tada tiesiog nekurti quote line item?
 #### 02-11
 ##### Task: [(Patch) trigeris prie quote](https://bcline.lightning.force.com/lightning/r/a0NSZ00000BmKCe2AN/view)
 * Testing functionality in sandbox.
+* Wrote small test and fixing small errors.
+* Tested and fixed last things, wrote simple tests and created PR to partial
+##### Task: [(Patch) Quote Email Template](https://bcline.lightning.force.com/lightning/r/a0NSZ00000BpK6P2AV/view "(Patch) Quote Email Template")
+* Writing email template for text from document.
+* Fixing service generate fn.
+* Fixing PM commented things in slack.
+* Deployed last changes to spot-quote-partial branch.
+##### Task: [❓trcuk dalies draginimas pele](https://bcline.lightning.force.com/lightning/r/a0NSZ000008UIsX2AW/view "❓trcuk dalies draginimas pele")
+* according to last notes about this task remains to:
+	* ~~hide wrapped items~~
+	* save sets to local storage 
+	* add speed item card
+* Discussed about task updates
+* Updates:
+	* items can be consist of 2 or 3 parts (icon - number - icon). After resizing sidebar this items width will reduce step by step, first right icon, then number ant only then entire item.
+	* button to minimize sidebar.
+	* increase text area width for license plate.
+* to be continued...
+##### Task: [(Patch) STT-16461 file rotated as in desktop console](https://bcline.lightning.force.com/lightning/r/a0NSZ00000BqJg92AF/view "(Patch) STT-16461 file rotated as in desktop console")
+* Hidden close X button and left the Done button to close in mobile console.
+##### Task: [❓trcuk dalies draginimas pele](https://bcline.lightning.force.com/lightning/r/a0NSZ000008UIsX2AW/view "❓trcuk dalies draginimas pele")
 * 
