@@ -212,4 +212,12 @@ Gal jeigu cost arba price quantity yra 0 tada tiesiog nekurti quote line item?
 ##### Task: [(Patch) STT-16461 file rotated as in desktop console](https://bcline.lightning.force.com/lightning/r/a0NSZ00000BqJg92AF/view "(Patch) STT-16461 file rotated as in desktop console")
 * Hidden close X button and left the Done button to close in mobile console.
 ##### Task: [❓trcuk dalies draginimas pele](https://bcline.lightning.force.com/lightning/r/a0NSZ000008UIsX2AW/view "❓trcuk dalies draginimas pele")
+* Added appearing button on sidebar border on hover and on click listener, writing logic to minimize sidebar.
+#### 02-12
+##### Task: [Truck dalies draginimas pele](https://bcline.lightning.force.com/lightning/r/a0NSZ000008UIsX2AW/view "❓trcuk dalies draginimas pele")
+* Updates resizer design
+* Writing functionality to wrap the sidebar by clicking on the minimizer button.
+* Testing and fixing small things. Adding listeners and remove them on control events and resizer usability.
+* Try to separate js controller of resizing functionality. Adding speed item to truck row.
+* Created speed card and display live_speed__c value. Added permission set and custom permission to display item.
 * 
