@@ -202,7 +202,7 @@ Gal jeigu cost arba price quantity yra 0 tada tiesiog nekurti quote line item?
 * according to last notes about this task remains to:
 	* ~~hide wrapped items~~
 	* save sets to local storage 
-	* add speed item card
+	* ~~add speed item card~~
 * Discussed about task updates
 * Updates:
 	* items can be consist of 2 or 3 parts (icon - number - icon). After resizing sidebar this items width will reduce step by step, first right icon, then number ant only then entire item.
@@ -220,4 +220,8 @@ Gal jeigu cost arba price quantity yra 0 tada tiesiog nekurti quote line item?
 * Testing and fixing small things. Adding listeners and remove them on control events and resizer usability.
 * Try to separate js controller of resizing functionality. Adding speed item to truck row.
 * Created speed card and display live_speed__c value. Added permission set and custom permission to display item.
+##### 1-on-1
+* Use notes to better control the task flow and debug
+##### Task: [Truck dalies draginimas pele](https://bcline.lightning.force.com/lightning/r/a0NSZ000008UIsX2AW/view)
+* Writing local storage functionality (use consoleLocalStorageWrapper)
 * 
