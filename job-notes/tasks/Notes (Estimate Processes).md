@@ -86,7 +86,7 @@ On service after update event to invoiceRoolup calculate add `&& cmp.hasRecordTy
 * Started fixing fields display solution. Discussed with TL need I to fix that and how. After a couple of attempts, found the reason and solution.
 * Fixed date display value bug.
 * Fixing buttons and maps components display bugs and testing validation functionality.
-#### 01-04
+#### 02-04
 ##### Task: [Trigeris, kai Quote tampa Approved ir susikuria Booking](https://bcline.lightning.force.com/lightning/r/a0NSZ000009XZ9t2AG/view)
 * Fixed PR merge conflict.
 * Fixed gearset error.
