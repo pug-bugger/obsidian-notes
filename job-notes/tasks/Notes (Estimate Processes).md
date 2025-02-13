@@ -201,7 +201,7 @@ Gal jeigu cost arba price quantity yra 0 tada tiesiog nekurti quote line item?
 ##### Task: [❓trcuk dalies draginimas pele](https://bcline.lightning.force.com/lightning/r/a0NSZ000008UIsX2AW/view "❓trcuk dalies draginimas pele")
 * according to last notes about this task remains to:
 	* ~~hide wrapped items~~
-	* save sets to local storage 
+	* ~~save sets to local storage~~ 
 	* ~~add speed item card~~
 * Discussed about task updates
 * Updates:
@@ -224,4 +224,13 @@ Gal jeigu cost arba price quantity yra 0 tada tiesiog nekurti quote line item?
 * Use notes to better control the task flow and debug
 ##### Task: [Truck dalies draginimas pele](https://bcline.lightning.force.com/lightning/r/a0NSZ000008UIsX2AW/view)
 * Writing local storage functionality (use consoleLocalStorageWrapper)
+* Something wrong with default set from local storage, fixing and testing
+#### 02-13
+##### Task: [Truck dalies draginimas pele](https://bcline.lightning.force.com/lightning/r/a0NSZ000008UIsX2AW/view)
+* Wrote local storage functionality, on load component width and collapsing data sets by default.
+* Discussed about code refactoring, decided to separate functionality to new component to make it reusable and control in one place and less dependency from children component.
+* Created new resizerWrapper component and use to resize sidebar.
+* Adding extra area place to be able to resize to right side and end resizing on left that area.
+* **stand-up**
+* Added extra area of resizing listener, modifying design of collapse button.
 * 
