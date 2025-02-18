@@ -232,5 +232,48 @@ Gal jeigu cost arba price quantity yra 0 tada tiesiog nekurti quote line item?
 * Created new resizerWrapper component and use to resize sidebar.
 * Adding extra area place to be able to resize to right side and end resizing on left that area.
 * **stand-up**
+* Fixed components fn and design after replaced the code to the new component.
 * Added extra area of resizing listener, modifying design of collapse button.
+* Fixing scrollbar and resizer conflict. Fixed by adding z-index: 1 dynamically on mousedown event.
+* Working on truck label and items aligning and flex wight calculation. Almost find the solution.
+#### 02-14
+##### Task: [(Hotfix) Nuotraukų zoominimas mobile konsolėje](https://bcline.lightning.force.com/lightning/r/a0NSZ00000BxQWP2A3/view "(Hotfix) Nuotraukų zoominimas mobile konsolėje")
+* setup sandbox, login from mobile, testing
+* Fixed new functionality and close "Done" button in messenger, fixing and testing image swipe.
+* Fixed zoom and navigation gestures conflict. Navigation works only on the image is zoomed out.
+* Deployed to sprint-26-hotfix-1 branch.
+* Wrote test cases.
+##### Task:  [Truck dalies draginimas pele](https://bcline.lightning.force.com/lightning/r/a0NSZ000008UIsX2AW/view "Truck dalies draginimas pele")
+* Deploying all changes to refreshed sandbox.
+* Done with truck row aligning to right side of sidebar.
+* Fixed scrollbar bug from production.
+* Adding fuel sorting logic to sort each groups of sorted lists. Waiting for answer from Paulius.
+* remains to add bubble and separate items. (not big deal)
+#### 02-17
+##### Task: [Truck dalies draginimas pele](https://bcline.lightning.force.com/lightning/r/a0NSZ000008UIsX2AW/view "Truck dalies draginimas pele")
+* Asked about task. 
+* **Stashed last changes** and switch to hotfix !
+##### Task: [(Hotfix) Nuotraukų zoominimas mobile konsolėje](https://bcline.lightning.force.com/lightning/r/a0NSZ00000BxQWP2A3/view "(Hotfix) Nuotraukų zoominimas mobile konsolėje")
+* Fixed code review comment (replace class selector by ref)
+* Tested on the mobile phone.
+**stand-up**
+##### Task: [Truck dalies draginimas pele](https://bcline.lightning.force.com/lightning/r/a0NSZ000008UIsX2AW/view "Truck dalies draginimas pele")
+* Get back stashed code. Working on fuel sorting fn.
+* Comments: 
+	* Collapse button make more like pill shape and with invisible area to help reach that button. ✅
+	* Don't lock resizer then sidebar is collapsed. ✅
+	* Minimum width should be like label text width. ✅
+* Updated fuel sort fn.
+* Added refuel task counting code, created new roll-up field.
+* Updating bubble display logic according to comments after the last adjustment.
+* Done with fuel task count bubble subtask.
+* Fixed all bugs what had find out.
+* Try to complete last new functionality subtask.
+*don't forget retrieve new created field metadata* ✅
+#### 02-18
+##### Task: [Auto sattelite toggle button](https://bcline.lightning.force.com/lightning/r/a0NSZ00000BnHHV2A3/view "Auto sattelite toggle button")
+* Get satellite on zoom icon from figma, added circle in svg and set scale.
+* Added button to map controller.
+* Writing toggle functionality to set auto map change on zoom functionality.
+* Remains to save changes in local storage and preset settings on load the page.
 * 
