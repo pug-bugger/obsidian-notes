@@ -276,4 +276,27 @@ Gal jeigu cost arba price quantity yra 0 tada tiesiog nekurti quote line item?
 * Added button to map controller.
 * Writing toggle functionality to set auto map change on zoom functionality.
 * Remains to save changes in local storage and preset settings on load the page.
+* Added local storage functionality and default setting set.
+* Deployed to bitbucket.
+##### Task: [Truck dalies draginimas pele](https://bcline.lightning.force.com/lightning/r/a0NSZ000008UIsX2AW/view)
+* Try to rebuild row display logic, try to implement a workaround.
+* Try to use resizeObserver api.
+* Researching how to handle truck row width change and hide items on reduce row width.
+* Sent collected information to Paulius.
+* The message:
+```
+Žodžiu norėjau padaryti kontainerio listeneri per ResizeObserver, bet LWC jis nepalaikomas Locker API, tai yra sprendimas dar saugoti biblioteką static resource ir importinti ir naudoti (https://salesforce.stackexchange.com/questions/366965/resizeobserver-is-not-a-constructor). Arba kas man atrodo perblogai, tai daryti listeneri iš pat resizer komponento į truckRow componentą, bet jeigu naršiklio lankas pasikeis tai jau truckRow width nepersiskaičiuos. 
+
+Dar radau @container rule kur galima uždėti conditions kad row-container width daugiau nei kažkiek ir priklausomai nuo to keisti item'ų width. Galiu šitą išbandyti dar tada jeigu bus laiko.
+```
+#### 02-19
+Answer: 2h to try @container.
+##### Task: [Truck dalies draginimas pele](https://bcline.lightning.force.com/lightning/r/a0NSZ000008UIsX2AW/view)
+* Try use @container css rule, seems it works
+* Discussed this task job:
+	* Move bubble to left a little bit (about 50%).
+	* Hiding items one by one, but in items with text first text, and then entire item.
+* Added @container rule, fixed last things (icon bubble position, ma/min width, last item left hide).
+* Wrote test cases.
+##### Task: [STT-16434 range marker tooltip](https://bcline.lightning.force.com/lightning/r/a0NSZ00000BpGAr2AN/view "STT-16434 range marker tooltip")
 * 
