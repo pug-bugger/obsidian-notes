@@ -299,4 +299,39 @@ Answer: 2h to try @container.
 * Added @container rule, fixed last things (icon bubble position, ma/min width, last item left hide).
 * Wrote test cases.
 ##### Task: [STT-16434 range marker tooltip](https://bcline.lightning.force.com/lightning/r/a0NSZ00000BpGAr2AN/view "STT-16434 range marker tooltip")
-* 
+* Reduce close button width/height from 48px to 24px and remove icon margin.
+* Skipped this task now because it is the 28 sprint task.
+* Paklaust Eligiju kur šitą pakeisti
+##### Task: [STT-16408 csv format info](https://bcline.lightning.force.com/lightning/r/a0NSZ00000BqDPS2A3/view "STT-16408 csv format info")
+* Added stopPropagation and cursor changed to default.
+* Created PR to partial.
+* Assigned existing test case.
+##### Task: [STT-16039 search highlight](https://bcline.lightning.force.com/lightning/r/a0NSZ00000Bp6oE2AR/view "STT-16039 search highlight")
+* Added search(...) method for group items where group are not filtered out.
+* Create PR to partial.
+* Assigned existing test case.
+##### Task: [STT-16041 info box font change (first time)](https://bcline.lightning.force.com/lightning/r/a0NSZ00000BpGQz2AN/view "STT-16041 info box font change (first time)")
+* Started task, asked QA how to reproduce.
+* Researching this task functionality code.
+#### 02-20
+##### Task: [STT-16041 info box font change (first time)](https://bcline.lightning.force.com/lightning/r/a0NSZ00000BpGQz2AN/view "STT-16041 info box font change (first time)")
+* Added font directly in context-menu.
+* Try first generate context-menu element and then display it.
+* Try use visibility instead of display: none
+##### Task: [Kuro kainos ir kiti papildymai adresų grupėms](https://bcline.lightning.force.com/lightning/r/a0NSZ00000BnKGz2AN/view "Kuro kainos ir kiti papildymai adresų grupėms")
+* Create endpoint class REST_GroupItems.
+* I asked about this task, we discussed what needs to be done.
+* Writing endpoint class.
+##### Task: [Auto sattelite toggle button](https://bcline.lightning.force.com/lightning/r/a0NSZ00000BnHHV2A3/view "Auto sattelite toggle button")
+* Added change theme on zoom and changing satellite_on_zoom.
+* Fixing initial map selection.
+* //from home
+##### Task: [Kuro kainos ir kiti papildymai adresų grupėms](https://bcline.lightning.force.com/lightning/r/a0NSZ00000BnKGz2AN/view "Kuro kainos ir kiti papildymai adresų grupėms")
+* Wrote postman test requests.
+* I created the chat for specifying details about the task.
+#### 02-21
+##### Task: [Auto sattelite toggle button](https://bcline.lightning.force.com/lightning/r/a0NSZ00000BnHHV2A3/view "Auto sattelite toggle button")
+* Fixed devbug task. 
+* Tested and deployed to PR.
+##### Task: [Kuro kainos ir kiti papildymai adresų grupėms](https://bcline.lightning.force.com/lightning/r/a0NSZ00000BnKGz2AN/view "Kuro kainos ir kiti papildymai adresų grupėms")
+Schema of request body and map to sf records: [[grou-items-request.canvas]]
