@@ -335,3 +335,10 @@ Answer: 2h to try @container.
 * Tested and deployed to PR.
 ##### Task: [Kuro kainos ir kiti papildymai adresų grupėms](https://bcline.lightning.force.com/lightning/r/a0NSZ00000BnKGz2AN/view "Kuro kainos ir kiti papildymai adresų grupėms")
 Schema of request body and map to sf records: [[grou-items-request.canvas]]
+* Writing logic to create Account, Location_Group__c and Location_Group_Item__c records.
+* It seems I need to create many of fflib layers during completing this task.
+* Drawing canvas for own task explanation
+*stand-up*
+* Created couple of fields (Account.Fuel_Price__c, Location_Group_Item__c.Fuel_Price__c)
+* Writing endpoint class logic with fflib.
+* 
