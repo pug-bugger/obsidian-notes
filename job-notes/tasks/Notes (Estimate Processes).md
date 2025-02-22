@@ -232,5 +232,113 @@ Gal jeigu cost arba price quantity yra 0 tada tiesiog nekurti quote line item?
 * Created new resizerWrapper component and use to resize sidebar.
 * Adding extra area place to be able to resize to right side and end resizing on left that area.
 * **stand-up**
+* Fixed components fn and design after replaced the code to the new component.
 * Added extra area of resizing listener, modifying design of collapse button.
+* Fixing scrollbar and resizer conflict. Fixed by adding z-index: 1 dynamically on mousedown event.
+* Working on truck label and items aligning and flex wight calculation. Almost find the solution.
+#### 02-14
+##### Task: [(Hotfix) Nuotraukų zoominimas mobile konsolėje](https://bcline.lightning.force.com/lightning/r/a0NSZ00000BxQWP2A3/view "(Hotfix) Nuotraukų zoominimas mobile konsolėje")
+* setup sandbox, login from mobile, testing
+* Fixed new functionality and close "Done" button in messenger, fixing and testing image swipe.
+* Fixed zoom and navigation gestures conflict. Navigation works only on the image is zoomed out.
+* Deployed to sprint-26-hotfix-1 branch.
+* Wrote test cases.
+##### Task:  [Truck dalies draginimas pele](https://bcline.lightning.force.com/lightning/r/a0NSZ000008UIsX2AW/view "Truck dalies draginimas pele")
+* Deploying all changes to refreshed sandbox.
+* Done with truck row aligning to right side of sidebar.
+* Fixed scrollbar bug from production.
+* Adding fuel sorting logic to sort each groups of sorted lists. Waiting for answer from Paulius.
+* remains to add bubble and separate items. (not big deal)
+#### 02-17
+##### Task: [Truck dalies draginimas pele](https://bcline.lightning.force.com/lightning/r/a0NSZ000008UIsX2AW/view "Truck dalies draginimas pele")
+* Asked about task. 
+* **Stashed last changes** and switch to hotfix !
+##### Task: [(Hotfix) Nuotraukų zoominimas mobile konsolėje](https://bcline.lightning.force.com/lightning/r/a0NSZ00000BxQWP2A3/view "(Hotfix) Nuotraukų zoominimas mobile konsolėje")
+* Fixed code review comment (replace class selector by ref)
+* Tested on the mobile phone.
+**stand-up**
+##### Task: [Truck dalies draginimas pele](https://bcline.lightning.force.com/lightning/r/a0NSZ000008UIsX2AW/view "Truck dalies draginimas pele")
+* Get back stashed code. Working on fuel sorting fn.
+* Comments: 
+	* Collapse button make more like pill shape and with invisible area to help reach that button. ✅
+	* Don't lock resizer then sidebar is collapsed. ✅
+	* Minimum width should be like label text width. ✅
+* Updated fuel sort fn.
+* Added refuel task counting code, created new roll-up field.
+* Updating bubble display logic according to comments after the last adjustment.
+* Done with fuel task count bubble subtask.
+* Fixed all bugs what had find out.
+* Try to complete last new functionality subtask.
+*don't forget retrieve new created field metadata* ✅
+#### 02-18
+##### Task: [Auto sattelite toggle button](https://bcline.lightning.force.com/lightning/r/a0NSZ00000BnHHV2A3/view "Auto sattelite toggle button")
+* Get satellite on zoom icon from figma, added circle in svg and set scale.
+* Added button to map controller.
+* Writing toggle functionality to set auto map change on zoom functionality.
+* Remains to save changes in local storage and preset settings on load the page.
+* Added local storage functionality and default setting set.
+* Deployed to bitbucket.
+##### Task: [Truck dalies draginimas pele](https://bcline.lightning.force.com/lightning/r/a0NSZ000008UIsX2AW/view)
+* Try to rebuild row display logic, try to implement a workaround.
+* Try to use resizeObserver api.
+* Researching how to handle truck row width change and hide items on reduce row width.
+* Sent collected information to Paulius.
+* The message:
+```
+Žodžiu norėjau padaryti kontainerio listeneri per ResizeObserver, bet LWC jis nepalaikomas Locker API, tai yra sprendimas dar saugoti biblioteką static resource ir importinti ir naudoti (https://salesforce.stackexchange.com/questions/366965/resizeobserver-is-not-a-constructor). Arba kas man atrodo perblogai, tai daryti listeneri iš pat resizer komponento į truckRow componentą, bet jeigu naršiklio lankas pasikeis tai jau truckRow width nepersiskaičiuos. 
+
+Dar radau @container rule kur galima uždėti conditions kad row-container width daugiau nei kažkiek ir priklausomai nuo to keisti item'ų width. Galiu šitą išbandyti dar tada jeigu bus laiko.
+```
+#### 02-19
+Answer: 2h to try @container.
+##### Task: [Truck dalies draginimas pele](https://bcline.lightning.force.com/lightning/r/a0NSZ000008UIsX2AW/view)
+* Try use @container css rule, seems it works
+* Discussed this task job:
+	* Move bubble to left a little bit (about 50%).
+	* Hiding items one by one, but in items with text first text, and then entire item.
+* Added @container rule, fixed last things (icon bubble position, ma/min width, last item left hide).
+* Wrote test cases.
+##### Task: [STT-16434 range marker tooltip](https://bcline.lightning.force.com/lightning/r/a0NSZ00000BpGAr2AN/view "STT-16434 range marker tooltip")
+* Reduce close button width/height from 48px to 24px and remove icon margin.
+* Skipped this task now because it is the 28 sprint task.
+* Paklaust Eligiju kur šitą pakeisti
+##### Task: [STT-16408 csv format info](https://bcline.lightning.force.com/lightning/r/a0NSZ00000BqDPS2A3/view "STT-16408 csv format info")
+* Added stopPropagation and cursor changed to default.
+* Created PR to partial.
+* Assigned existing test case.
+##### Task: [STT-16039 search highlight](https://bcline.lightning.force.com/lightning/r/a0NSZ00000Bp6oE2AR/view "STT-16039 search highlight")
+* Added search(...) method for group items where group are not filtered out.
+* Create PR to partial.
+* Assigned existing test case.
+##### Task: [STT-16041 info box font change (first time)](https://bcline.lightning.force.com/lightning/r/a0NSZ00000BpGQz2AN/view "STT-16041 info box font change (first time)")
+* Started task, asked QA how to reproduce.
+* Researching this task functionality code.
+#### 02-20
+##### Task: [STT-16041 info box font change (first time)](https://bcline.lightning.force.com/lightning/r/a0NSZ00000BpGQz2AN/view "STT-16041 info box font change (first time)")
+* Added font directly in context-menu.
+* Try first generate context-menu element and then display it.
+* Try use visibility instead of display: none
+##### Task: [Kuro kainos ir kiti papildymai adresų grupėms](https://bcline.lightning.force.com/lightning/r/a0NSZ00000BnKGz2AN/view "Kuro kainos ir kiti papildymai adresų grupėms")
+* Create endpoint class REST_GroupItems.
+* I asked about this task, we discussed what needs to be done.
+* Writing endpoint class.
+##### Task: [Auto sattelite toggle button](https://bcline.lightning.force.com/lightning/r/a0NSZ00000BnHHV2A3/view "Auto sattelite toggle button")
+* Added change theme on zoom and changing satellite_on_zoom.
+* Fixing initial map selection.
+* //from home
+##### Task: [Kuro kainos ir kiti papildymai adresų grupėms](https://bcline.lightning.force.com/lightning/r/a0NSZ00000BnKGz2AN/view "Kuro kainos ir kiti papildymai adresų grupėms")
+* Wrote postman test requests.
+* I created the chat for specifying details about the task.
+#### 02-21
+##### Task: [Auto sattelite toggle button](https://bcline.lightning.force.com/lightning/r/a0NSZ00000BnHHV2A3/view "Auto sattelite toggle button")
+* Fixed devbug task. 
+* Tested and deployed to PR.
+##### Task: [Kuro kainos ir kiti papildymai adresų grupėms](https://bcline.lightning.force.com/lightning/r/a0NSZ00000BnKGz2AN/view "Kuro kainos ir kiti papildymai adresų grupėms")
+Schema of request body and map to sf records: [[grou-items-request.canvas]]
+* Writing logic to create Account, Location_Group__c and Location_Group_Item__c records.
+* It seems I need to create many of fflib layers during completing this task.
+* Drawing canvas for own task explanation
+*stand-up*
+* Created couple of fields (Account.Fuel_Price__c, Location_Group_Item__c.Fuel_Price__c)
+* Writing endpoint class logic with fflib.
 * 

@@ -9,3 +9,8 @@ https://medium.com/@mdtaqui.jhar/6-repos-to-master-nextjs-d01672dbea7c
 
 https://blog.stackademic.com/top-10-clean-code-rules-831fb34caff7
 
+https://www.youtube.com/watch?v=jJVAla0dWJo&t=1s
+
+
+!!!
+https://photogradient.com/?ref=dailydev
