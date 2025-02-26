@@ -341,4 +341,44 @@ Schema of request body and map to sf records: [[grou-items-request.canvas]]
 *stand-up*
 * Created couple of fields (Account.Fuel_Price__c, Location_Group_Item__c.Fuel_Price__c)
 * Writing endpoint class logic with fflib.
-* 
+*code reviewers meet:* [[code-review meet|here]]
+##### Task: [Kuro kainos ir kiti papildymai adresų grupėms](https://bcline.lightning.force.com/lightning/r/a0NSZ00000BnKGz2AN/view "Kuro kainos ir kiti papildymai adresų grupėms")
+* Created group, group item and account domain layer classes. Writing LocationGroupItemService implementation and testing with postman. for now only to create all records.
+#### 02-24
+##### Task: [Kuro kainos ir kiti papildymai adresų grupėms](https://bcline.lightning.force.com/lightning/r/a0NSZ00000BnKGz2AN/view "Kuro kainos ir kiti papildymai adresų grupėms")
+* Sending http requests and try to debug error. 
+*stand-up meet* ==discussed failing test task (made info-box always visible, but if not "opened", then hide by move over the screen, x: 0 and y: 0)== ✅
+* Wrote functionality to create new accounts, groups and group items.
+* Writing logic of upsert part. Issue with group item and account relationship, try to figure it out how it is should work.
+* Call with Paulius, explain to me how it should work.
+* Wrote validation method for type parameter to log wrong type values.
+* Wrote validation for ids, log them and skip for upserting.
+* Testing with postman.
+* Writing test class.
+#### 02-25
+##### Task: [Kuro kainos ir kiti papildymai adresų grupėms](https://bcline.lightning.force.com/lightning/r/a0NSZ00000BnKGz2AN/view "Kuro kainos ir kiti papildymai adresų grupėms")
+* Wrote tests and documentation of this endpoint.
+* Retrieving all changes from sandbox, fields, permission sets to deploy to bitbucket.
+* Fixing comments, updating documentation and endpoint code.
+*stand-up meet*
+##### Task: [Kuro kainos ir kiti papildymai adresų grupėms](https://bcline.lightning.force.com/lightning/r/a0NSZ00000BnKGz2AN/view "Kuro kainos ir kiti papildymai adresų grupėms")
+* Fixed code and documentation comments.
+* Remains to write test of REST_GroupItems endpoint class.
+##### Task: [STT-16041 info box font change (first time)](https://bcline.lightning.force.com/lightning/r/a0NSZ00000BpGQz2AN/view "STT-16041 info box font change (first time)")
+* Shift context-menu element over the edge of map container. Display container when are clicked on mad and x and y coordinates appeared from click.
+* Can't reproduce the error, hope the bug is fixed🤞
+##### Task: [Kuro kainos ir kiti papildymai adresų grupėms](https://bcline.lightning.force.com/lightning/r/a0NSZ00000BnKGz2AN/view)
+* Fixed error occurred after I updated group and group item selectors. Replaced old group and group item selectors by new created with this task.
+* Started working with design.
+* ==Find out problem with endpoint response body, type in chat.== (answer: display "error" next to id and groupId fields of records with wrong ids)
+* Some code conflict in sandbox, should I merge changes to one branch.
+* Added fuel price column in Edit/Create Location Group window.
+#### 02-26
+##### Task: [Kuro kainos ir kiti papildymai adresų grupėms](https://bcline.lightning.force.com/lightning/r/a0NSZ00000BnKGz2AN/view)
+* Modifying and testing csv.
+* Added column to import price also from csv.
+*stand-up meet*
+* Finally fixed init data upload class. Error occurs because of decimal tries convert \r and empty strings.
+* Adding label bubble next to mark.
+* Added price display functionality. When price are filled and mark are not in cluster, then display price next to mark.
+* Now decided to not display cluster lowest price, but pull mark with lowest price and display separately.

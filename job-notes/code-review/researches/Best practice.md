@@ -3,3 +3,7 @@ https://blog.devgenius.io/10-advanced-javascript-tricks-for-experienced-develope
 
 https://www.freecodecamp.org/news/the-clean-code-handbook/?ref=dailydev
 
+Apex `??` operator.
+
+Use `String.isBlank(text)` instead of `text != null && text!= ''`
+
