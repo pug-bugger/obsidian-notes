@@ -1,8 +1,6 @@
 
 **Today Plans**
 
-1. finish milestone post completed triggers (stakes and booking status)
-Exploring
 
 **Now:**
 
@@ -382,3 +380,43 @@ Schema of request body and map to sf records: [[grou-items-request.canvas]]
 * Adding label bubble next to mark.
 * Added price display functionality. When price are filled and mark are not in cluster, then display price next to mark.
 * Now decided to not display cluster lowest price, but pull mark with lowest price and display separately.
+#### 02-27
+##### Task: [Auto sattelite toggle button](https://bcline.lightning.force.com/lightning/r/a0NSZ00000BnHHV2A3/view "Auto sattelite toggle button")
+* Fixed code review
+##### Task: [Kuro kainos ir kiti papildymai adresų grupėms](https://bcline.lightning.force.com/lightning/r/a0NSZ00000BnKGz2AN/view)
+* Assembled the pallet of colors. (#C42300-red,#BA6F00-orange,#F1A07E-tangerine,#A1BE13-apple,#51BD74-green,#00BCD4-brand_light,#147A89-brand,#27383E-brand_dark)
+*went to dentist*
+* Added options to Location_Group__c.Group_Color__c picklist. Try to display colors in picklist.
+*stand-up meet*
+* Added new mark colors in console. Testing and checking if all data displays after change color.
+* Fixing markers color update and display price immediately.
+* Try to add price comparison and display it.
+*1-on-1* pažiūrėti dėl atostogu.
+##### Task: [Kuro kainos ir kiti papildymai adresų grupėms](https://bcline.lightning.force.com/lightning/r/a0NSZ00000BnKGz2AN/view)
+* Added price comparison in clusters and display lowest price
+* Try to find the method of save records and fix fuel_price__c value display after save.
+#### 02-28
+##### Task: [Kuro kainos ir kiti papildymai adresų grupėms](https://bcline.lightning.force.com/lightning/r/a0NSZ00000BnKGz2AN/view)
+* ==I need to learn how to fast and clear find and see the logic and code structure of lwc components (from vscode or dev tools)==
+* Find place where marker element rerenders and mess the marker labelRight display code.
+* Try to implement last functionality which display lowest price and mark it green color.
+*stand-up meet*
+* First I will try to display lowest price on load (and add display logic in clusters render), then will check what triggers checked and unchecked field and recalculate on this change.
+* Find place where trigger from to update all markers.
+#### 03-03
+##### Task: [Kuro kainos ir kiti papildymai adresų grupėms](https://bcline.lightning.force.com/lightning/r/a0NSZ00000BnKGz2AN/view)
+* Try to figure out how to update all markers labels after update price.
+* Finally fixed price display updates after they was changes in group edit window.
+* Finally find the reason why markers clusters does not updating together with markers.
+* Searching reason why marker lost the lowest price parameter. debugging and try to find reason
+#### 03-04
+##### Task: [Kuro kainos ir kiti papildymai adresų grupėms](https://bcline.lightning.force.com/lightning/r/a0NSZ00000BnKGz2AN/view)
+* Fixed fuel station price display styling in planner functionality.
+* Testing all places where is price used.
+* Wrote test cases.
+* Fixing gearset.
+##### Task: [Truck dalies draginimas pele](https://bcline.lightning.force.com/lightning/r/a0NSZ000008UIsX2AW/view "Truck dalies draginimas pele")
+* Fixing code review.
+* Fixed bug after testing in sandbox.
+* Deployed changes to PR.
+*stand-up meet*
