@@ -12,3 +12,4 @@ I decided to write requests with query.id instead of params.id.
 Now orders can be created, read, updated and deleted.
 
 Order part done, read all, read by id, create, update by id and delete by id functionality works.
+Remains to do same with chat collection.
