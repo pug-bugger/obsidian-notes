@@ -6,3 +6,9 @@ Routes are used to handle requests for each collection separately.
 `req.params.id`
 • ?id=... → Параметр передается **в строке запроса (query params)** (пример: /api/orders?id=123).
 `req.query.id
+
+I decided to write requests with query.id instead of params.id.
+
+Now orders can be created, read, updated and deleted.
+
+Order part done, read all, read by id, create, update by id and delete by id functionality works.
