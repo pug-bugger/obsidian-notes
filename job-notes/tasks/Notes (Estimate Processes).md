@@ -420,3 +420,35 @@ Schema of request body and map to sf records: [[grou-items-request.canvas]]
 * Fixed bug after testing in sandbox.
 * Deployed changes to PR.
 *stand-up meet*
+##### Task [Reikia orderio grupėms](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CVQaP2AX/view "Reikia orderio grupėms")
+* Added sort in groupPicker cmp controller.
+* Created PR and deployed changes.
+* Wrote test case.
+##### Task: [resetSygic notification button](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CVRUr2AP/view)
+- Searching for new best approach to create buttons more flexible.
+- Found something with flow.
+- Create "AssetPushNotificationFlow" flow.
+- Wrote "AssetPushNotificationController" class with invocable method to call from flow. This class accepts selected asset ids and name of Push_Notification_Data__mdt metadata record api name. Metadata record takes json string to parse and get data.
+- Created all metadata records.
+- Preparing data and testing
+#### 03-05 -
+#### 03-06
+##### Task: [resetSygic notification button](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CVRUr2AP/view)
+- Asked how to test functionality.
+- Update all push buttons to new url functionality
+- Deployed all to bitbucket and updated labels to save type name (with prefix "Push").
+- Created PR to partial.
+- Writing test class.
+*stand-up meet*
+##### Task: [Rodyti task attachment failus prie taskų histogramoje + stc iš 24 sprinto](https://bcline.lightning.force.com/lightning/r/a0NSZ000008e2T72AI/view)
+- Call with Paulius, discussed entire task, I found out about the new design and discussed STT (failed sprint task test cases).
+- questionable [moving range with middle button](https://bcline.lightning.force.com/lightning/r/a2KSZ000002fL2C2AU/view "moving range with middle button")
+- STT-12800 ✅
+	- added **user-select: none**.
+- STT-12797 🔄️
+	- testing, discussed with QA one point.
+	- *move to home workspace*
+	- for me it happens then I click during moving mouse. Changed onclick by mousedown, maybe it will fix.
+	- is to hard to rewrite zoom in functionality to avoid display entire clip. Just added opacity: 0 to hide entire graph.
+	- added minimum range validation. If range less 1 sec, then add 1 sec.
+- Need to switch to dev19 sandbox to fix and test STT's.
