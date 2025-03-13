@@ -450,5 +450,48 @@ Schema of request body and map to sf records: [[grou-items-request.canvas]]
 	- *move to home workspace*
 	- for me it happens then I click during moving mouse. Changed onclick by mousedown, maybe it will fix.
 	- is to hard to rewrite zoom in functionality to avoid display entire clip. Just added opacity: 0 to hide entire graph.
-	- added minimum range validation. If range less 1 sec, then add 1 sec.
+	- adding minimum range validation. If range less 1 sec, then add extra 1 sec.
 - Need to switch to dev19 sandbox to fix and test STT's.
+#### 02-07
+##### Task: [Rodyti task attachment failus prie taskų histogramoje + stc iš 24 sprinto](https://bcline.lightning.force.com/lightning/r/a0NSZ000008e2T72AI/view)
+- To fix STT-12797 4 and 5 points, required to handle selected range, and disable zoom in button then selected range is critically short for zoom funtionality.
+##### Task: [Kuro kainos ir kiti papildymai adresų grupėms](https://bcline.lightning.force.com/lightning/r/a0NSZ00000BnKGz2AN/view "Kuro kainos ir kiti papildymai adresų grupėms")
+1. Updated group color select for loop code.
+- Fixing sandbox and deploying last changes what are already done.
+*stand-up meet*
+- Fixed sandbox, deployed own functionality. Run init data create script.
+- Fixed groupDisplay code comments.
+- Writing test class with fflib.
+- Meet the problem with dto mocking in fflib. Solving with Vylius help, try use fflib_ArgumentCaptor and etc.
+#### 03-10
+##### Task: [Kuro kainos ir kiti papildymai adresų grupėms](https://bcline.lightning.force.com/lightning/r/a0NSZ00000BnKGz2AN/view "Kuro kainos ir kiti papildymai adresų grupėms")
+- Finally fixed test class.
+- Removed picklist check and logger method.
+- Added error field to set error message and updated endpoint doc.
+- Writing price value validation. Added validator handler to check if price is a number type value. 
+*stand-up meet*
+- Wrote price and names validation.
+- Updated test methods. Fixed gearset.
+- Fixed sidebar dragging task PR merge conflict.
+##### Task: [resetSygic notification button](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CVRUr2AP/view)
+- Removed old code in PR.
+- Fixed Gearset error.
+##### Task: [Rodyti task attachment failus prie taskų histogramoje + stc iš 24 sprinto](https://bcline.lightning.force.com/lightning/r/a0NSZ000008e2T72AI/view)
+- Fixing STT-12797 last point.
+#### 03-12
+##### Task: [Kuro kainos ir kiti papildymai adresų grupėms](https://bcline.lightning.force.com/lightning/r/a0NSZ00000BnKGz2AN/view "Kuro kainos ir kiti papildymai adresų grupėms")
+- Fixed code review comments (removed validator, changed dto type of price from string to decimal, request strings to variable of dto object, and updated clusters render method, join all calculations to one for loop)
+- Tested in sandbox, deployed to bitbucket.
+- Fixing gearset build error (error related with another task, I need to wait or fix it?)
+##### Task: [Rodyti task attachment failus prie taskų histogramoje + stc iš 24 sprinto](https://bcline.lightning.force.com/lightning/r/a0NSZ000008e2T72AI/view)
+- Debugging polylineClickHnadler and try to disable in range then button will work incorrect.
+*stand-up meet*
+- Try to disable zoom button if width is 0, but discussed with Paulius and decided that current solution is good.
+- Started review new STT.
+- Created new PR to partial to fix permission sets.
+##### Task: [Pakoreguojam custom report checkboxų logiką](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CmkEY2AZ/view)
+- Researching custom report component.
+- Changed getter of selected trucks.
+- Tested in dev19 sandbox (with logs)
+- Wrote test case.
+- Created PR to partial.

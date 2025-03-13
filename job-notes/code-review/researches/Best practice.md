@@ -7,3 +7,8 @@ Apex `??` operator.
 
 Use `String.isBlank(text)` instead of `text != null && text!= ''`
 
+What is better?
+`const colorGroup = redOrGroupColor ? redOrGroupColor : GROUP;`
+or
+`const colorGroup = redOrGroupColor ?? GROUP;`
+
