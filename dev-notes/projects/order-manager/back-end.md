@@ -13,3 +13,7 @@ Now orders can be created, read, updated and deleted.
 
 Order part done, read all, read by id, create, update by id and delete by id functionality works.
 Remains to do same with chat collection.
+
+Changed create single order doc to bulk create.
+
+Read this article: [BigQuery JSON for Optimized MongoDB](https://developers.googleblog.com/en/leveraging-bigquery-json-for-optimized-mongodb-dataflow-pipelines/?ref=dailydev)
