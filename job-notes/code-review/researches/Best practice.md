@@ -12,3 +12,9 @@ What is better?
 or
 `const colorGroup = redOrGroupColor ?? GROUP;`
 
+js - use `??` or `||`
+
+use let or const variable instead of this.variable if this variable uses several times in method.
+
+NaN
+
