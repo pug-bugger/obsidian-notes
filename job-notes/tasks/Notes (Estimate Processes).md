@@ -495,3 +495,97 @@ Schema of request body and map to sf records: [[grou-items-request.canvas]]
 - Tested in dev19 sandbox (with logs)
 - Wrote test case.
 - Created PR to partial.
+#### 03-13
+*Fill performance review form*
+##### Task: [Rodyti task attachment failus prie taskų histogramoje + stc iš 24 sprinto](https://bcline.lightning.force.com/lightning/r/a0NSZ000008e2T72AI/view)
+- STT-12779 - added z-index then colorGroup is SELECTED.
+- STT-12776 - controller passes the sorted by sequence data, exploring/code review of backend. Here trip trigger just put new or updated trip to end of sequence of trips in truck. Here no logic to check date of trip or tasks of that trip.
+*stand-up meet*
+##### Task: [Rodyti task attachment failus prie taskų histogramoje + stc iš 24 sprinto](https://bcline.lightning.force.com/lightning/r/a0NSZ000008e2T72AI/view)
+- Started main task part. Exploring transfer act design implementation.
+*lunch*
+- Create mini task detail window component
+- Q: [[way to create mini task detail window]] 
+  https://dreamcubatorteam.slack.com/archives/D01DT8M8HFS/p1741862551961019
+  https://dreamcubatorteam.slack.com/archives/D01DT8M8HFS/p1741862784071999
+- A: Use simplest way to display that component. Similar to transfer act compare approach.
+- Creating c-task-display-mini component
+#### 03-14
+##### Task: [Rodyti task attachment failus prie taskų histogramoje + stc iš 24 sprinto](https://bcline.lightning.force.com/lightning/r/a0NSZ000008e2T72AI/view)
+- Coping task details component design
+##### Task: [resetSygic notification button](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CVRUr2AP/view "resetSygic notification button")
+- Fix PR gearset 
+##### Task: [Rodyti task attachment failus prie taskų histogramoje + stc iš 24 sprinto](https://bcline.lightning.force.com/lightning/r/a0NSZ000008e2T72AI/view)
+- Creating task details mini component design.
+*Meet - Performance Review*
+##### Task: [Rodyti task attachment failus prie taskų histogramoje + stc iš 24 sprinto](https://bcline.lightning.force.com/lightning/r/a0NSZ000008e2T72AI/view)
+- Discussed with Paulius that is the best way to pass selected task to task details mini component to display task details.
+- Writing task pass by api functionality and coping task details display functionality from task details component.
+- Need to check tasks from all trips in date range. 
+#### 03-17
+##### Task: [Rodyti task attachment failus prie taskų histogramoje + stc iš 24 sprinto](https://bcline.lightning.force.com/lightning/r/a0NSZ000008e2T72AI/view)
+- Added task details top part.
+- Adding document display section.
+- Reached max time of 20 h (need extra 16 h) - logged time on meet task.
+- Wrote simple test case before finished task.
+- Changing get task info method and source to display info correctly.
+- Researching getFinishedTasksByTrips method to fix task info display.
+- Adding doc display section (try to figure out why component do not display files)
+*stand-up meet*
+##### Task: [❌(HISTOGRAM) interaktyvūs task burbulai grafike](https://bcline.lightning.force.com/lightning/r/a0NSZ000005H2Lt2AK/view)
+- Do all one dev19 and one branch.
+- Change previous task sandbox to dev16, and other histograms updates do on dev19.
+- [Histogramos duomenų parsinimo pakeitimai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CrSwv2AF/view "Histogramos duomenų parsinimo pakeitimai") do in dev19 sandbox in same branch like in this task.
+- Researched how works select bubble functionality.
+- Find and implement same functionality to this task.
+- Next step in task description skipped because of one task with task details is in progress.
+- Remains to create PR
+#### 03-18
+##### Task: [❌(HISTOGRAM) interaktyvūs task burbulai grafike](https://bcline.lightning.force.com/lightning/r/a0NSZ000005H2Lt2AK/view)
+- Created PR to partial, wrote test case and developer notes.
+##### Task: [Rodyti task attachment failus prie taskų histogramoje + stc iš 24 sprinto](https://bcline.lightning.force.com/lightning/r/a0NSZ000008e2T72AI/view)
+- Files data received successfully.
+- Fixing css styles to display files properly.
+- Remains to check all buttons in task details mini component.
+*stand-up meet*  Asked Paulius about task requirements. Checked currenct functionality and what I need to fix.
+##### Task: [Rodyti task attachment failus prie taskų histogramoje + stc iš 24 sprinto](https://bcline.lightning.force.com/lightning/r/a0NSZ000008e2T72AI/view)
+- Fixed image preview in task details mini window.
+- Button of single file download works.
+- Added functionality of selection and bulk download.
+- Select all and cancel almost done (find bug when select some files and just open another task then snackbar don't hide and fiels from previous task remains selected)
+- Fixed display style, snackbar display style and close button to hide entire task details mini window.
+- Finish close button update/fix.
+- Fixing snackbar and selection (hope the last issue, except snackbar design)
+- Fixed snackbar selection on close or change selected task.
+- Need to wrote test cases more properly.
+- Discussed with Paulius about snackbar design, decided to wait for Erik answer.
+#### 03-19
+##### Task: [❌(HISTOGRAM) interaktyvūs task burbulai grafike](https://bcline.lightning.force.com/lightning/r/a0NSZ000005H2Lt2AK/view)
+- code review fix, commit last task changes and fix error validation code in previous task before started this task code review comment fix.
+##### Task: [(Patch) STT-21924 Validate Tooltip Functionality and Appearance](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CwtV62AJ/view)
+- prepare sandbox to check this task bug.
+*stand-up meet*
+##### Task: [(Patch) STT-21924 Validate Tooltip Functionality and Appearance](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CwtV62AJ/view)
+- Added overflow-wrap: anywhere style.
+- Imported road record from partial to test in sandbox.
+- Created PR to master
+##### Task: [(Patch) STT-21220 map controller cmp closed/opened](https://bcline.lightning.force.com/lightning/r/a0NSZ00000Cviob2AB/view)
+- Testing in sandbox, map controller panel collapse and expand changes save in local storage correctly and after reload display correct state.
+- Asked comments about this from QA.
+==Deploy partial to sandbox and check==
+##### Task: [(Patch) STT-21220 map controller cmp closed/opened](https://bcline.lightning.force.com/lightning/r/a0NSZ00000Cviob2AB/view)
+- Deploying all metadata from partial to sandbox.
+- Very slow deploying.
+- Deploying stuff to dev3 sandbox. Ask Paulius to refresh sandbox to quickly deploy partial changes.
+##### Task: [(Patch) STT-21655 exsting accounts updated (group)](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CzqSb2AJ/view)
+- Removed mappingKey parameter.
+- Will test when sandbox will be refreshed.
+##### Task: [Rodyti task attachment failus prie taskų histogramoje + stc iš 24 sprinto](https://bcline.lightning.force.com/lightning/r/a0NSZ000008e2T72AI/view)
+- Added test case.
+- Deploying partial to dev3 sandbox
+[[Refresh Sandbox With Latest Master and Partial changes]]
+##### Task: [(Patch) STT-21655 exsting accounts updated (group)](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CzqSb2AJ/view)
+- Deployed all change from partial to dev4 sandbox.
+- Fixed and tested [STT-21655](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CzqSb2AJ/view "(Patch) STT-21655 exsting accounts updated (group)"), [21924](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CwtV62AJ/view "(Patch) STT-21924 Validate Tooltip Functionality and Appearance"), [STT-21995](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CxJ1J2AV/view "(Patch) STT-21995 Immediate Update of Markers After Editing Group Items") patched.
+- Added test cases to this tasks.
+- 
