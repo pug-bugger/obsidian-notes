@@ -588,4 +588,77 @@ Schema of request body and map to sf records: [[grou-items-request.canvas]]
 - Deployed all change from partial to dev4 sandbox.
 - Fixed and tested [STT-21655](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CzqSb2AJ/view "(Patch) STT-21655 exsting accounts updated (group)"), [21924](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CwtV62AJ/view "(Patch) STT-21924 Validate Tooltip Functionality and Appearance"), [STT-21995](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CxJ1J2AV/view "(Patch) STT-21995 Immediate Update of Markers After Editing Group Items") patched.
 - Added test cases to this tasks.
+##### Task: [(Patch) STT-21220 map controller cmp closed/opened](https://bcline.lightning.force.com/lightning/r/a0NSZ00000Cviob2AB/view)
+- Changed `isCollapsed === "true"` to just `isCollapsed`.
+##### Task: [(Patch) STT-21379 trip card (km left, task type, planned tasks number)](https://bcline.lightning.force.com/lightning/r/a0NSZ00000D0WDJ2A3/view)
+- Reset min-width to 0 in mobile console css.
+- Wrote test case
+- Created PR to master
+#### 03-20
+##### Task: [(Patch) STT-21220 map controller cmp closed/opened](https://bcline.lightning.force.com/lightning/r/a0NSZ00000Cviob2AB/view)
+- Finishing all patch tasks, fill merge link (same PR for all patches).
+- Checked if all patches have test cases.
+##### Task: [(Patch) STT-21315 send message](https://bcline.lightning.force.com/lightning/r/a0NSZ00000D0OAv2AN/view)
+- Reading API_MessageLogicWrappers class changes.
+- Maybe problem with android dto.
+- Asked for help in slack. Maybe I should use tablet feature flag to backup last version of endpoint response.
+*stand-up meet*
+##### Task: [(Patch) STT-21315 send message](https://bcline.lightning.force.com/lightning/r/a0NSZ00000D0OAv2AN/view)
+- Figure out the problem reason: Console_Files__r expected object, but array.
+- Tested in sf console, related record list json serializes differently. So I need to find way to back object type instead of array for Console_Fiel__r parameter in response.
+- Problem with 
+```
+List<Object> msgList = new List<Object>();
+Map<String, Object> msgMap = new Map<String, Object>(message.getPopulatedFieldsAsMap());
+msgList.add(msgMap);
+```
+instead of 
+```
+List<Message__c> msgList = new List<Message__c>();
+msgList.add(message);
+```
+- Tried to parse response with old Console_Files__r format.
+- Discussed with TL and PM what to do, what side of functionality should be fixed.
+- Attached script to debug and compare response of old and new parsing code.
+##### Task: [(Patch) STT-21220 map controller cmp closed/opened](https://bcline.lightning.force.com/lightning/r/a0NSZ00000Cviob2AB/view)
+- changed status
+##### Task: [(Patch) STT-21379 trip card (km left, task type, planned tasks number)](https://bcline.lightning.force.com/lightning/r/a0NSZ00000D0WDJ2A3/view)
+- Changed all patches status.
+- Checked PRs.
+- Discussing issue of message in chat group.
+##### Task: [Kai ištrinu taską planeryje editindamas trip, išsaugojus atidaro ištrintą taską](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CeuEH2AZ/view)
+- Switch to histogram task
+##### Task: [Histogramos duomenų parsinimo pakeitimai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CrSwv2AF/view)
+- Deployed last master changes to dev19 sandbox.
+- Forget to switch to another task.
+##### Task: [Kai ištrinu taską planeryje editindamas trip, išsaugojus atidaro ištrintą taską](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CeuEH2AZ/view)
+- Prepare dev19 to test previous tasks in dev19 sandbox.
+- Changed sandbox to dev22.
+- Checking how works now.
+- Retrieved sandbox access group from production and push to patch branch.
+##### Task: [(Patch) STT-21513 all trucks are visable (zoomed out) when first loaded](https://bcline.lightning.force.com/lightning/r/a0NSZ00000D2RW62AN/view)
+- Asked QA about this task test case, how to test and what is this Sharing Group in general.
+- Testing in dev4 sandbox.
+#### 03-21
+##### Task: [(Patch) STT-21513 all trucks are visable (zoomed out) when first loaded](https://bcline.lightning.force.com/lightning/r/a0NSZ00000D2RW62AN/view)
+- Looking for reason why map don't loaded before action.
+- Fixed: added check for null wrapper value.
+*stand-up meet*
+##### Task: [(Patch) Tušti Fuel Price field'ai vis dar rodomi kaip NaN](https://bcline.lightning.force.com/lightning/r/a0NSZ00000D5JVZ2A3/view)
+- Added check for undefined or null num parameter.
+##### Task: [Kai ištrinu taską planeryje editindamas trip, išsaugojus atidaro ištrintą taską](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CeuEH2AZ/view)
+- Explore planner save method logic and page display logic on click save button
+- Added changeVal selectedTask to display trip page on click save button.
+- Wrote test case to test redirection to trip task list page.
+##### Task: [STT-16434 range marker tooltip](https://bcline.lightning.force.com/lightning/r/a0NSZ00000BpGAr2AN/view)
+- Tested and fixed close button in map tooltip.
+- Wrote test case.
+- Created PR.
+*code review meet*
+##### Task: [Endpointas žinučių siuntimui](https://bcline.lightning.force.com/lightning/r/a0NSZ00000BnGQH2A3/view)
+Plan of this task:
+- [ ] Create new REST class
+- [ ] Create Postman endpoint example with test
+- [ ] Write test classes
+- [ ] Test Cases
 - 
