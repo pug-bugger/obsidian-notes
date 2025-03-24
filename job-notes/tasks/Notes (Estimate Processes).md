@@ -661,4 +661,23 @@ Plan of this task:
 - [ ] Create Postman endpoint example with test
 - [ ] Write test classes
 - [ ] Test Cases
+- Looking how it works in message component.
+- Create REST_SendMessage class.
+#### 03-24
+##### Task: [Endpointas žinučių siuntimui](https://bcline.lightning.force.com/lightning/r/a0NSZ00000BnGQH2A3/view)
+- Writing PostLogicWrapper inner class
+*stand-up meet*
+##### Task: [Endpointas žinučių siuntimui](https://bcline.lightning.force.com/lightning/r/a0NSZ00000BnGQH2A3/view)
+- Wrote Test Case and postman endpoint first, before start writing endpoint code.
+- Writing PostLogicWrapper.
+- Created Message__c service and domain layers classes.
+- Writing Message Service and Domain code.
+*lunch time*
+##### Task: [Endpointas žinučių siuntimui](https://bcline.lightning.force.com/lightning/r/a0NSZ00000BnGQH2A3/view)
+- Discussed how should be worked endpoint to send message to tablet.
+- imei should filter by imei and telematic in one time.
+- Writing MessageServiceImpl class code.
+*coding standards meet* [[Coding standards meets]]
+##### Task: [Endpointas žinučių siuntimui](https://bcline.lightning.force.com/lightning/r/a0NSZ00000BnGQH2A3/view)
+- Discussed fflib stuff in routical, old selectors with wrong naming left as it is but move to layouts/selector folder.
 - 
