@@ -661,4 +661,52 @@ Plan of this task:
 - [ ] Create Postman endpoint example with test
 - [ ] Write test classes
 - [ ] Test Cases
-- 
+- Looking how it works in message component.
+- Create REST_SendMessage class.
+#### 03-24
+##### Task: [Endpointas žinučių siuntimui](https://bcline.lightning.force.com/lightning/r/a0NSZ00000BnGQH2A3/view)
+- Writing PostLogicWrapper inner class
+*stand-up meet*
+##### Task: [Endpointas žinučių siuntimui](https://bcline.lightning.force.com/lightning/r/a0NSZ00000BnGQH2A3/view)
+- Wrote Test Case and postman endpoint first, before start writing endpoint code.
+- Writing PostLogicWrapper.
+- Created Message__c service and domain layers classes.
+- Writing Message Service and Domain code.
+*lunch time*
+##### Task: [Endpointas žinučių siuntimui](https://bcline.lightning.force.com/lightning/r/a0NSZ00000BnGQH2A3/view)
+- Discussed how should be worked endpoint to send message to tablet.
+- imei should filter by imei and telematic in one time.
+- Writing MessageServiceImpl class code.
+*coding standards meet* [[Coding standards meets]]
+##### Task: [Endpointas žinučių siuntimui](https://bcline.lightning.force.com/lightning/r/a0NSZ00000BnGQH2A3/view)
+- Discussed fflib stuff in routical, old selectors with wrong naming left as it is but move to layouts/selector folder.
+- Wrote service class with selectors and services layers.
+- Tested with postman, looks like all works.
+- Added screenshot to test case record.
+- Wrote unit tests for Messages and ConsoleFiles domain classes.
+- Writing unit test for MessageService class.
+- Remains to finish MessageService_TEST and write REST_SendMessage_TEST class.
+#### 03-25
+##### Task: [Rodyti task attachment failus prie taskų histogramoje + stc iš 24 sprinto](https://bcline.lightning.force.com/lightning/r/a0NSZ000008e2T72AI/view)
+- Updated snackbar component design according to the figma design.
+- Added new icon.
+- Wrote test case for snackbar design.
+##### Task: [Rodyti task attachment failus prie taskų histogramoje + stc iš 24 sprinto](https://bcline.lightning.force.com/lightning/r/a0NSZ000008e2T72AI/view)
+- Upload changes to branch.
+- Waiting for sandbox refresh.
+##### Task: [Endpointas žinučių siuntimui](https://bcline.lightning.force.com/lightning/r/a0NSZ00000BnGQH2A3/view)
+- Deploying changes to refreshed sandbox. Merging master and changes code.
+- Wrote test mock class.
+- Fixed PR and added permissions, tested in postman.
+##### Task: [(Hotfix) lūžta trip planeris ant Save, jei pasirenka iš buvusių task](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DBBlS2AX/view)
+- Prepared sandbox and tested with test data.
+- Changed Customer__c value assignment from address to Id.
+- Create new PR to hotfix-pre-prod
+- Wrote test case
+==Review some examples of complex sidebar resize==
+##### Task: [(Hotfix) info burbulas per aukštai truck liste; draginimo issues](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DBjNJ2A1/view)
+- Setup sandbox and prepare to test and fix.
+- Fixed default width set and collapse functionality.
+- Changing resizer label pallet min-width.
+- Updated sidebar drag display logic.
+- Remains to solve question with logo and routical logo display. `Restrict draging until logo`.
