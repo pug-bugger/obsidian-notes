@@ -710,3 +710,108 @@ Plan of this task:
 - Changing resizer label pallet min-width.
 - Updated sidebar drag display logic.
 - Remains to solve question with logo and routical logo display. `Restrict draging until logo`.
+#### 03-26
+##### Task: [(Hotfix) info burbulas per aukštai truck liste; draginimo issues](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DBjNJ2A1/view)
+- Editing minimum width.
+- Create chat to ask for help to decide.
+*stand-up meet*
+##### Task: [(Hotfix) info burbulas per aukštai truck liste; draginimo issues](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DBjNJ2A1/view)
+- Updated min-width value.
+- Made dynamic group picklist component position depends on sidebar position/distance to window edge.
+- Fixed info bubble display style, always next to truck row.
+- Wrote test cases.
+- Created PR to hotfix-pre-prod.
+*lunch time*
+##### Task: [STT-16434 range marker tooltip](https://bcline.lightning.force.com/lightning/r/a0NSZ00000BpGAr2AN/view "STT-16434 range marker tooltip")
+- Redeploying changes to sandbox.
+*1-on-1 meet*
+##### Task: [STT-16434 range marker tooltip](https://bcline.lightning.force.com/lightning/r/a0NSZ00000BpGAr2AN/view "STT-16434 range marker tooltip")
+- Changed sandbox, deployed and tested.
+##### Task: [Kai ištrinu taską planeryje editindamas trip, išsaugojus atidaro ištrintą taską](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CeuEH2AZ/view)
+- Redeploying.
+##### Task: [Rodyti task attachment failus prie taskų histogramoje + stc iš 24 sprinto](https://bcline.lightning.force.com/lightning/r/a0NSZ000008e2T72AI/view)
+- Redepoying.
+- Fixed close button fn.
+##### Task: [❌(HISTOGRAM) interaktyvūs task burbulai grafike](https://bcline.lightning.force.com/lightning/r/a0NSZ000005H2Lt2AK/view)
+- Redeploying.
+- Testing in sandbox.
+- Quick test of Rest sendMessage endpoint in dev6 with postman.
+##### Task: [(Hotfix) Truck too far away alertų siuntimas vadybininkams](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DEyMb2AL/view "(Hotfix) Truck too far away alertų siuntimas vadybininkams")
+- Asked PM to explain this task.
+- Created Truck Group Employee object and Email custom text field.
+- Discussed this task logic with Paulius, finding out how exactly should work logic of send emails.
+- Writing logic to group emails by additional employees.
+==cusros prompt snippets/templates==
+#### 03-27
+##### Task: [(Hotfix) Truck too far away alertų siuntimas vadybininkams](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DEyMb2AL/view "(Hotfix) Truck too far away alertų siuntimas vadybininkams")
+- Try to find out best way to get Employee and Vehicle relationship.
+- Created master lookups from Truck_Group_Employee__c to Employee__c and Truck_Group__c objects.
+- Created 2 selector classes for Truck_Group_Employee__c and Truck_Group_Item__c objects.
+- Writing logic to group emails and send truck info according to the record relationships.
+*stand-up chat + lunch*
+##### Task: [(Hotfix) Truck too far away alertų siuntimas vadybininkams](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DEyMb2AL/view "(Hotfix) Truck too far away alertų siuntimas vadybininkams")
+- Finished writing entire logic to group all data to default and additional emails and send directly.
+- Deployed metadata (layouts, new object and fields, permissions)
+- Wrote test case with script.
+- Writing tests.
+- Wrote tests with csv.
+- Created PR to hotfix-pre-prod
+	- Additional Comments: ==Kolkas iškeliam truck group employee į kitą metodą kad kai prisides kitą logiką tak būtų atskirta.== *2025-03-28*
+##### Task: [Rodyti task attachment failus prie taskų histogramoje + stc iš 24 sprinto](https://bcline.lightning.force.com/lightning/r/a0NSZ000008e2T72AI/view)
+- Fixing code review comments.
+- Fixed last task data getting and display, enum, removed mobile parameter.
+- Remains first two comments, with task file and ptvEta getter comments.
+#### 03-28
+##### Task: [Rodyti task attachment failus prie taskų histogramoje + stc iš 24 sprinto](https://bcline.lightning.force.com/lightning/r/a0NSZ000008e2T72AI/view)
+- Solving code review comment of getter method
+##### Task: [(Hotfix) prie tam tikros truck listo drago pozicijos bugina top ikonos](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DIQfi2AH/view)
+- Importing changes from last master environment.
+*lunch*
+##### Task: [(Hotfix) prie tam tikros truck listo drago pozicijos bugina top ikonos](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DIQfi2AH/view)
+- Fixed style and js controller to get picker position and shift according to the sidebar position.
+##### Task: [(Hotfix) Truck too far away alertų siuntimas vadybininkams](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DEyMb2AL/view)
+- Tested and fixed truck group item selector.
+- Solve code review comments.
+- Updated bitbucket branch.
+##### Task: [(Hotfix) Navision nullpointer (HOTFIX)](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DICRR2A5/view)
+- Explore Navision inbound logic wrapper.
+- Asked for entire email error log.
+- I guess something wrong with relationship, maybe id is null/empty.
+*dev-friday meet* [[DEV Friday]]
+##### Task: [(Hotfix) Navision nullpointer (HOTFIX)](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DICRR2A5/view)
+- Find out that account can be returned as null and can't be registered relationship.
+- Created PR to pre hotfix prod branch
+#### 03-31
+##### Task: [(Hotfix) Truck too far away alertų siuntimas vadybininkams](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DEyMb2AL/view)
+- Fixed code review.
+##### Task: [Rodyti task attachment failus prie taskų histogramoje + stc iš 24 sprinto](https://bcline.lightning.force.com/lightning/r/a0NSZ000008e2T72AI/view)
+- Rewrote ptvEta getter, simplify a little bit. ==read about getters and ad/dis of it==
+- Added third level of selector with files to get last files in task details.
+- Fixed rotation refresh in task details.
+##### Task: [Histogramos duomenų parsinimo pakeitimai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CrSwv2AF/view)
+- Discussed about this task, the issues and solutions, how try to implement items critical and prettier display calculations.
+- Writing test case.
+#### 04-01
+##### Task: [Rodyti task attachment failus prie taskų histogramoje + stc iš 24 sprinto](https://bcline.lightning.force.com/lightning/r/a0NSZ000008e2T72AI/view)
+- Updates after code review.
+- lwc:if don't works in iteration div.
+##### Task: [Histogramos duomenų parsinimo pakeitimai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CrSwv2AF/view)
+- Switch to another task
+##### Task: [Endpointas žinučių siuntimui](https://bcline.lightning.force.com/lightning/r/a0NSZ00000BnGQH2A3/view)
+- Little updates after code review.
+##### Task: [Histogramos duomenų parsinimo pakeitimai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CrSwv2AF/view)
+- Writing noticed thing about lwc:if in chat. [[LWC IF in iterator]]
+*stand-up meet + lunch*
+##### Task: [Histogramos duomenų parsinimo pakeitimai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CrSwv2AF/view)
+- Learning d3 library that are used in histogram wrapper.
+- Completed task point of rpm data to see in boolean graph.
+- Also added axle 1/2 sum graph. Temporary is just sum of ax1 and ax2 until I will know what parameter from http are ax1/2.
+#### 04-02
+##### Task: [❌(HISTOGRAM) interaktyvūs task burbulai grafike](https://bcline.lightning.force.com/lightning/r/a0NSZ000005H2Lt2AK/view)
+- Redeployed
+##### Task: [Histogramos duomenų parsinimo pakeitimai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CrSwv2AF/view)
+- Switch to task from code review
+##### Task: [Endpointas žinučių siuntimui](https://bcline.lightning.force.com/lightning/r/a0NSZ00000BnGQH2A3/view)
+- Fixed code review
+##### Task: [(Hotfix) dėl naujos versijos užkėlimo konsolėje](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DRukz2AD/view)
+- Updated version from 27_1 to 27_2.
