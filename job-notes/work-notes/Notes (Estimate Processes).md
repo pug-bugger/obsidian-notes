@@ -972,17 +972,73 @@ Plan of this task:
 #### 04-15
 ##### Task: [Pigesnės kuro degalinės įtraukimas į lentelę pagal maršrutą](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DZJl32AH/view)
 - Wrote logic for execute one by one trucks plan.
-##### Task: [(Hotfix) importavus tai pačiai grupei vieną degaline su kaina kita be kainos, du](https://bcline.lightning.force.com/lightning/r/a0NSZ00000Dk81V2AR/view)
+##### Task: [(Hotfix) nebeveikia planner account search pasirinkimas](https://bcline.lightning.force.com/lightning/r/a0NSZ00000Dk9dV2AR/view "(Hotfix) nebeveikia planner account search pasirinkimas")
 - Reviewed dev bug. In sandbox all works.
 ##### Task: [Pigesnės kuro degalinės įtraukimas į lentelę pagal maršrutą](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DZJl32AH/view)
 - Tested, fixed some things, now works properly.
 - Remains to write test classes and web console updates.
-##### Task: [(Hotfix) importavus tai pačiai grupei vieną degaline su kaina kita be kainos, du](https://bcline.lightning.force.com/lightning/r/a0NSZ00000Dk81V2AR/view)
+##### Task: [(Hotfix) nebeveikia planner account search pasirinkimas](https://bcline.lightning.force.com/lightning/r/a0NSZ00000Dk9dV2AR/view "(Hotfix) nebeveikia planner account search pasirinkimas")
 - Testing in hotfix sandbox.
 - Ask for hotfix sandbox login.
 - Cursor IDE lagging.
 - Deployed hotfix-pre-prod changes to dev11 and testing.
 - Try to deploy and test account from hotfix sandbox in dev11.
 *stand-up meet*
-##### Task: [(Hotfix) importavus tai pačiai grupei vieną degaline su kaina kita be kainos, du](https://bcline.lightning.force.com/lightning/r/a0NSZ00000Dk81V2AR/view)
+##### Task: [(Hotfix) nebeveikia planner account search pasirinkimas](https://bcline.lightning.force.com/lightning/r/a0NSZ00000Dk9dV2AR/view "(Hotfix) nebeveikia planner account search pasirinkimas")
 - Imported accounts from hotfix sandbox and still cant reproduce error. Not all fields are included.
+##### Task: [Pigesnės kuro degalinės įtraukimas į lentelę pagal maršrutą](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DZJl32AH/view)
+- Switch to hotfix task.
+##### Task: [(Hotfix) nebeveikia planner account search pasirinkimas](https://bcline.lightning.force.com/lightning/r/a0NSZ00000Dk9dV2AR/view "(Hotfix) nebeveikia planner account search pasirinkimas")
+- Imported new accounts from csv.
+- Testing with many accounts.
+- Fixed by change key in html to avoid key duplications.
+##### Task: [Pigesnės kuro degalinės įtraukimas į lentelę pagal maršrutą](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DZJl32AH/view)
+- Discussed code architecture, how fflib should look like and what I should to change to improve code architecture. Also discussed queueable and batch approaches in this task context.
+- Implement task route length and heap in execute context to control heap limits and continue left trucks in next execution context.
+- Approach 1 (read): https://salesforce.stackexchange.com/questions/192109/soql-for-loop-heap-size-how-to-decide-between-speed-and-memory-mangament
+#### 04-16
+##### Task: [Pigesnės kuro degalinės įtraukimas į lentelę pagal maršrutą](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DZJl32AH/view)
+- Rewriting queueable class and service layer code architecture and prepare to testing with big data
+*stand-up meet*
+##### Task: [Pigesnės kuro degalinės įtraukimas į lentelę pagal maršrutą](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DZJl32AH/view)
+- Added address account save in console.
+- Tested with one truck.
+- Creating test records to test 50 trucks.
+*lunch time*
+- Created test data, tasks with Address_Account__c and try to execute and test.
+*1-on-1 meet*
+##### Task: [Pigesnės kuro degalinės įtraukimas į lentelę pagal maršrutą](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DZJl32AH/view)
+- Realized, that selector in for loop comes as variable (with full heap size). Use string and select in for loop with Database.query(...);
+- Noted last update requirement to get fix functionality (break on truck, but not on trip - in middle of truck)
+#### 04-17
+##### Task: [Pigesnės kuro degalinės įtraukimas į lentelę pagal maršrutą](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DZJl32AH/view)
+- Figure out that query with more than 1 subquery level are not available in for loop.
+- Fixed selector and mapping logic.
+- Checking and testing
+*stand-up meet*
+##### Task: [Pigesnės kuro degalinės įtraukimas į lentelę pagal maršrutą](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DZJl32AH/view)
+- Find mistake in my code. Fixed and now functionality works good.
+- Try to add notification next to task marker when task have filled Cheaper_Fuel_Station__c.
+- Discussed test mock data and how to implement that.
+- Discussed current task completed job and priority to complete first. Now added logic to check previous route and all next.
+- Adding logic to check planned distance and check if truck can reach that alternative point.
+*DC Birth Day*
+##### Task: [Pigesnės kuro degalinės įtraukimas į lentelę pagal maršrutą](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DZJl32AH/view)
+- Exploring fuel calculation in web console.
+- Created formula field in vehicle object to see how much km truck can to move.
+- Adding logic to calculate possible distance to drive and check if suggested cheaper point are in reachable range and filter inf not
+#### 04-18
+##### Task: [Pigesnės kuro degalinės įtraukimas į lentelę pagal maršrutą](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DZJl32AH/view)
+- Wrote logic to get lowest price from current to last next planned tasks.
+- Find out one problem possibly.
+- Writing fuel calculation method to get drivable kms and use in planning logic code.
+*stand-up meet*
+##### Task: [Pigesnės kuro degalinės įtraukimas į lentelę pagal maršrutą](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DZJl32AH/view)
+- Discussed with Paulius the problem related with route encoded string, maybe it just in debug console displays that way.
+- Wrote logic to track truck drivable distance km and check if point are reachable and can be added to alternative if it is are cheaper fuel station.
+- Added logic to consider fuel stations what are in pass and fill trucks and add to drivable distance.
+- Created test truck with test trip and tasks. Testing and try to figure out if all works logically.
+- I will need to change live_fuel__c value calculation (this field represents procents, but not liters as I thought).
+#### 04-22 (holiday)
+- supebadge
+#### 04-23
