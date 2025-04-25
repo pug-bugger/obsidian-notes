@@ -1042,3 +1042,39 @@ Plan of this task:
 #### 04-22 (holiday)
 - supebadge
 #### 04-23
+*stand-up meet*
+##### Task: [(Bug) Map Layer mygtukų pakeitimai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DZLyD2AX/view)
+- Added `?? fasle` to assign default false value and save in local storage.
+- Created PR and wrote test case.
+##### Task: [Pigesnės kuro degalinės įtraukimas į lentelę pagal maršrutą](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DZJl32AH/view)
+- Replaced live_fuel with fuel_level formula field of vehicle object.
+- Tested with one small truck example. Seems like all works properly.
+- Find bug candidate of truck sorting then selecting truck group and display truck with wrong sorting.
+- Testing with biggest data. Need to update testing trucks live telematics fuel values.
+- Meet/discussed next steps of cheaper fuel task series.
+*lunch time*
+- Testing with 58 test truck.
+- Try to log step by step to see how my code calculates fuel in all process levels.
+- Seems like now fuel calculates good.
+- Remains to write tests.
+#### 04-24
+##### Task: [Pigesnės kuro degalinės įtraukimas į lentelę pagal maršrutą](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DZJl32AH/view)
+- Testing with other trucks, fixing then execute without pass truck ids.
+- Preparing to code review.
+*stand-up meet*
+- For some reason trucks can take wrong cheaper point. Try to debug and fix it.
+*lunch time*
+##### Task: [Pigesnės kuro degalinės įtraukimas į lentelę pagal maršrutą](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DZJl32AH/view)
+- Try to compare large test data and 4-5 truck data and figure out key problem.
+- Discussed with Paulius how to check and test functionality.
+- Discussed next tasks functionality.
+- Find out problem reason - trip and tasks are sorted wrong.
+#### 04-25
+##### Task: [(Patch) Pigesnės kuro degalinės įtraukimas į lentelę pagal maršrutą](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DZJl32AH/view)
+- Fixed sorting functionality by replace next setOrdering.
+- Writing tests.
+*stand-up meet + lunch time*
+##### Task: [(Patch) Pigesnės kuro degalinės įtraukimas į lentelę pagal maršrutą](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DZJl32AH/view)
+- Writing service layer test.
+- Wrote simple integration test.
+- Retrieving metadata
