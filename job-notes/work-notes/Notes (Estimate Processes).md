@@ -1078,3 +1078,20 @@ Plan of this task:
 - Writing service layer test.
 - Wrote simple integration test.
 - Retrieving metadata
+*dev Friday meet*
+==Next week (Monday) new functionality things (fuel plan component, lwc updates, trigger), check PR==
+#### 04-28
+##### Task: [(Patch) Pigesnės kuro degalinės įtraukimas į lentelę pagal maršrutą](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DZJl32AH/view)
+- Deployed fields and permissions to bitbucket
+- Changed drivable formula to do not calculate fuel level under 20 percent.
+- Added search reachable stations depth limit
+- Added custom settings to set distance to polyline and interval in minutes of scheduler.
+- Started writing fuel plan component updates.
+*stand-up meet + lunch*
+##### Task: [(Patch) Pigesnės kuro degalinės įtraukimas į lentelę pagal maršrutą](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DZJl32AH/view)
+- Completed refuel plan updates. Added two columns with current and alternative fuel price with link to truck refuel page in console.
+- Fixed custom settings default data get code.
+- Discussed trigger coding place, decided to write in old trigger handler for now.
+- Added compare wrapper statements, service method to reset cheaper fuel station for none refuel type tasks.
+- On update task address_account__c, ptv_route1__c or type change from or to REFUEL, then that truck cheaper_refuel_station__c checks. If task type changes from refuel to any other type, then cheaper refuel station updates to null.
+- 
