@@ -5,7 +5,7 @@
 **Now:**
 
 
-
+### 01,02
 #### 01-29
 ##### Task: [Trigeris ant Service Exchange Rate'ams nustatyti](https://bcline.lightning.force.com/lightning/r/Task__c/a0NSZ00000AgMPl2AN/view)
 - [x] Create cmp variable to identify trip recorf type is changed.   [completion:: 2025-01-30]
@@ -403,6 +403,7 @@ Schema of request body and map to sf records: [[grou-items-request.canvas]]
 *stand-up meet*
 * First I will try to display lowest price on load (and add display logic in clusters render), then will check what triggers checked and unchecked field and recalculate on this change.
 * Find place where trigger from to update all markers.
+### 03
 #### 03-03
 ##### Task: [Kuro kainos ir kiti papildymai adresų grupėms](https://bcline.lightning.force.com/lightning/r/a0NSZ00000BnKGz2AN/view)
 * Try to figure out how to update all markers labels after update price.
@@ -791,6 +792,7 @@ Plan of this task:
 ##### Task: [Histogramos duomenų parsinimo pakeitimai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CrSwv2AF/view)
 - Discussed about this task, the issues and solutions, how try to implement items critical and prettier display calculations.
 - Writing test case.
+### 04
 #### 04-01
 ##### Task: [Rodyti task attachment failus prie taskų histogramoje + stc iš 24 sprinto](https://bcline.lightning.force.com/lightning/r/a0NSZ000008e2T72AI/view)
 - Updates after code review.
@@ -815,3 +817,281 @@ Plan of this task:
 - Fixed code review
 ##### Task: [(Hotfix) dėl naujos versijos užkėlimo konsolėje](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DRukz2AD/view)
 - Updated version from 27_1 to 27_2.
+##### Task: [Histogramos duomenų parsinimo pakeitimai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CrSwv2AF/view)
+- Added seconds display in info wrapper.
+*stand-up meet*
+##### Task: [Rodyti task attachment failus prie taskų histogramoje + stc iš 24 sprinto](https://bcline.lightning.force.com/lightning/r/a0NSZ000008e2T72AI/view)
+- Need more sandboxes with working histogram component and data.
+- Redeploying changes.
+- Discussed with Paulius about selection drag out of histogram graph edges. It's okey to left it at it is.
+##### Task: [Histogramos duomenų parsinimo pakeitimai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CrSwv2AF/view)
+- Working on max and min range scale for each graph.
+##### Task: [(Hotfix) konsolėje paselectinus adresų grupę - lagina](https://bcline.lightning.force.com/lightning/r/a0NSZ00000Czpmf2AB/view)
+- Discussed with Paulius possible reason of this bug, how try to check and test.
+- Import new account records and generate groups and group items in sandbox.
+- Testing with test data in sandbox, JSON parsing and stringify takes 2 seconds.
+- groupDisplay.drawMarkers takes entire array of location group items, this takes much of time (~6 s.) refactoring this to pass to this method only ids of group items/groups/selectAll/unselectAll and on edit update specific data. only first time (on loaded) get all data to work with it in future by ids.
+#### 04-03
+##### Task: [(Hotfix) konsolėje paselectinus adresų grupę - lagina](https://bcline.lightning.force.com/lightning/r/a0NSZ00000Czpmf2AB/view)
+- Rewriting group display logic.
+- Added initial data loading method.
+- Wrote logic to pass selected/unselected item ids and check state value from groupSearch component.
+*stand-up meet*
+##### Task: [(Hotfix) konsolėje paselectinus adresų grupę - lagina](https://bcline.lightning.force.com/lightning/r/a0NSZ00000Czpmf2AB/view)
+- Writing parent component data generation to take ids in groupDisplay.
+- It already works better.
+- Writing object hash key logic
+- Separate draw marker fuctionality to three parts: create cluster, create marker and display or hide.
+- Passing ids of items or groups to update display.
+- Display changes works faster.
+- Cleaning code, update some methods or logic to improve performance.
+- Discussed result and decided to reduce getSelectedItemsLatLng array items to the 4 furthest points LatLng__c.
+#### 04-04
+##### Task: [(Hotfix) konsolėje paselectinus adresų grupę - lagina](https://bcline.lightning.force.com/lightning/r/a0NSZ00000Czpmf2AB/view)
+- Added method to center zoom view according to 4 selected point.
+- Added check/uncheck all.
+- Writing lowest price calculation. Writing update custom set method.
+*stand-up meet + lunch*
+##### Task: [(Hotfix) konsolėje paselectinus adresų grupę - lagina](https://bcline.lightning.force.com/lightning/r/a0NSZ00000Czpmf2AB/view)
+- Fixing lowest price display functionality.
+- Discussed next task issue and how to complete next task.
+- Completed price display part.
+- Remains to check how works item edit functionality and how to make it quicker.
+#### 04-07
+##### Task: [(Hotfix) konsolėje paselectinus adresų grupę - lagina](https://bcline.lightning.force.com/lightning/r/a0NSZ00000Czpmf2AB/view)
+- Check edit button on different groups. Group with the most items loads more time than small.
+*stand-up meet*
+##### Task: [(Hotfix) konsolėje paselectinus adresų grupę - lagina](https://bcline.lightning.force.com/lightning/r/a0NSZ00000Czpmf2AB/view)
+- Fixing edit data and display updated in the map.
+- Fixed all things after updated code structure of markers render.
+- Created test case, created PR
+*lunch time*
+##### Task: [❌(HISTOGRAM) interaktyvūs task burbulai grafike](https://bcline.lightning.force.com/lightning/r/a0NSZ000005H2Lt2AK/view)
+- Try to implement selector of selected task in histogram task graph.
+#### 04-08
+##### Task: [❌(HISTOGRAM) interaktyvūs task burbulai grafike](https://bcline.lightning.force.com/lightning/r/a0NSZ000005H2Lt2AK/view)
+- Changed single task selection in histogram task graph functionality.
+- Updated test case description.
+- Upload changes to PR.
+*code reviewing*
+##### Task: [Histogramos duomenų parsinimo pakeitimai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CrSwv2AF/view)
+- Changed sandbox from 19 to 18.
+- Setup sandbox, importing test data and connect with vscode.
+- Deploying last updated. 
+*stand-up meet*
+##### Task: [Histogramos duomenų parsinimo pakeitimai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CrSwv2AF/view)
+- Noted steps to complete this task and estimated approximate time.
+*lunch time*
+##### Task: [Histogramos duomenų parsinimo pakeitimai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CrSwv2AF/view)
+- Discussed task progress and plan to complete it.
+- Max/Min scale get from axle1, 2 and 1/2 one for each graph.
+- Use debug button to toggle round functionality and display dots of real points.
+##### Task: [(Hotfix) konsolėje paselectinus adresų grupę - lagina](https://bcline.lightning.force.com/lightning/r/a0NSZ00000Czpmf2AB/view)
+- Fixed lowest price in cluster display fn.
+- Fixed group color correct display after edit.
+- Fixing display of markers in trip planner, find reason why markers left in map (consoleLoader -> groupSearch method).
+#### 04-09
+##### Task:[(Hotfix) konsolėje paselectinus adresų grupę - lagina](https://bcline.lightning.force.com/lightning/r/a0NSZ00000Czpmf2AB/view)
+- Fixing toggleItems, uncheckSystem methods.
+*stand-up meet*
+##### Task:[(Hotfix) konsolėje paselectinus adresų grupę - lagina](https://bcline.lightning.force.com/lightning/r/a0NSZ00000Czpmf2AB/view)
+- Fixed last dev bug. Updated display system markers and hide them.
+##### Task: [Pigesnės kuro degalinės įtraukimas į lentelę pagal maršrutą](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DZJl32AH/view)
+- Setup sandbox dev17.
+- Exploring and updating refuelPlan component (added field, but not added link and address name yet to display prettier).
+- Added column as url type.
+- Writing queueable class to send request to endpoint and map response with appropriate point.
+- Discussed task logic and details with Paulius.
+#### 04-10
+##### Task: [Pigesnės kuro degalinės įtraukimas į lentelę pagal maršrutą](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DZJl32AH/view)
+- Writing queueable class. Added selectors methods.
+##### Task: [(Hotfix) konsolėje paselectinus adresų grupę - lagina](https://bcline.lightning.force.com/lightning/r/a0NSZ00000Czpmf2AB/view)
+- Code review fixes.
+*stand-up meet*
+##### Task: [(Hotfix) konsolėje paselectinus adresų grupę - lagina](https://bcline.lightning.force.com/lightning/r/a0NSZ00000Czpmf2AB/view)
+- Finished code review fixes.
+##### Task: [Kai ištrinu taską planeryje editindamas trip, išsaugojus atidaro ištrintą taską](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CeuEH2AZ/view)
+- PR merge conflict fixed
+*lunch time*
+##### Task: [Pigesnės kuro degalinės įtraukimas į lentelę pagal maršrutą](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DZJl32AH/view)
+- Wrote selector to get required data and pass to endpoint.
+- Testing and view rezults.
+- Create new field in task object Address_Account__c.
+- Added fill logic of this new field.
+- Updated selectors.
+#### 04-11
+##### Task: [Pigesnės kuro degalinės įtraukimas į lentelę pagal maršrutą](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DZJl32AH/view)
+- Switch to hotfix
+##### Task: [(Hotfix) konsolėje paselectinus adresų grupę - lagina](https://bcline.lightning.force.com/lightning/r/a0NSZ00000Czpmf2AB/view)
+- Fixing dev bug.
+- Removed check if marker already exist.
+##### Task: [Pigesnės kuro degalinės įtraukimas į lentelę pagal maršrutą](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DZJl32AH/view)
+- Writing logic to map received data and assign Cheaper_Fuel_Station__c field.
+*stand-up*
+##### Task: [Pigesnės kuro degalinės įtraukimas į lentelę pagal maršrutą](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DZJl32AH/view)
+- Wrote logic to map received near points with lowest price to task.
+- Testing
+*lunch time*
+##### Task: [Pigesnės kuro degalinės įtraukimas į lentelę pagal maršrutą](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DZJl32AH/view)
+- Testing and fixing logic. (don't forget add logic to get point from next route if it have cheaper fuel station)
+- Discussed code structure with Paulius. (use http wrapper, )
+- Renamed old task service impl class to TaskServiceImplOld to separate code from my new class, maybe in future or now will rewrite and move all code from old class to new service class.
+- Need to: little method logic update, use httpWrapperV2, write test classes, web console display cheaper fuel station
+##### Task: [(Hotfix) nebeveikia planner account search pasirinkimas](https://bcline.lightning.force.com/lightning/r/a0NSZ00000Dk9dV2AR/view)
+- Prepare sandbox.
+#### 04-14
+##### Task: [(Hotfix) nebeveikia planner account search pasirinkimas](https://bcline.lightning.force.com/lightning/r/a0NSZ00000Dk9dV2AR/view)
+- Changed object structure.
+- For testing deleted old data and created new.
+- Assigned existing test case to this task.
+- Created PR to hotfix-pre-prod
+##### Task: [(Hotfix) importavus tai pačiai grupei vieną degaline su kaina kita be kainos, du](https://bcline.lightning.force.com/lightning/r/a0NSZ00000Dk81V2AR/view)
+- Asked for csv file.
+- Explore fileInputHandler.
+*stand-up meet*
+##### Task: [(Hotfix) importavus tai pačiai grupei vieną degaline su kaina kita be kainos, du](https://bcline.lightning.force.com/lightning/r/a0NSZ00000Dk81V2AR/view)
+- Test upload accounts with search group component. It works.
+- Waiting for help.
+##### Task: [Pigesnės kuro degalinės įtraukimas į lentelę pagal maršrutą](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DZJl32AH/view)
+- Writing request in http wrapper
+*lunch time*
+##### Task: [(Hotfix) importavus tai pačiai grupei vieną degaline su kaina kita be kainos, du](https://bcline.lightning.force.com/lightning/r/a0NSZ00000Dk81V2AR/view)
+- Fixed groupItems endpoint class (REST_GroupItems) logic implementation class. Added check if group are already declared and ready to commit.
+- Created PR to hotfix-pre-prod.
+##### Discussing new functionality task
+- How functionality should work.
+- About bounding box (in future task)
+- Add distance calculation until new cheaper fuel station to reach real alternative refuel station.
+##### Task: [(Hotfix) nebeveikia planner account search pasirinkimas](https://bcline.lightning.force.com/lightning/r/a0NSZ00000Dk9dV2AR/view)
+- Fixed address display fn.
+- Deployed changes to PR.
+##### Task: [Pigesnės kuro degalinės įtraukimas į lentelę pagal maršrutą](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DZJl32AH/view)
+- Explaining new new functionality
+- Wrote httpWrapper request.
+- Now queueable class sends request for all routes of all trucks. I need to rewrite this part to separate routes by truck and execute logic for each separately.
+#### 04-15
+##### Task: [Pigesnės kuro degalinės įtraukimas į lentelę pagal maršrutą](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DZJl32AH/view)
+- Wrote logic for execute one by one trucks plan.
+##### Task: [(Hotfix) nebeveikia planner account search pasirinkimas](https://bcline.lightning.force.com/lightning/r/a0NSZ00000Dk9dV2AR/view "(Hotfix) nebeveikia planner account search pasirinkimas")
+- Reviewed dev bug. In sandbox all works.
+##### Task: [Pigesnės kuro degalinės įtraukimas į lentelę pagal maršrutą](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DZJl32AH/view)
+- Tested, fixed some things, now works properly.
+- Remains to write test classes and web console updates.
+##### Task: [(Hotfix) nebeveikia planner account search pasirinkimas](https://bcline.lightning.force.com/lightning/r/a0NSZ00000Dk9dV2AR/view "(Hotfix) nebeveikia planner account search pasirinkimas")
+- Testing in hotfix sandbox.
+- Ask for hotfix sandbox login.
+- Cursor IDE lagging.
+- Deployed hotfix-pre-prod changes to dev11 and testing.
+- Try to deploy and test account from hotfix sandbox in dev11.
+*stand-up meet*
+##### Task: [(Hotfix) nebeveikia planner account search pasirinkimas](https://bcline.lightning.force.com/lightning/r/a0NSZ00000Dk9dV2AR/view "(Hotfix) nebeveikia planner account search pasirinkimas")
+- Imported accounts from hotfix sandbox and still cant reproduce error. Not all fields are included.
+##### Task: [Pigesnės kuro degalinės įtraukimas į lentelę pagal maršrutą](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DZJl32AH/view)
+- Switch to hotfix task.
+##### Task: [(Hotfix) nebeveikia planner account search pasirinkimas](https://bcline.lightning.force.com/lightning/r/a0NSZ00000Dk9dV2AR/view "(Hotfix) nebeveikia planner account search pasirinkimas")
+- Imported new accounts from csv.
+- Testing with many accounts.
+- Fixed by change key in html to avoid key duplications.
+##### Task: [Pigesnės kuro degalinės įtraukimas į lentelę pagal maršrutą](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DZJl32AH/view)
+- Discussed code architecture, how fflib should look like and what I should to change to improve code architecture. Also discussed queueable and batch approaches in this task context.
+- Implement task route length and heap in execute context to control heap limits and continue left trucks in next execution context.
+- Approach 1 (read): https://salesforce.stackexchange.com/questions/192109/soql-for-loop-heap-size-how-to-decide-between-speed-and-memory-mangament
+#### 04-16
+##### Task: [Pigesnės kuro degalinės įtraukimas į lentelę pagal maršrutą](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DZJl32AH/view)
+- Rewriting queueable class and service layer code architecture and prepare to testing with big data
+*stand-up meet*
+##### Task: [Pigesnės kuro degalinės įtraukimas į lentelę pagal maršrutą](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DZJl32AH/view)
+- Added address account save in console.
+- Tested with one truck.
+- Creating test records to test 50 trucks.
+*lunch time*
+- Created test data, tasks with Address_Account__c and try to execute and test.
+*1-on-1 meet*
+##### Task: [Pigesnės kuro degalinės įtraukimas į lentelę pagal maršrutą](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DZJl32AH/view)
+- Realized, that selector in for loop comes as variable (with full heap size). Use string and select in for loop with Database.query(...);
+- Noted last update requirement to get fix functionality (break on truck, but not on trip - in middle of truck)
+#### 04-17
+##### Task: [Pigesnės kuro degalinės įtraukimas į lentelę pagal maršrutą](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DZJl32AH/view)
+- Figure out that query with more than 1 subquery level are not available in for loop.
+- Fixed selector and mapping logic.
+- Checking and testing
+*stand-up meet*
+##### Task: [Pigesnės kuro degalinės įtraukimas į lentelę pagal maršrutą](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DZJl32AH/view)
+- Find mistake in my code. Fixed and now functionality works good.
+- Try to add notification next to task marker when task have filled Cheaper_Fuel_Station__c.
+- Discussed test mock data and how to implement that.
+- Discussed current task completed job and priority to complete first. Now added logic to check previous route and all next.
+- Adding logic to check planned distance and check if truck can reach that alternative point.
+*DC Birth Day*
+##### Task: [Pigesnės kuro degalinės įtraukimas į lentelę pagal maršrutą](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DZJl32AH/view)
+- Exploring fuel calculation in web console.
+- Created formula field in vehicle object to see how much km truck can to move.
+- Adding logic to calculate possible distance to drive and check if suggested cheaper point are in reachable range and filter inf not
+#### 04-18
+##### Task: [Pigesnės kuro degalinės įtraukimas į lentelę pagal maršrutą](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DZJl32AH/view)
+- Wrote logic to get lowest price from current to last next planned tasks.
+- Find out one problem possibly.
+- Writing fuel calculation method to get drivable kms and use in planning logic code.
+*stand-up meet*
+##### Task: [Pigesnės kuro degalinės įtraukimas į lentelę pagal maršrutą](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DZJl32AH/view)
+- Discussed with Paulius the problem related with route encoded string, maybe it just in debug console displays that way.
+- Wrote logic to track truck drivable distance km and check if point are reachable and can be added to alternative if it is are cheaper fuel station.
+- Added logic to consider fuel stations what are in pass and fill trucks and add to drivable distance.
+- Created test truck with test trip and tasks. Testing and try to figure out if all works logically.
+- I will need to change live_fuel__c value calculation (this field represents procents, but not liters as I thought).
+#### 04-22 (holiday)
+- supebadge
+#### 04-23
+*stand-up meet*
+##### Task: [(Bug) Map Layer mygtukų pakeitimai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DZLyD2AX/view)
+- Added `?? fasle` to assign default false value and save in local storage.
+- Created PR and wrote test case.
+##### Task: [Pigesnės kuro degalinės įtraukimas į lentelę pagal maršrutą](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DZJl32AH/view)
+- Replaced live_fuel with fuel_level formula field of vehicle object.
+- Tested with one small truck example. Seems like all works properly.
+- Find bug candidate of truck sorting then selecting truck group and display truck with wrong sorting.
+- Testing with biggest data. Need to update testing trucks live telematics fuel values.
+- Meet/discussed next steps of cheaper fuel task series.
+*lunch time*
+- Testing with 58 test truck.
+- Try to log step by step to see how my code calculates fuel in all process levels.
+- Seems like now fuel calculates good.
+- Remains to write tests.
+#### 04-24
+##### Task: [Pigesnės kuro degalinės įtraukimas į lentelę pagal maršrutą](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DZJl32AH/view)
+- Testing with other trucks, fixing then execute without pass truck ids.
+- Preparing to code review.
+*stand-up meet*
+- For some reason trucks can take wrong cheaper point. Try to debug and fix it.
+*lunch time*
+##### Task: [Pigesnės kuro degalinės įtraukimas į lentelę pagal maršrutą](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DZJl32AH/view)
+- Try to compare large test data and 4-5 truck data and figure out key problem.
+- Discussed with Paulius how to check and test functionality.
+- Discussed next tasks functionality.
+- Find out problem reason - trip and tasks are sorted wrong.
+#### 04-25
+##### Task: [(Patch) Pigesnės kuro degalinės įtraukimas į lentelę pagal maršrutą](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DZJl32AH/view)
+- Fixed sorting functionality by replace next setOrdering.
+- Writing tests.
+*stand-up meet + lunch time*
+##### Task: [(Patch) Pigesnės kuro degalinės įtraukimas į lentelę pagal maršrutą](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DZJl32AH/view)
+- Writing service layer test.
+- Wrote simple integration test.
+- Retrieving metadata
+*dev Friday meet*
+==Next week (Monday) new functionality things (fuel plan component, lwc updates, trigger), check PR==
+#### 04-28
+##### Task: [(Patch) Pigesnės kuro degalinės įtraukimas į lentelę pagal maršrutą](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DZJl32AH/view)
+- Deployed fields and permissions to bitbucket
+- Changed drivable formula to do not calculate fuel level under 20 percent.
+- Added search reachable stations depth limit
+- Added custom settings to set distance to polyline and interval in minutes of scheduler.
+- Started writing fuel plan component updates.
+*stand-up meet + lunch*
+##### Task: [(Patch) Pigesnės kuro degalinės įtraukimas į lentelę pagal maršrutą](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DZJl32AH/view)
+- Completed refuel plan updates. Added two columns with current and alternative fuel price with link to truck refuel page in console.
+- Fixed custom settings default data get code.
+- Discussed trigger coding place, decided to write in old trigger handler for now.
+- Added compare wrapper statements, service method to reset cheaper fuel station for none refuel type tasks.
+- On update task address_account__c, ptv_route1__c or type change from or to REFUEL, then that truck cheaper_refuel_station__c checks. If task type changes from refuel to any other type, then cheaper refuel station updates to null.
+- 
