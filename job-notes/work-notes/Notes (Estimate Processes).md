@@ -1094,4 +1094,191 @@ Plan of this task:
 - Discussed trigger coding place, decided to write in old trigger handler for now.
 - Added compare wrapper statements, service method to reset cheaper fuel station for none refuel type tasks.
 - On update task address_account__c, ptv_route1__c or type change from or to REFUEL, then that truck cheaper_refuel_station__c checks. If task type changes from refuel to any other type, then cheaper refuel station updates to null.
-- 
+- Writing tests for trigger handler
+#### 04-29
+##### Task: [(Patch) Pigesnės kuro degalinės įtraukimas į lentelę pagal maršrutą](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DZJl32AH/view)
+- Wrote tests
+- Testing functionality, fixed one bug.
+- Created PR to partial.
+- Fixing merge conflicts.
+*stand-up meet*
+##### Task: [(Patch) Pigesnės kuro degalinės įtraukimas į lentelę pagal maršrutą](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DZJl32AH/view)
+- Fixing merge conflict
+*lunch time*
+- Fixing merge conflicts.
+- Wrote Test cases.
+- Fixed merge conflict.
+- Fixed queue limit exception using IQueueChainable interface implementation.
+##### Task: [(Patch) update dėl pigesnės degalinės lokacijos logikos; front end](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DoFFh2AN/view)
+- Created new branch and pulled all functionality from 1022 previous task.
+- Imported test data and created one custom truck with trip and tasks.
+- Discussed new quick task.
+- Created test data.
+- Adding € symbol next to trip and task with cheaper refuel station.
+#### 04-30
+##### Task: [pigesnė kuro alternatyva - front end first part minimal](https://bcline.lightning.force.com/lightning/r/a0NSZ00000EAnYr2AL/view)
+- Setup branch and done first task part of truck fuel card tooltip info with "Cheaper fuel available".
+- Added euro symbol icon and use for trips and tasks with cheaper fuel available.
+- Exploring how works fuel trip select and how to add that trip tasks cheaper fuel account markers.
+*stand-up meet + lunch time*
+##### Task: [pigesnė kuro alternatyva - front end first part minimal](https://bcline.lightning.force.com/lightning/r/a0NSZ00000EAnYr2AL/view)
+- Researching fuelWindow and fuelGraphDisplay code.
+- Wrote markers create function.
+- Writing logic to display and hide on select trips or tasks.
+- Complicated logic of cheaper fuel marker display
+  - How to handle refuel stations display from group items and from fuel status display context?
+  - Logic to display and hide according to selected trip and task.
+- Need to fix markers display logic (create but not display until trip or task are not selected, and hide then trip or task are changed).
+### 05
+#### 05-02 (holiday)
+#### 05-05
+##### Task: [(Patch) Pigesnės kuro degalinės įtraukimas į lentelę pagal maršrutą](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DZJl32AH/view "https://bcline.lightning.force.com/lightning/r/a0NSZ00000DZJl32AH/view")
+- Solving code review.
+- Have question to Paulius about queueable class scheduling. Will try to figure out by live tacho code example.
+- By pass selector refactoring to end of all code review comments.
+*stand-up meet*
+##### Task: [(Patch) Pigesnės kuro degalinės įtraukimas į lentelę pagal maršrutą](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DZJl32AH/view "https://bcline.lightning.force.com/lightning/r/a0NSZ00000DZJl32AH/view")
+- Discussed with TL and decided to left scheduler as it is and change it in future with patch task.
+- Fixed all code review comments, it remains to be completed comments of trip selector convert to task selector.
+- Almost done, tested and fixing task selector, decided to finish this last code review comments after cut-off. Save to stash and switch to frontend task.
+- Change task status to sandbox review.
+##### Task: [pigesnė kuro alternatyva - front end first part minimal](https://bcline.lightning.force.com/lightning/r/a0NSZ00000EAnYr2AL/view)
+- Fixed display functionality only on select trip.
+- Added listener to hide on unselect trip.
+- Wrote logic to display and hide refuel station alternative on click on task also.
+- Created PR to partial, wrote test case.
+#### 05-06
+##### Task: [(Patch) Pigesnės kuro degalinės įtraukimas į lentelę pagal maršrutą](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DZJl32AH/view)
+- This issue was reported based on a bug found in the developer sandbox. It is not related to this task’s assigned sandbox environment.
+##### Task: [update dėl pigesnės degalinės lokacijos logikos; front end](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DoFFh2AN/view)
+- setup new environment (sandbox). Deployed all new changes from previous task, imported test data.
+*stand-up meet + lunch time*
+##### Task: [update dėl pigesnės degalinės lokacijos logikos; front end](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DoFFh2AN/view)
+- Added fn to display next.
+- Try to add logic to display next task of next trip if exist, but have complexity with it. Seems like near to solution, but still far from it.
+- Adding functionality to display around the route refuel stations.
+- Almost added fuel stations around the route of selected task and next one.
+- Need to fix paths generating and pass to showFuelStationsAlongRoute correct data.
+#### 05-07
+##### Task: [update dėl pigesnės degalinės lokacijos logikos; front end](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DoFFh2AN/view)
+- Fixing display refuel stations around the route. Added parameter to bypass fuel stations hiding on select task. Fixed.
+- Fixed next trip task display.
+*stand-up meet*
+- Fixed refuel stations display fn.
+##### Task: [(Patch) Planneryje neveikia add destination butonas](https://bcline.lightning.force.com/lightning/r/a0NSZ00000ELMYX2A5/view)
+- Fixed bug, deployed to PR to partial.
+- Wrote test case.
+##### Task: [update dėl pigesnės degalinės lokacijos logikos; front end](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DoFFh2AN/view)
+- Added tooltip with text on euro icon with "Cheaper fuel available" text.
+- Wrote test case for that functionality.
+- Wrote method in context menu to change button display statement. Added to groupMenu open method to check before open context menu.
+- Writing logic to get selected task type in Fuel Status window and display or hide Update Fuel Station button.
+- Added selectedTaskId global wrapper variable to reach selected task from Fuel Status window in groupDisplay and pass to contextMenu.
+#### 05-08
+##### Task: [update dėl pigesnės degalinės lokacijos logikos; front end](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DoFFh2AN/view)
+- Writing selected task in fuel status window send to vf context menu.
+- Done button display functionality.
+- Writing "Update Fuel Station" functionlaity.
+- Wrote update fuel station functionality part. Need to fix/test:
+	- task cheaper field clean,
+	- task ptv update,
+	- display selected task ptv without reset task selection
+- Try reuse trip planner logic
+*lunch time*
+##### Task: [update dėl pigesnės degalinės lokacijos logikos; front end](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DoFFh2AN/view)
+- Finally is almost works.
+- Reused addTask method from tripPlanner, seems like all works like expected.
+- Fixing cancel trip planner button to reset task marker coordinates.
+- Fixed cancel button, but it still takes too long, fixing.
+- Created PR.
+- Preparing code to code review in bitbucket.
+- After solved merge conflict something went wrong and map doesn't work. Will deploy all code to sandbox. Also need to write test case of last functionality.
+- Fixed map after merge conflict solving.
+- Fixing task marker reset on cancel button click.
+#### 05-09
+##### Task: [update dėl pigesnės degalinės lokacijos logikos; front end](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DoFFh2AN/view)
+- Fixed functionality after merge conflict.
+- Fixed marker location display after cancel in trip planner.
+- Wrote test case for update fuel station functionality.
+##### Task: [Histogramos duomenų parsinimo pakeitimai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CrSwv2AF/view)
+- Try to remember what I have already done.
+*stand-up meet*
+- Switch to path tasks.
+##### Task: [(Patch) STT-24709 does version number match sprint number](https://bcline.lightning.force.com/lightning/r/a0NSZ00000EOXh72AH/view)
+- Updated console version from 27_4 to 28. 
+- Setup sandbox and deployed updates.
+- Created PR to partial.
+##### Task: [(Patch) STT-24770 clear search](https://bcline.lightning.force.com/lightning/r/a0NSZ00000EOZm92AH/view)
+- Testing.
+- Used consoleLocalStorageWrapper.
+- Wrote test case.
+- Created PR to partial.
+##### Task: [Histogramos duomenų parsinimo pakeitimai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CrSwv2AF/view)
+- Working on dynamic graph height
+##### Task: [(Patch) STT-25508 Task Details From Histogram](https://bcline.lightning.force.com/lightning/r/a0NSZ00000EOjIT2A1/view)
+- Deployed all changes from all patches to prepare testing environment for QA.
+- Fixed histogramSelecteScreen. 
+- Testing.
+- Wrote test case. Created PR to partial.
+#### 05-12
+##### Task: [Histogramos duomenų parsinimo pakeitimai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CrSwv2AF/view)
+- Fixing histogram data fetching.
+##### Task: [(Patch) STT-24709 does version number match sprint number](https://bcline.lightning.force.com/lightning/r/a0NSZ00000EOXh72AH/view)
+- Fixing PRs.
+- Fixing PRs, Waiting for build status refreshing.
+##### Task: [Histogramos duomenų parsinimo pakeitimai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CrSwv2AF/view)
+- Fixing histogram data fetching.
+*stand-up meet*
+##### Task: [Histogramos duomenų parsinimo pakeitimai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CrSwv2AF/view)
+- Switch to patch task.
+##### Task: [(Patch) STT-25506 Fast update view in map on select accounts in location group](https://bcline.lightning.force.com/lightning/r/a0NSZ00000ESV422AH/view)
+- Debugging partial location group.
+- Try to find reason of freeze.
+- Imported location groups to dev22 sandbox. Try to test and reproduce bug in sandbox.
+*lunch time*
+##### Task: [(Patch) STT-25506 Fast update view in map on select accounts in location group](https://bcline.lightning.force.com/lightning/r/a0NSZ00000ESV422AH/view)
+- Fixing data loader.
+*code standards meet*
+##### Task: [(Patch) STT-25506 Fast update view in map on select accounts in location group](https://bcline.lightning.force.com/lightning/r/a0NSZ00000ESV422AH/view)
+- Logged loader method. Reason of long loading are not in connectedCallback, but in group line items rendering. When group have many of items, then rendering.
+- Wrote logic to rendering items only then group are not collapsed.
+- Writing logic to render only first time and hide/display with css.
+- *reikia pasitarti su Andrium/Paulium kaip reikėtų daryti, on expand ilgai renderina.*
+#### 05-13
+##### Task: [(Patch) STT-24782 adding to route](https://bcline.lightning.force.com/lightning/r/a0NSZ00000ESUSx2AP/view)
+- Discussing about group search large data rendering issue.
+- Fixed add to route functionality from fuel status window.
+- Assign test case and created PR to partial.
+##### Task: [(Patch) STT-25485 Immediate Update of Markers After Editing Group Items](https://bcline.lightning.force.com/lightning/r/a0NSZ00000ESYuj2AH/view)
+- Analyzing and debugging group edit code.
+*stand-up meet*
+##### Task: [(Patch) STT-25485 Immediate Update of Markers After Editing Group Items](https://bcline.lightning.force.com/lightning/r/a0NSZ00000ESYuj2AH/view)
+- Find wrong condition check, removed.
+- Assign test case and created PR to partial
+##### Task: [(Patch) Navigating to Transfer Acts window throws Error](https://bcline.lightning.force.com/lightning/r/a0NSZ00000ESuqP2AT/view)
+- Try to debug with dev tools. Discussed with Paulius, recommended to debug with console logs and set timeouts.
+- Chatting with TL.
+##### Task: [(Patch) STT-25220 select the truck which has tacho/telmtic history, change to th](https://bcline.lightning.force.com/lightning/r/a0NSZ00000ET2Cs2AL/view)
+- Discussing with Paulius about navigation to transfer acts window.
+- Fixing PR and branch in VSCode.
+##### Task: [(Patch) Navigating to Transfer Acts window throws Error](https://bcline.lightning.force.com/lightning/r/a0NSZ00000ESuqP2AT/view)
+- Updated PR code and wrote test cases.
+##### Task: [Histogramos duomenų parsinimo pakeitimai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CrSwv2AF/view)
+- Switch to patch task.
+##### Task: [(Patch) Navigating to Transfer Acts window throws Error](https://bcline.lightning.force.com/lightning/r/a0NSZ00000ESuqP2AT/view)
+- Error tarted push errors in sandbox, so I find the reason, debugged and fixed by check type of mutation object firs and filter not 'attributes' type items.
+#### 05-14
+##### Task: [Histogramos duomenų parsinimo pakeitimai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CrSwv2AF/view)
+- Added dynamic graph scale.
+- Adding 0 points hiding line to display only what are greater than 0.
+- Writing/correcting test cases.
+*stand-up meet*
+##### Task: [(Patch) STT-25485 Immediate Update of Markers After Editing Group Items](https://bcline.lightning.force.com/lightning/r/a0NSZ00000ESYuj2AH/view)
+- Testing. It works for me.
+- Wait for QA.
+##### Task: [Histogramos duomenų parsinimo pakeitimai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CrSwv2AF/view)
+- Wrote filter method to hide 0 point lines.
+- Wrote test case.
+- Try to reuse compressed data for graph displaying in tooltip card.
+- Exploring histogram data rendering and dependency of scale and zoom.
+- Kind of solution, will ask Paulius if good solution.
