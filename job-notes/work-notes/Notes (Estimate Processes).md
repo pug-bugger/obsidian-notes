@@ -1282,3 +1282,349 @@ Plan of this task:
 - Try to reuse compressed data for graph displaying in tooltip card.
 - Exploring histogram data rendering and dependency of scale and zoom.
 - Kind of solution, will ask Paulius if good solution.
+#### 05-15
+##### Task: [Histogramos duomenų parsinimo pakeitimai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CrSwv2AF/view)
+- Switching to path tasks
+##### Task: [(Patch) STT-25248 Filtering Transfer Acts Within a Date Interval](https://bcline.lightning.force.com/lightning/r/a0NSZ00000EWkIz2AL/view)
+- Fixed sf cli.
+- Deployed partial code to sandbox dev6.
+- Testing and debugging. Try to figure out reason of error.
+*stand-up meet*
+##### Task: [(Patch) Component Errors yra metami keičiant Truck'us, kol Fuel Window yra open](https://bcline.lightning.force.com/lightning/r/a0NSZ00000EX9Av2AL/view)
+- Try to reproduce in sandbox.
+*lunch time*
+##### Task: [(Patch) Component Errors yra metami keičiant Truck'us, kol Fuel Window yra open](https://bcline.lightning.force.com/lightning/r/a0NSZ00000EX9Av2AL/view)
+- Testing and debugging.
+- Don't find the source of wrong data is coming, but solved by writing temp solution.
+- Fixed, deployed and created PR to partial. Assigned existing test case.
+- Tested this task errors. Added ?. to handle null values (also quick solution).
+- Created PR to partial and wrote test case record.
+##### Task: [Histogramos duomenų parsinimo pakeitimai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CrSwv2AF/view)
+- Discussed with Paulius about tooltip data display values. *add average values between points*
+- Separating tooltip data with different scales.
+##### Task: [(Patch) STT-25714 Display Alternative Refuel Station](https://bcline.lightning.force.com/lightning/r/a0NSZ00000EYLLJ2A5/view)
+- Find left console field set parameters and fixed one small thing, then next trip user select is have cheaper fuel station too and fuel station of previous trip left in map, so I clean that fuel station marker and display only last selected trip cheaper fuel station merkers.
+- Created PR to partial and assigned existing test case.
+##### Task: [Histogramos duomenų parsinimo pakeitimai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CrSwv2AF/view)
+- Updating tooltip data display according to the graph but better. With exact time and smoothy rounded data between items.
+#### 05-16
+##### Task: [Histogramos duomenų parsinimo pakeitimai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CrSwv2AF/view)
+- Creating logic to generate that interpolated data of diagram data.
+- Almost done, updating to increase performance.
+*stand-up meet*
+##### Task: [Histogramos duomenų parsinimo pakeitimai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CrSwv2AF/view)
+- Added interpolatedData variable to display graphs data in tooltip.
+- Writing rounding on zoom, changing rounding scale for particular data type.
+*lunch time*
+##### Task: [Histogramos duomenų parsinimo pakeitimai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CrSwv2AF/view)
+- Implemented curveStepAfter for boolean values.
+- Updating tooltip data display to ensure that tool tip display exactly what diagram displaying.
+- Adding none compressed data display on max zoom.
+##### Task: [(Patch) Reikia pakoreguoti dizainą](https://bcline.lightning.force.com/lightning/r/a0NSZ00000EZSkX2AX/view)
+- Setup sandbox before start developing.
+- Try first write test cases before start developing.
+- Wrote test cases (~1h).
+- Updating euro icon. Writing css to display that icon in orange circle.
+#### 05-19
+##### Task: [(Patch) Reikia pakoreguoti dizainą](https://bcline.lightning.force.com/lightning/r/a0NSZ00000EZSkX2AX/view)
+- Updated euro icon circle.
+- Updated style of alternative fuel station marker. (point 5)
+- Added price label next to task marker.
+- Updating fuel card bubble styling depending to cheaper fuel station available parameter
+*stand-up meet*
+##### Task: [(Patch) Reikia pakoreguoti dizainą](https://bcline.lightning.force.com/lightning/r/a0NSZ00000EZSkX2AX/view)
+- Updated fuel card bubble style.
+- Updated marker price label style, and light green color updated.
+- Adding fuel price to task details screen. Added address account to field set, displaying fuel price and address account name next to fuel field in task details.
+*lunch time*
+##### Task: [(Patch) Reikia pakoreguoti dizainą](https://bcline.lightning.force.com/lightning/r/a0NSZ00000EZSkX2AX/view)
+- Updated fuel task details fuel field.
+- Updated fuel task marker price label, display always.
+- Wrote test cases.
+##### Task: [Histogramos duomenų parsinimo pakeitimai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CrSwv2AF/view)
+- Writing zoom compression updates. Writing data compression in dataParser, because of in histogramHelpers it work but a little bit strange.
+#### 05-20
+##### Task: [Histogramos duomenų parsinimo pakeitimai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CrSwv2AF/view)
+- Updated data display on zoom. Added RAW data.
+- Tried to increase data display, I need to more compress speed diagram.
+- Trying to complete last point with virtual points.
+*stand-up meet*
+##### Task: [(Patch) Reikia pakoreguoti dizainą](https://bcline.lightning.force.com/lightning/r/a0NSZ00000EZSkX2AX/view)
+- Updated task fuel price display and in task details.
+- Updated lowest price label style.
+*lunch time*
+##### Task: [(Patch) Reikia pakoreguoti dizainą](https://bcline.lightning.force.com/lightning/r/a0NSZ00000EZSkX2AX/view)
+- Fixed little thing (PM_V commented in slack)
+##### Task: [Histogramos duomenų parsinimo pakeitimai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CrSwv2AF/view)
+- Discussed with Paulius what way to smooth li ne in graph.
+- Added new list of RAW data, and modified ALL, last one have smoothed shapes to display more aligned lines in graph.
+- Wrote this task comments to PM, waiting for agreements of max time increase.
+#### 05-21
+##### Task: [Histogramos duomenų parsinimo pakeitimai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CrSwv2AF/view)
+- Testing and fixing smooth calculations. Adding fake points to display sharp changes.
+##### Task: [(Hotfix) Pigiausio kuro skaičiavimai pagrybauja](https://bcline.lightning.force.com/lightning/r/a0NSZ00000EfO6N2AV/view)
+- Need discuss first case with Paulius and Vytenis in office.
+- I think there need to discuss also, because of in case 2 task account (price: 1.0048) have cheaper fuel station (price: 1.0026). But maybe need to correct trigger to remove that cheaper fuel station when task status changes from planned to any else. Trigger don't have clear functionality after task status changes from planned to any other status.
+*stand-up meet*
+##### Task: [(Hotfix) Pigiausio kuro skaičiavimai pagrybauja](https://bcline.lightning.force.com/lightning/r/a0NSZ00000EfO6N2AV/view)
+- Setup dev4 sandbox.
+- Added check for task status change from Planned to remove Cheaper_Fuel_Station__c data.
+- Wrote test case.
+##### Task: [Histogramos duomenų parsinimo pakeitimai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CrSwv2AF/view)
+- Switch to hotfix task.
+##### Task: [(Hotfix) Pigiausio kuro skaičiavimai pagrybauja](https://bcline.lightning.force.com/lightning/r/a0NSZ00000EfO6N2AV/view)
+- Meet with Paulius and Vytenis.
+  1. Check if in this task truck really was able to reach that refuel station. If not, then check service layer code, is it checks fuel level for 20%.
+  2. Check why on polyline update cheaper fuel station was not reset to null.
+- Fixed code and cheaper fuel station in trigger handler.
+- Added new test case and assigned old one.
+- Created PR to hotfix-pre-prod branch.
+##### Task: [Histogramos duomenų parsinimo pakeitimai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CrSwv2AF/view)
+- Testing and writing fake point functionality.
+*1-on-1 meet*
+##### Task: [(Hotfix) Pigiausio kuro skaičiavimai pagrybauja](https://bcline.lightning.force.com/lightning/r/a0NSZ00000EfO6N2AV/view)
+- Checking bug of task markers and polylines in task fuel window.
+- I guess it happened after trip updates in planned component, maybe something with planner draft data before save or after save.
+##### Task: [Histogramos duomenų parsinimo pakeitimai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CrSwv2AF/view)
+- Testing. Switch to hotfix.
+##### Task: [(Hotfix) Pigiausio kuro skaičiavimai pagrybauja](https://bcline.lightning.force.com/lightning/r/a0NSZ00000EfO6N2AV/view)
+- New functionalities:
+  1. Add to route button fix (cheaper fuel station marker in fuel window).
+  2. Display button in fuel window.
+- Discussed 3 new functionality point, seems like here was problem with markers display, when sometimes expensive fuel station marker displays on top of cheaper.
+- Adding cheaper fuel station context menu fn.
+#### 05-22
+##### Task: [(Hotfix) Pigiausio kuro skaičiavimai pagrybauja](https://bcline.lightning.force.com/lightning/r/a0NSZ00000EfO6N2AV/view)
+- Writing context menu functionality for cheaper fuel station markers.
+- Rewrote cheaper fuel station marker display approach. Deciding to reuse group display functionality. Adding custom styling for cheaper fuel station.
+*stand-up meet + lunch time*
+##### Task: [(Hotfix) Pigiausio kuro skaičiavimai pagrybauja](https://bcline.lightning.force.com/lightning/r/a0NSZ00000EfO6N2AV/view)
+- Completed context menu new functionality part.
+- Trying to implement expand of critical fuel level trip by default, but have some bug's to fix before.
+- Don't forget to retrieve task console field set.
+#### 05-27
+##### Task: [(Hotfix) Pigiausio kuro skaičiavimai pagrybauja](https://bcline.lightning.force.com/lightning/r/a0NSZ00000EfO6N2AV/view)
+- Uploaded metadata to the bitbucket.
+- Debugging and fixing fuel status auto expand trip (with critical fuel level or alternative fuel station).
+*stand-up meet*
+##### Task: [(Hotfix) Pigiausio kuro skaičiavimai pagrybauja](https://bcline.lightning.force.com/lightning/r/a0NSZ00000EfO6N2AV/view)
+- Added setScale for price field value in account domain class.
+- Fixing truck fuel window functionality.
+- Fixed selection of trip with critical fuel level.
+- Adding alternative price criteria and fixing selected trip visual part bug (on select another trip, default selected trip lefts selected and expanded).
+##### Task: [(Hotfix) Pigiausio kuro skaičiavimai pagrybauja](https://bcline.lightning.force.com/lightning/r/a0NSZ00000EfO6N2AV/view)
+- Preparing to code review.
+- Fixed default selected trip unselect functionality.
+- Wrote test cases.
+- Added display fuel station always on calculate fuel toggle on. Done new functionality and wrote new test case.
+##### Task: [update dėl pigesnės degalinės lokacijos logikos; front end](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DoFFh2AN/view)
+- Checking changes and deploying to refreshed sandbox.
+- Fixed style and context menu update in sandbox.
+- Tested and updated test case screenshots.
+- Need to check again after hot fix merged.
+##### Task: [Histogramos duomenų parsinimo pakeitimai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CrSwv2AF/view)
+- Testing with parameters, try to configure big increasing display functionality.
+#### 05-28
+##### Task: [Histogramos duomenų parsinimo pakeitimai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CrSwv2AF/view)
+- Fixing increase detect functionality.
+##### Task: [(Hotfix) Pigiausio kuro skaičiavimai pagrybauja](https://bcline.lightning.force.com/lightning/r/a0NSZ00000EfO6N2AV/view)
+- Fixed little code review comments.
+- Updated TaskServiceImpl truck type data validation.
+##### Task: [Histogramos duomenų parsinimo pakeitimai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CrSwv2AF/view)
+- Testing with configurations and try to fix increasing detection functionality.
+*stand-up meet + lunch time*
+##### Task: [Histogramos duomenų parsinimo pakeitimai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CrSwv2AF/view)
+- Writing logic to display increasing and decreasing data values in graph.
+- Separate logic of smoothing of data changes and after smooth adding logic to detect data huge changes.
+- The histogram endpoint server is having internet issues. I’m writing as much code as I can, but I’ll have to stop if I need to verify it with the endpoint.
+- Wrote detectAndModifySharpChanges method to modify an array of data. Hardest place is to detect and check if data pass condition of big changes and log start and stop indexes.
+- Now can't to check if all works, because of data fetching is failing. 
+#### 05-29
+##### Task: [Histogramos duomenų parsinimo pakeitimai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CrSwv2AF/view)
+- Testing fake point functionality.
+- Fixed decrease part of fake points.
+- Testing and fixing interpolated data display in tooltip card.
+*lunch time*
+##### Task: [Histogramos duomenų parsinimo pakeitimai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CrSwv2AF/view)
+- Fixed displaying of interpolated data on zoom.
+- Checking all done work.
+- Wrote test cases.
+- Fixed 0 points hide fn.
+- Created PR to partial.
+- Solved merge conflicts.
+##### Task: [(Hotfix) Pigiausio kuro skaičiavimai pagrybauja](https://bcline.lightning.force.com/lightning/r/a0NSZ00000EfO6N2AV/view)
+- Fixed one dev bug. Added check parameters to prevent alternative fuel station marker from remove from map.
+- Asked PM about second dev bug and how it should work.
+##### Task: [pasiimti/atvaizduoti Anatolijaus atiduodamą telefono nr. Prie vardo pavardės](https://bcline.lightning.force.com/lightning/r/a0NSZ00000Dq6mc2AB/view)
+- Setup sandbox.
+- Created driver mobile number formula field and added to console field set.
+- Adding to TruckDriverHeader component.
+==Discussed hotfix dev bug. Reikia prideti tikrinima ar tripas yra paselektintas, ir ar range yra pa selektintas, jei nei vienas is situ parametru nera paselektinti, tada notification modalas atsiranda "reikia pasirinkti range'a arba trip'a"==
+#### 05-30
+##### Task: [pasiimti/atvaizduoti Anatolijaus atiduodamą telefono nr. Prie vardo pavardės](https://bcline.lightning.force.com/lightning/r/a0NSZ00000Dq6mc2AB/view)
+- Implemented an adaptive style to move the mobile number to the next line if there’s no space in the first line.
+- Created PR to partial and wrote test case.
+##### Task: [Meet'ai (David) - Dreamcubator](https://bcline.lightning.force.com/lightning/r/a0N5J0000051YxRUAU/view "Meet'ai (David) - Dreamcubator")
+- Asked for increase max time.
+##### Task: [(Hotfix) Pigiausio kuro skaičiavimai pagrybauja](https://bcline.lightning.force.com/lightning/r/a0NSZ00000EfO6N2AV/view)
+- Fixed dev bug: added check for selected trip also and allows to add point to route if user are selected range or just trip from fuel window component.
+- Added parameter to hide alternative fuel station on exit the fuel window. When marker was displayed because of it is an alternative fuel station, then after exit fuel window, marker will be hidden.
+*stand-up meet*
+##### Task: [failų prikabinimas siunčiant masines žinutes](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DSkjZ2AT/view)
+- Adding attachment functionality to global messages component. Added button to add attachments.
+- Fixed file cards text line height (added 1 pixel) to display full height of text.
+- Edit messageWindow.sendMessages method, removed condition of global message and standardized method of messages with files sending functionality.
+- Testing. Messages with only text context displays as always, it didn't break.
+- Message with files sent successfully, no errors, but don't see console files in salesforce database.
+### 06
+#### 06-02
+##### Task: [failų prikabinimas siunčiant masines žinutes](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DSkjZ2AT/view)
+- Testing and fixing global file sending functionality. Fixing consoleFilesUploader and MessageController code.
+*stand-up meet*
+- After some fixes records successfully creates in salesforce database, but not displays in global message chat window.
+- Forget to start task (from 10:20)
+- Exploring message data loading functionality. I need to update filter to get also global messages with files.
+*lunch time*
+- Find messages with files filtering reason. Added global id to messages with files. Seems like all works. Testing with 100 trucks. Will check test class.
+- Fixed test class.
+- Fixed on first load data of global messages window. Added data fetching and mapping files with messages.
+- Writing test case. Done.
+- Created PR to partial.
+##### Task: [pasiimti/atvaizduoti Anatolijaus atiduodamą telefono nr. Prie vardo pavardės](https://bcline.lightning.force.com/lightning/r/a0NSZ00000Dq6mc2AB/view)
+- Updated endpoint of Tachograph. Added new parameter of mobile number.
+- Not tested yet.
+#### 06-03
+##### Task: [pasiimti/atvaizduoti Anatolijaus atiduodamą telefono nr. Prie vardo pavardės](https://bcline.lightning.force.com/lightning/r/a0NSZ00000Dq6mc2AB/view)
+- Testing, wrote test case.
+##### Task: [Histogramos duomenų parsinimo pakeitimai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CrSwv2AF/view)
+- Checking dev bugs comments and search solutions.
+- Created new channel to ask questions about dev bugs.
+*stand-up meet + Discussed hotfix changes*
+##### Task: [Histogramos duomenų parsinimo pakeitimai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CrSwv2AF/view)
+- Discussed left to drive to finish in progress task find alternative fuel station. And use geofencing and new boolean field to find new fuel station after left existing fuel station radius.
+- About altitude data display: don't smooth line, just set step of change to display new line.
+- Display boolean with true/false values.
+- Writing the functionality to display raw data to compare processed data and see differences.
+#### 06-04
+##### Task: [Histogramos duomenų parsinimo pakeitimai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CrSwv2AF/view)
+- Writing debug mode data display in dots.
+- Discussing with PM about hotfix task.
+*stand-up meet*
+##### Task: [update dėl pigesnės degalinės lokacijos logikos; front end](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DoFFh2AN/view)
+- Merged code after hot fix.
+- Find reason of left alternative fuel station in map after select another truck.
+- Fixed new functionality bug - added alternative fuel stations hide method even when truck don't have critical or alternative fuel stations.
+- Wrote test case for new functionality.
+*1-on-1 meet*
+##### Task: [(Hotfix) in progress tasko skaičiavimo alternatyviom degalinėm](https://bcline.lightning.force.com/lightning/r/a0NSZ00000F2fxi2AB/view)
+- Task test case writing (~45 min)
+- Setup sandbox, create test data.
+- Generated Account.Near_To_Task_Truck__c custom field with cursor AI chat.
+- Updating GeofencingHandler code to update Near_To_Task_Truck__c field. And account trigger handler to remove Cheaper_Fuel_Station__c.
+*preparing workplace*
+#### 06-05
+##### Task: [(Hotfix) in progress tasko skaičiavimo alternatyviom degalinėm](https://bcline.lightning.force.com/lightning/r/a0NSZ00000F2fxi2AB/view)
+- Wrote GeofencingHandler logic to update Near_To_Task_Truck__c.
+- Prepared test data to test functionality.
+- Writing trigger handler after account Near_To_Task_Truck__c field update to execute queueable class.
+*stand-up meet*
+##### Task: [(Hotfix) in progress tasko skaičiavimo alternatyviom degalinėm](https://bcline.lightning.force.com/lightning/r/a0NSZ00000F2fxi2AB/view)
+- Created account service layer to find truck ids and execute search of cheaper fuel queueable class.
+- Writing account service unit tests.
+- Wrote Sliced Polyline endpoint wrapper, added to task service implementation class and use for accepted and job_started tasks.
+- Testing. executePointsAroundPolyRouteDTO method works properly. But updateVisitedTasks fixing in progress.
+- Testing and fixing. For some reason after left account, the task doesn't removed cheaper account. Fixed.
+- Now seems like all works as required.
+- Writing unit tests.
+#### 06-06
+##### Task: [(Hotfix) in progress tasko skaičiavimo alternatyviom degalinėm](https://bcline.lightning.force.com/lightning/r/a0NSZ00000F2fxi2AB/view)
+- Writing tests. Wrote AccountService_TEST, Accounts.
+- Writing GeofencingHandler class unit test.
+*stand-up meet*
+- Rewrote account field to task object logic. Removed account service layer logic and account trigger changes. Removed account custom field and created task Truck_Near_To_Cheaper_Fuel_Station__c with permission sets.
+- Prepared PR to gear set building.
+- Updated unit tests.
+##### Task: [(Bug) Pigiausio kuro skaičiavimai pagrybauja](https://bcline.lightning.force.com/lightning/r/a0NSZ00000F5jiD2AR/view)
+- Testing in production, searching for cases to reproduce bug in loom.
+- Don't find bug.
+##### Task: [failų prikabinimas siunčiant masines žinutes](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DSkjZ2AT/view)
+- Added search by file name functionality in global messenger.
+##### Task: [Histogramos duomenų parsinimo pakeitimai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CrSwv2AF/view)
+- Adding debug button to see raw data in graph. Added new icon and button in buttons column container next to graph.
+#### 06-09
+##### Task: [Histogramos duomenų parsinimo pakeitimai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CrSwv2AF/view)
+- Writing debug mode fn.
+##### Task: [(Hotfix) in progress tasko skaičiavimo alternatyviom degalinėm](https://bcline.lightning.force.com/lightning/r/a0NSZ00000F2fxi2AB/view "(Hotfix) in progress tasko skaičiavimo alternatyviom degalinėm")
+- Fixing code review.
+##### Task: [(Bug) Pigiausio kuro skaičiavimai pagrybauja](https://bcline.lightning.force.com/lightning/r/a0NSZ00000F5jiD2AR/view)
+- Still do not have information.
+##### Task: [failų prikabinimas siunčiant masines žinutes](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DSkjZ2AT/view)
+- Changed status of dev bug.
+##### Task: [Histogramos duomenų parsinimo pakeitimai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CrSwv2AF/view)
+- Lost stashes changes and mixed them, need to fix this.
+- Try to write custom function to display boolean data in diagram as I need.
+*stand-up meet*
+##### Task: [(Hotfix) in progress tasko skaičiavimo alternatyviom degalinėm](https://bcline.lightning.force.com/lightning/r/a0NSZ00000F2fxi2AB/view "(Hotfix) in progress tasko skaičiavimo alternatyviom degalinėm")
+- Fixing PR code review. Asked about task statuses.
+- Fixing code review comments.
+- For some reason final static list not exist in class, but are initialized.
+- Added callout counter to track callouts in one apex code transaction.
+##### Task: [(Backpropagated) Pigiausio kuro skaičiavimai pagrybauja](https://bcline.lightning.force.com/lightning/r/a0NSZ00000F3KBF2A3/view)
+- Checked code, seems like all code changes are in partial, so do not need to create PR to partial.
+##### Task: [Histogramos duomenų parsinimo pakeitimai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CrSwv2AF/view)
+- Fixed percent display value rounding.
+- Editing debug mode data display to check result.
+- Seems like made good variant of debug mode data display feature.
+#### 06-10
+##### Task: [Histogramos duomenų parsinimo pakeitimai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CrSwv2AF/view)
+- Testing and fixing debug mode fn. It works not too good with huge data.
+- Increase compressed data display ranges, now it displays rather than before.
+- Try to display debug data to compare raw and processed data.
+*stand-up meet + back propagated task prepare*
+##### Task: [Histogramos duomenų parsinimo pakeitimai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CrSwv2AF/view)
+- Discussed task details tested current done functionality with Paulius.
+- [ ] Made group display filter, separate different trend of data.
+- [ ] Add fake point to not display null.
+- [x] Debug mode fix.
+- Debugging, searching for reason of lagging, seems like find the reason, try to fix. Fixed.
+- Fixing debug data display mode.
+#### 06-11
+##### Task: [Histogramos duomenų parsinimo pakeitimai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CrSwv2AF/view)
+- Fixed debug mode data display functionality. Displaying raw data to compare changes.
+- Fixing null lines hiding functionality. Added fake points next to fist last point with value to set contrast change. Adding same for averaged data.
+*lunch time*
+##### Task: [pasiimti/atvaizduoti Anatolijaus atiduodamą telefono nr. Prie vardo pavardės](https://bcline.lightning.force.com/lightning/r/a0NSZ00000Dq6mc2AB/view)
+- Increased Mobile_Number__c field length to 30 characters.
+- Updated number display style.
+##### Task: [(Hotfix) in progress tasko skaičiavimo alternatyviom degalinėm](https://bcline.lightning.force.com/lightning/r/a0NSZ00000F2fxi2AB/view)
+- Testing and discussing with QA and reproducing errors.
+- Try to debug.
+- Asked help to recognize error message.
+- Selected all accounts with wrong Longitude__c values and changed to valid.
+- Tested, now all works good.
+- Change consoleSettings.fuelAlongTheRouteRadiusKm custom settings value to set correct distance of displaying near fuel station from route.
+##### Task: [Histogramos duomenų parsinimo pakeitimai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CrSwv2AF/view)
+- Fixed step function to not display bottom null lines.
+- Writing speed and fuel diagrams "vibe" view function...
+#### 06-12
+##### Task: [Histogramos duomenų parsinimo pakeitimai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CrSwv2AF/view)
+- Seems like rpm > 0 tooltip displays correct data.
+- Reuse custom smooth functionality, seems like looks better, need to discuss some details.
+- Adding listener for 10 min of data change trend and separate from each other. It should make "vibe" effect better.
+*lunch time*
+- Writing smoothing functionality, added additional configuration feature for each array of raw and averaged data. Adding 10 min data trend detection.
+##### Task: [pasiimti/atvaizduoti Anatolijaus atiduodamą telefono nr. Prie vardo pavardės](https://bcline.lightning.force.com/lightning/r/a0NSZ00000Dq6mc2AB/view)
+- Discussed dev bug requirements.
+- Fixed dev bug, replaced phone number to another place with shift item styling. Added css to avoid wrapping in truck name for no reason.
+##### Task: [(Hotfix) Calculate Fuel ilgesniam poly along the route degalinės neatsiranda](https://bcline.lightning.force.com/lightning/r/a0NSZ00000FKJ132AH/view)
+- Fixed init PR and create new PR to hotfix-pre-prod brunch.
+- Using dev17 with previous hotfix changes.
+- Tried to reproduce in sandbox, checked logs, have nothing to work with.
+##### Task: [(Hotfix) Siūlo pigesnę tą pačią degalinę, kuri jau yra suplanuota](https://bcline.lightning.force.com/lightning/r/a0NSZ00000EnEo92AF/view)
+- Added updates to prevent select cheaper fuel station like address account.
+- Added rounding
+- Wrote test case
+##### Task: [(Hotfix) Calculate Fuel ilgesniam poly along the route degalinės neatsiranda](https://bcline.lightning.force.com/lightning/r/a0NSZ00000FKJ132AH/view)
+- Debugging error in production with one truck (NFB373 / Focus) trip.
+- Find what this path parameter are not valid, too small I guess. (consoleLoader -> handleFuelAlongRoute)
+- ![[Pasted image 20250612162336.png]]
