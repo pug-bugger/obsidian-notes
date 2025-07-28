@@ -1628,3 +1628,112 @@ Plan of this task:
 - Debugging error in production with one truck (NFB373 / Focus) trip.
 - Find what this path parameter are not valid, too small I guess. (consoleLoader -> handleFuelAlongRoute)
 - ![[Pasted image 20250612162336.png]]
+#### 06-16
+##### Task: [(Hotfix) Calculate Fuel ilgesniam poly along the route degalinės neatsiranda](https://bcline.lightning.force.com/lightning/r/a0NSZ00000FKJ132AH/view)
+- Added if condition to bypass small array of path.
+*stand-up meet*
+- Create PR to hotfix branch.
+- Wrote test case.
+##### Task: [pasiimti/atvaizduoti Anatolijaus atiduodamą telefono nr. Prie vardo pavardės](https://bcline.lightning.force.com/lightning/r/a0NSZ00000Dq6mc2AB/view)
+- Added console field set to PR.
+##### Task: [Histogramos duomenų parsinimo pakeitimai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CrSwv2AF/view)
+- Switch to hotfix comments fixing.
+##### Task: [(Hotfix) Calculate Fuel ilgesniam poly along the route degalinės neatsiranda](https://bcline.lightning.force.com/lightning/r/a0NSZ00000FKJ132AH/view)
+- Wrote wrapper for routeBoxer to handle error case.
+- Adding custom bounding box for cases when path array length are less than 4 items.
+*lunch time*
+- Added custom bounding functionality. Tested, all works good.
+##### Task: [Histogramos duomenų parsinimo pakeitimai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CrSwv2AF/view)
+- Fixed path PR with new versioning.
+- Discussed requirements and done job with Paulius, we have formed the requirements that I need to be corrected.
+- Changed 10min, hour and 12hour to 2, 5, 10 and 30 min sets.
+- Adding logic to calculate average with no losing max and min values.
+#### 06-17
+##### Task: [(Patch) STT-28043 does version number match sprint number](https://bcline.lightning.force.com/lightning/r/a0NSZ00000FQRlV2AX/view)
+- Version was updated in https://bitbucket.org/dcsid/tms-console-package/pull-requests/2547
+##### Task: [Meet'ai (David) - Dreamcubator](https://bcline.lightning.force.com/lightning/r/a0N5J0000051YxRUAU/view)
+- Waiting for decision.
+##### Task: [Kai paspaudi "X" išėjimas iš planerio lagina](https://bcline.lightning.force.com/lightning/r/a0NSZ00000D8wDq2AJ/view "Kai paspaudi \"X\" išėjimas iš planerio lagina")
+- Testing in sandbox, compare with production. Seems like not only planner, but other windows has same problem when huge count of trucks are displaying in truck list.
+- Decided to skip for now.
+##### Task: [Histogramos duomenų parsinimo pakeitimai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CrSwv2AF/view)
+- Writing averaging functionality and step displaying in averaged data.
+*stand-up meet*
+##### Task: [(Patch) STT-28043 does version number match sprint number](https://bcline.lightning.force.com/lightning/r/a0NSZ00000FQRlV2AX/view "(Patch) STT-28043 does version number match sprint number")
+- Updated version. Created PR to partial. Assigned existing test case.
+##### Task: [(Patch) STT-28753 Validate Tooltip Functionality and Appearance](https://bcline.lightning.force.com/lightning/r/a0NSZ00000FRLED2A5/view)
+- Setup sandbox.
+- Added style to address marker context menu, fixed button style.
+##### Task: [Histogramos duomenų parsinimo pakeitimai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CrSwv2AF/view)
+- Fixing contras of change functionality.
+*lunch time*
+- Switch to another task.
+##### Task: [(Hotfix) Calculate Fuel ilgesniam poly along the route degalinės neatsiranda](https://bcline.lightning.force.com/lightning/r/a0NSZ00000FKJ132AH/view)
+- Created new PR with updated version
+##### Task: [Histogramos duomenų parsinimo pakeitimai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CrSwv2AF/view)
+- Fixed step display of big change (for fuel item)
+- Writing new custom average functionality.
+#### 06-18
+##### Task: [Histogramos duomenų parsinimo pakeitimai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CrSwv2AF/view)
+- Added detectAndModifySharpChanges functionality to all sets, added new fake point before last increased or decreased point to display changes.
+##### Task: [(Hotfix) Calculate Fuel ilgesniam poly along the route degalinės neatsiranda](https://bcline.lightning.force.com/lightning/r/a0NSZ00000FKJ132AH/view)
+- Try to figure out reason why test in gear set failing.
+*stand-up meet + windows updates*
+- Updated PR, waiting for gearset build status update.
+- Fixed PR.
+*lunch time*
+##### Task: [Histogramos duomenų parsinimo pakeitimai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CrSwv2AF/view)
+- Fixed fake point fn. Preparing code to write new averaging functionality.
+- Prepared to work on custom average method. Made sumData\[ALL\] as averaged by 1 min. Now all calculations will be executed on this data.
+- Fixed max/min scaling set, max data are not too near to top border. Altitude now displays line under 0 point.
+- Fixing round to minute range average.
+*1-on-1 David (Performance Review Follow-up)*
+##### Task: [Histogramos duomenų parsinimo pakeitimai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CrSwv2AF/view)
+- Fixing 1 min average set calculation. Problem with items where are to small/wide interval.
+#### 06-19
+##### Task: [(Patch) STT-28513 global checkbox value](https://bcline.lightning.force.com/lightning/r/a0NSZ00000FRs8X2AT/view)
+- Setup new dev22 sandbox.
+- Replaced updateAllSelectionValue method after the location items changes.
+- Created PR.
+- Remains to write or assign existing test case.
+*stand-up meet*
+##### Task: [(Patch) STT-28513 global checkbox value](https://bcline.lightning.force.com/lightning/r/a0NSZ00000FRs8X2AT/view)
+- Added test case.
+##### Task: [(Patch) STT-28067 navigating range left and right](https://bcline.lightning.force.com/lightning/r/a0NSZ00000FTv8j2AD/view)
+- Reuse dev16, deployed last changes.
+- Researching move to left and right range change event handler and try to find approach to reset selections and on change range by moving to left of right in histogramSelectionScreen.
+*lunch time*
+##### Task: [(Patch) STT-28067 navigating range left and right](https://bcline.lightning.force.com/lightning/r/a0NSZ00000FTv8j2AD/view)
+- Added this.rangeSelector.hideItems(); on range selection change.
+- Tested, assigned test case.
+- Created PR to partial.
+##### Task: [Histogramos duomenų parsinimo pakeitimai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CrSwv2AF/view)
+- For some reason averaging works but not always. Fixed it, problem was in this line `partialTimeDistance -= oneMinute`, changed to this `partialTimeDistance -= Math.floor(partialTimeDistance / oneMinute) * oneMinute;`.
+- Fixed tooltip display interpolated data.
+- Writing custom average calculation function. Implementing described logic on the paper.
+#### 06-20
+##### Task: [Histogramos duomenų parsinimo pakeitimai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000CrSwv2AF/view)
+- Writing logic to average with no min/max data loss.
+*stand-up meet*
+- Discussed done parts of task and remains requirements.
+- Wrote much of code and logic, but it is not work. Something wrong.
+- Debugging and try to find reason where is not working.
+#### 06-25
+##### Task: [Adblue įtraukimas](https://bcline.lightning.force.com/lightning/r/a0NSZ00000FKcoT2AT/view)
+- Setup new sandbox.
+- Created new custom field Adblue_Price__c for Account object.
+*stand-up meet*
+- Try to update accountsInsert apex class and csv file to create accounts with adblue price.
+- Just deployed changed csv to sandbox, now works good.
+- Added adbluePrice parameter to **groupItems** endpoint, updated shared google document of endpoint documentation: https://docs.google.com/document/d/1qs3Vi2rnLNRpIB9eyqeCypZ1Wy9UfqUE-pEruFGkLcw/edit?tab=t.0
+- Created Fuel Price Last Updated and Adblue Price Last Updated date fields.
+- Writing test cases.
+- Added adblue max price finding in findCheaperFuelStations method, edited account selector.
+- Added new fields to field sets and layouts.
+- Don't forget about near to cheaper adblue station.
+==Father's Holiday==
+### 07
+#### 07-28
+##### Task: [Meet'ai (David) - Dreamcubator](https://bcline.lightning.force.com/lightning/r/a0N5J0000051YxRUAU/view "Meet'ai (David) - Dreamcubator") (completed tasks testing)
+- Remembering tasks, testing assigned to me tasks.
+- Prepare doc about father's vacation.
