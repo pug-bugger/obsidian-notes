@@ -14,3 +14,7 @@ https://www.youtube.com/watch?v=jJVAla0dWJo&t=1s
 
 !!!
 https://photogradient.com/?ref=dailydev
+theme creator
+https://allshadcn.com/tools/tinte-shadcn/
+from https://allshadcn.com/?page=1
+animation https://animate-ui.com/?utm_source=all-shadcn&utm_medium=referral&utm_campaign=components
