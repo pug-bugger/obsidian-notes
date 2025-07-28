@@ -1737,3 +1737,11 @@ Plan of this task:
 ##### Task: [Meet'ai (David) - Dreamcubator](https://bcline.lightning.force.com/lightning/r/a0N5J0000051YxRUAU/view "Meet'ai (David) - Dreamcubator") (completed tasks testing)
 - Remembering tasks, testing assigned to me tasks.
 - Prepare doc about father's vacation.
+*stand-up meet + waiting for task max time increasing*
+##### Task: [Adblue įtraukimas](https://bcline.lightning.force.com/lightning/r/a0NSZ00000FKcoT2AT/view)
+- Investigating changes and testing in sandbox.
+*lunch time*
+##### Task: [Adblue įtraukimas](https://bcline.lightning.force.com/lightning/r/a0NSZ00000FKcoT2AT/view)
+- Tested this task. Didn't find any inconsistencies.
+##### Task: [Keletas issues su pigiausia degaline](https://bcline.lightning.force.com/lightning/r/a0NSZ00000FsAPx2AN/view)
+- 
