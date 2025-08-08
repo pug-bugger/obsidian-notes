@@ -1,8 +1,8 @@
-Use Agent to check hotfix description.
+Use Agent to check hotfix description. ✅
 
 
 
 webassessor check.
-debug tools.
+debug tools. 🔁
 
 
