@@ -1744,4 +1744,97 @@ Plan of this task:
 ##### Task: [Adblue įtraukimas](https://bcline.lightning.force.com/lightning/r/a0NSZ00000FKcoT2AT/view)
 - Tested this task. Didn't find any inconsistencies.
 ##### Task: [Keletas issues su pigiausia degaline](https://bcline.lightning.force.com/lightning/r/a0NSZ00000FsAPx2AN/view)
-- 
+- Tested this task, Didn't find any inconsistencies.
+##### Task: [Kažkodėl duodam pigiausią degalinę jau nuvažiuotam maršrutui](https://bcline.lightning.force.com/lightning/r/a0NSZ00000FwpKr2AJ/view)
+- Testing and researching changes. Try to test, but for some reason is not work as expected. Try to figure out how why.
+#### 07-29
+##### Task: [Keletas issues su pigiausia degaline](https://bcline.lightning.force.com/lightning/r/a0NSZ00000FsAPx2AN/view)
+- Tested cheaper fuel price finder functionality. Added task test case for [Kažkodėl duodam pigiausią degalinę jau nuvažiuotam maršrutui](https://bcline.lightning.force.com/lightning/r/a0NSZ00000FwpKr2AJ/view) task
+- Renamed queueable class name. Removed scheduler from partial to deploy new named scheduler.
+- Edited location group item fuel price formula field and replacing to use it in code and hide if not valid or expired price.
+*stand-up meet*
+##### Task: [Adblue įtraukimas](https://bcline.lightning.force.com/lightning/r/a0NSZ00000FKcoT2AT/view)
+- Updating expire price display logic.
+*lunch time*
+##### Task: [Keletas issues su pigiausia degaline](https://bcline.lightning.force.com/lightning/r/a0NSZ00000FsAPx2AN/view)
+- Updated and fixed expired price display functionality.
+- Wrote new test case.
+- Waiting for opinion about fuel and adblue price display next to markers logic.
+##### Task: [Kai paspaudi "X" išėjimas iš planerio lagina](https://bcline.lightning.force.com/lightning/r/a0NSZ00000D8wDq2AJ/view)
+- Setup sandbox, preparing to check with debug tools.
+- Switch to another task.
+##### Task: [Keletas issues su pigiausia degaline](https://bcline.lightning.force.com/lightning/r/a0NSZ00000FsAPx2AN/view)
+- Updated test case.
+- Updated label display next to fuel marker logic according to the PM answer in chat.
+##### Task: [kuro kainų atvaizdavimas, pigiausių rodymo update + konfigūruojama](https://bcline.lightning.force.com/lightning/r/a0NSZ00000E5T4X2AV/view)
+- Lowest price label style captures values up to a difference of 0.02€
+- Fixed fuel and adblue price formula fields precision in 3 numbers after dots.
+- improving code readability.
+#### 07-30
+##### Task: [kuro kainų atvaizdavimas, pigiausių rodymo update + konfigūruojama](https://bcline.lightning.force.com/lightning/r/a0NSZ00000E5T4X2AV/view)
+- Discussed with dev how to implement last point of this task - configurable lowest price threshold. Decided to create new class (same as ConsoleSettings.cls) and import to lwc and send to groupDisplay in initial method.
+- Testing and fixing bugs (default loaded markers disappears on close fuel window component)
+*stand-up meet (chat)*
+##### Task: [kuro kainų atvaizdavimas, pigiausių rodymo update + konfigūruojama](https://bcline.lightning.force.com/lightning/r/a0NSZ00000E5T4X2AV/view)
+- Initially loaded and displayed markers disappearing on close fuel window. Fixing this bug.
+*lunch time*
+- Fixed bug with display of local stored selected groups.
+- Update test case.
+##### Task: [Pigiausios degalinės patobulinimai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000EpmAb2AJ/view)
+- Added fields with saving on alternative price. Need to discuss with PM about this logic, how to display and visualize difference to show real information.
+- Testing and fixing taskServiceImpl.findCheaperFuelStations code.
+#### 07-31
+##### Task: [Pigiausios degalinės patobulinimai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000EpmAb2AJ/view)
+- Code readability improvements. Tested and fixed calculation to correct compare the 1.188 and 1.19 prices. 
+- Renamed task domain method.
+- Waiting for ideas how to display saving.
+##### Task: [Kai paspaudi "X" išėjimas iš planerio lagina](https://bcline.lightning.force.com/lightning/r/a0NSZ00000D8wDq2AJ/view)
+- Learning browser devtools to find freeze ui reason on close window in console.
+- Read long executed code.
+- I see what taskProgress are using getBoundingClientRect in each bubble element, what can cause increase of execution time. Scrollbar also use getBoundingClientRect, need to test it.
+#### 08-01
+##### Task: [Kai paspaudi "X" išėjimas iš planerio lagina](https://bcline.lightning.force.com/lightning/r/a0NSZ00000D8wDq2AJ/view)
+- Researching long executable code.
+- I think taskProgress has a renderedCallback with an outdated implementation. getBoundingClientRect is resource-intensive, and this component uses it excessively. This part of the logic needs to be rewritten.
+##### Task: [Pigiausios degalinės patobulinimai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000EpmAb2AJ/view)
+- Meet with Paulius, discussed how saving price calculation should be displayed.
+- Tried to add custom tooltip element to refuelPlanTable component header, but unfortunately not success, seems like it request to rewrite entire refuelPlanTable component and use entirely custom header.
+- Updating logic according to the task description updates. Working on nearest point find functionality. Implementing RouticalRoutinApiWrp class to get leftDistance and compate with planned task left distance.
+- I think js already have functionality to calculate left to drive, need to check this and implement.
+#### 08-05
+##### Task: [firebase token bugo prevencijai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000FKW9Z2AX/view)
+- Added limitation handler in asset trigger handler. Wrote test case.
+##### Task: [Pigiausios degalinės patobulinimai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000EpmAb2AJ/view)
+- Investigating fuel calculation functionality.
+*stand-up meet + lunch time*
+##### Task: [Pigiausios degalinės patobulinimai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000EpmAb2AJ/view)
+- Writing low price calculation display fn.
+- Discussed with Paulius how to display tooltip, in last queue do this. Try add css before and hover to override header style to display tooltip.
+- Added scrollbar in fuel-window.
+- Writing logic to get nearest point and calculate difference in price for fact liters.
+#### 08-06
+##### Task: [Pigiausios degalinės patobulinimai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000EpmAb2AJ/view)
+- Created new custom fields to save distance from planned task to alternative fuel and adblue points.
+- Writing logic to save alternative distances and use it in Refuel Plan
+*stand-up meet (chat)*
+##### Task: [Pigiausios degalinės patobulinimai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000EpmAb2AJ/view)
+- Updated and tested custom fields.
+- Wrote logic to save distance to alternative fuel or adblue stations. Tested.
+- Updating Refuel Plan component, rewriting logic of saving price calculation.
+#### 08-07
+##### Task: [Pigiausios degalinės patobulinimai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000EpmAb2AJ/view)
+- Writing Refuel Plan component savings columns calculation functionality. Remains write calculation for tank level then truck will arrive point and calculate liters are available to fill.
+*stand-up meet (chat)*
+##### Task: [Pigiausios degalinės patobulinimai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000EpmAb2AJ/view)
+- Finished Refuel Plan component updates.
+- Added tooltip to saving headers by hacking css styles with ::before and :hover help.
+- Wrote test cases.
+- Remains to made little changes.
+#### 08-08
+##### Task: [Pigiausios degalinės patobulinimai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000EpmAb2AJ/view)
+- Renamed css file. Tested and checked
+##### Task: [Keletas issues su pigiausia degaline](https://bcline.lightning.force.com/lightning/r/a0NSZ00000FsAPx2AN/view)
+- Fixing fuel marker hiding on unselect specific task.
+*stand-up meet*
+##### Task: [Keletas issues su pigiausia degaline](https://bcline.lightning.force.com/lightning/r/a0NSZ00000FsAPx2AN/view "Keletas issues su pigiausia degaline")
+- Fixed markers loading from local storage.
