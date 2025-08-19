@@ -1838,3 +1838,87 @@ Plan of this task:
 *stand-up meet*
 ##### Task: [Keletas issues su pigiausia degaline](https://bcline.lightning.force.com/lightning/r/a0NSZ00000FsAPx2AN/view "Keletas issues su pigiausia degaline")
 - Fixed markers loading from local storage.
+##### Task: [Adblue įtraukimas](https://bcline.lightning.force.com/lightning/r/a0NSZ00000FKcoT2AT/view "Adblue įtraukimas")
+- Fixed price update date.
+- Fixed alternative station display fn, hide when price are expired (older than 5 days). Created two new formula fields.
+##### Task: [firebase token bugo prevencijai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000FKW9Z2AX/view)
+- Fixed code review.
+#### 08-11
+##### Task: [Adblue įtraukimas](https://bcline.lightning.force.com/lightning/r/a0NSZ00000FKcoT2AT/view)
+- Added permissions, fixed gearset
+##### Task: [Kai paspaudi "X" išėjimas iš planerio lagina](https://bcline.lightning.force.com/lightning/r/a0NSZ00000D8wDq2AJ/view)
+- Try to debug, comment checkAll method in mainFrame, testing performance, not sure is big problem with this.
+*stand-up meet*
+##### Task: [custom reportus padaryti pasiekiamus konsolėje](https://bcline.lightning.force.com/lightning/r/a0NSZ00000H1fLv2AJ/view)
+- Setup sandbox. Discussed task with Paulius. Added and replaces new svg's in navigation.
+- Writing logic to display custom report component in modal window in console. 
+- Added new option with custom report template. Updating css and make if looks native and more comfortable to use.
+#### 08-12
+##### Task: [custom reportus padaryti pasiekiamus konsolėje](https://bcline.lightning.force.com/lightning/r/a0NSZ00000H1fLv2AJ/view)
+- Finished styling, fixing bugs and check performance.
+*stand-up meet*
+##### Task: [custom reportus padaryti pasiekiamus konsolėje](https://bcline.lightning.force.com/lightning/r/a0NSZ00000H1fLv2AJ/view)
+- Fixed close button in footer and added little style updates
+- Writing test cases.
+- Discussed with Paulius: 
+  - Custom Report - try replace custom report component theme to dark on ark console mode.
+  - "X" close button - try debug post message.
+*lunch time*
+##### Task: [custom reportus padaryti pasiekiamus konsolėje](https://bcline.lightning.force.com/lightning/r/a0NSZ00000H1fLv2AJ/view)
+- Remove footer from custom report modal window in web console.
+- Researching theme implementation in custom report. Decided to skip this part.
+- Wrote test cases.
+##### Task: [Kai paspaudi "X" išėjimas iš planerio lagina](https://bcline.lightning.force.com/lightning/r/a0NSZ00000D8wDq2AJ/view)
+- Tried to comment and debug postMessages. Nope.
+- Debugging with Paulius. Find that cards impact to lagging.
+- Need to debug and research cards, tooltip, getters, icon providers and check what exactly takes a long time to load.
+#### 08-13
+##### Task: [Kai paspaudi "X" išėjimas iš planerio lagina](https://bcline.lightning.force.com/lightning/r/a0NSZ00000D8wDq2AJ/view)
+- Debugging and try to optimize card rendering.
+*lunch time*
+##### Task: [custom reportus padaryti pasiekiamus konsolėje](https://bcline.lightning.force.com/lightning/r/a0NSZ00000H1fLv2AJ/view)
+- Replaced tacho icon with new one.
+- Combining colors and replace default to console style.
+*routical coding standards MEET*
+>1. general test cases, smulkmenos, bet pasimeta/pasimirštama.
+>2. browser adequate zoom range
+>3. console design differences - is not possible now to draw entire design, so it is not that important thing to spent much time.
+>4. General test cases (component always should be visible in different themes/modes)
+>5. Scheduler now should be started with custom runner.
+##### Task: [custom reportus padaryti pasiekiamus konsolėje](https://bcline.lightning.force.com/lightning/r/a0NSZ00000H1fLv2AJ/view)
+- Writing dark and light mode for custom report in console.
+#### 08-14
+##### Task: [custom reportus padaryti pasiekiamus konsolėje](https://bcline.lightning.force.com/lightning/r/a0NSZ00000H1fLv2AJ/view)
+- Deployed all to dev17 sandbox to test dark mode with generated data.
+- Testing and fixing css styling in dark mode.
+- Updated test case.
+*stand-up meet (chat) + lunch time*
+##### Task: [custom reportus padaryti pasiekiamus konsolėje](https://bcline.lightning.force.com/lightning/r/a0NSZ00000H1fLv2AJ/view)
+- Fixed all comments from Paulius: wrong styling, colors and icons.
+- Working on default loaded data to display last loaded data after close window.
+#### 08-15 *holiday*
+#### 08-18
+##### Task: [custom reportus padaryti pasiekiamus konsolėje](https://bcline.lightning.force.com/lightning/r/a0NSZ00000H1fLv2AJ/view)
+- Fixing bugs - select rows in console.
+- Working on default loaded data to display last loaded data after close window.
+*stand-up meet*
+- Fixed init data loading after close and open custom reports in console.
+- Updated test cases
+##### Task: [Adblue įtraukimas](https://bcline.lightning.force.com/lightning/r/a0NSZ00000FKcoT2AT/view "Adblue įtraukimas")
+- Fixed code review comments.
+##### Task: [Kai paspaudi "X" išėjimas iš planerio lagina](https://bcline.lightning.force.com/lightning/r/a0NSZ00000D8wDq2AJ/view)
+- Debugging and testing to optimize how cards load in truck rows.
+- Working on refining the re-rendering logic to make it more precise for all cards.
+==Reikia daryti mini refactor'inima su lazy loading, ir tuo pačiu ne passinti wrapper kaip api, bet padavinėti tik tai, ką reikia, atskirai parametrus==
+#### 08-19
+##### Task: [Transport Manager Group search funkcionalumas](https://bcline.lightning.force.com/lightning/r/a0NSZ00000GoNbJ2AV/view)
+- Added search-bar to group-picker component. Added css (left bug with search bar input field icon z-index, need to fix)
+- Writing filter and display in list component functionality.
+*stand-up meet*
+##### Task: [custom reportus padaryti pasiekiamus konsolėje](https://bcline.lightning.force.com/lightning/r/a0NSZ00000H1fLv2AJ/view)
+- Fix code review.
+##### Task: [Transport Manager Group search funkcionalumas](https://bcline.lightning.force.com/lightning/r/a0NSZ00000GoNbJ2AV/view)
+- Writing filter functionality and its display logic.
+*lunch time*
+##### Task: [Transport Manager Group search funkcionalumas](https://bcline.lightning.force.com/lightning/r/a0NSZ00000GoNbJ2AV/view)
+- 
