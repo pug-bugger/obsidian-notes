@@ -1921,4 +1921,7 @@ Plan of this task:
 - Writing filter functionality and its display logic.
 *lunch time*
 ##### Task: [Transport Manager Group search funkcionalumas](https://bcline.lightning.force.com/lightning/r/a0NSZ00000GoNbJ2AV/view)
-- 
+- Writing filter logic: hide filtered truck groups, highlighting matched text.
+- Display icon with text when result in not found.
+- Fixed clean icon visible when group picker is closed.
+- Remains to write logic of checkAll functionality.
