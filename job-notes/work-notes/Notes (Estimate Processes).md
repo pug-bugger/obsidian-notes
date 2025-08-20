@@ -1792,6 +1792,7 @@ Plan of this task:
 - Learning browser devtools to find freeze ui reason on close window in console.
 - Read long executed code.
 - I see what taskProgress are using getBoundingClientRect in each bubble element, what can cause increase of execution time. Scrollbar also use getBoundingClientRect, need to test it.
+### 08
 #### 08-01
 ##### Task: [Kai paspaudi "X" išėjimas iš planerio lagina](https://bcline.lightning.force.com/lightning/r/a0NSZ00000D8wDq2AJ/view)
 - Researching long executable code.
@@ -1925,3 +1926,19 @@ Plan of this task:
 - Display icon with text when result in not found.
 - Fixed clean icon visible when group picker is closed.
 - Remains to write logic of checkAll functionality.
+#### 08-20
+##### Task: [Transport Manager Group search funkcionalumas](https://bcline.lightning.force.com/lightning/r/a0NSZ00000GoNbJ2AV/view)
+- Writing partial check/uncheck all logic.
+*stand-up meet*
+##### Task: [Transport Manager Group search funkcionalumas](https://bcline.lightning.force.com/lightning/r/a0NSZ00000GoNbJ2AV/view)
+- Wrote filtered check/uncheck all functionality.
+- Writing test cases.
+- Adding tooltip to explain what check/uncheck all will do then use will click in it.
+##### Task: [Transport Manager Group search funkcionalumas](https://bcline.lightning.force.com/lightning/r/a0NSZ00000GoNbJ2AV/view)
+- Tried to add tooltip, but for some reason tooltip css correction requires to many time to complete.
+##### Task: [pakeisti, kad kai pridedi naują taską planerije, jis būtų be tipo](https://bcline.lightning.force.com/lightning/r/a0NSZ00000H1hva2AB/view)
+- Changed get task type method default return value of NONE.
+- Tested and checked, wrote test case.
+- Meeting with PM about new task
+##### Task: [bandant įkelti folderį, palūžta](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DW70U2AT/view "bandant įkelti folderį, palūžta")
+- Adding validation logic to prevent infinity loading on folder uploading.
