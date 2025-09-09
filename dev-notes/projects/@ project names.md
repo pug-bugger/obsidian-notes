@@ -1,3 +1,4 @@
 - smex
-- pugO
+- PuGo
+- nexto
 - 
