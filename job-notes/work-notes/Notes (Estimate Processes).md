@@ -2053,3 +2053,19 @@ Plan of this task:
 - After investigating scheduler jobs in production, I found no changes are needed for the schedule runner.
 - My bad, I misunderstood the task requirements.
 - Deployed mtd layout.
+### 11
+#### 11-03
+**Try to setup all apps, updates and preparing to be ready**
+Started bug task, solving problems with initial data. 
+##### Task: [(Bug) (Postponed) Deleted Trips lieka matomos Consolėje, kol nerefreshinamas pag](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DB0bV2AT/view)
+- Setup sandbox and preparing to solve bug.
+- Exploring current novision code, compare with changes PR.
+*stand-up meet*
+##### Task: [(Bug) (Postponed) Deleted Trips lieka matomos Consolėje, kol nerefreshinamas pag](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DB0bV2AT/view)
+- Waited for max time increase for testing failed task.
+- Keep exploring code of novision api.
+*lunch time*
+##### Task: [kai ateina taskas su 0 koord., tai pasiimti koordinates pgl adresą](https://bcline.lightning.force.com/lightning/r/a0NSZ00000HDN532AH/view)
+- Discussed trip display in console task with Paulius.
+- Updating sf cli and node.js, installing new version. 
+- 
