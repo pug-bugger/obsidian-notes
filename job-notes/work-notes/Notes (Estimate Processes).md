@@ -1942,3 +1942,130 @@ Plan of this task:
 - Meeting with PM about new task
 ##### Task: [bandant įkelti folderį, palūžta](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DW70U2AT/view "bandant įkelti folderį, palūžta")
 - Adding validation logic to prevent infinity loading on folder uploading.
+#### 08-21
+##### Task: [bandant įkelti folderį, palūžta](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DW70U2AT/view "bandant įkelti folderį, palūžta")
+- Wrote validation code. Testing. Wrote test case.
+##### Task: [rodyti pagrindinis ar antrasis vairuotojas šiuo metu dirba](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DqFl32AF/view)
+- Pulled updates from RFRS-1192 eta calc update branch.
+- Try to add current driver status.
+- Preparing to get ready to implement current driver tacho data get and close the task.
+*stand-up meet*
+==Working from home==
+##### Task: [rodyti pagrindinis ar antrasis vairuotojas šiuo metu dirba](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DqFl32AF/view)
+- Waiting for information who is the current driver and how to detect it in console.
+##### Task: [(Hotfix) išsilakstė Transfer Act front end'as](https://bcline.lightning.force.com/lightning/r/a0NSZ00000HPY7y2AH/view)
+- Prepare sandbox to testing, try to reproduce bug.
+- Updated Transfer Act css. Now transfer act details displays in right side nect to transfer act window.
+- Wrote test case.
+##### Task: [rodyti pagrindinis ar antrasis vairuotojas šiuo metu dirba](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DqFl32AF/view)
+- Discussing with Paulius how it should looks like.
+- Added new drivers icon (modified from group icon, removed third men from right side) and use it instead of driver icon when truck also have filled CoDriver__c field.
+- Remains to implement tooltip to display all information when truck driving two drivers.
+#### 08-22
+##### Task: [rodyti pagrindinis ar antrasis vairuotojas šiuo metu dirba](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DqFl32AF/view)
+- Wrote icon display logic and tooltip display driver and codriver info.
+- Wrote test case, fixing PR's. 
+*stand-up meet*
+##### Task: [(Hotfix) išsilakstė Transfer Act front end'as](https://bcline.lightning.force.com/lightning/r/a0NSZ00000HPY7y2AH/view "https://bcline.lightning.force.com/lightning/r/a0NSZ00000HPY7y2AH/view")
+- Fixed code review.
+*lunch time*
+##### Task: [(Hotfix) neleisti pririšti to paties aseto prie skirtingų truckų tuo pat metu](https://bcline.lightning.force.com/lightning/r/a0NSZ00000HQEvB2AX/view)
+- Asked Paulius about this task.
+- Added the Telematics related list to the Asset page layout.
+- Removed unused `Vehicle__c` and `License_Plate__c` fields from the `Asset__c` object and layouts.
+- Checked cheaper fuel around the polyline in production and found that custom settings were not assigned, which caused previously passed stations to still be marked as cheaper.
+- Writing a trigger handler to ensure an asset is not in use by another vehicle at the same time and to throw an error if trucks conflict.
+#### 08-25
+##### Task: [(Hotfix) neleisti pririšti to paties aseto prie skirtingų truckų tuo pat metu](https://bcline.lightning.force.com/lightning/r/a0NSZ00000HQEvB2AX/view)
+- Wrote logic to check if asset are not using in another vehicle telematics field.
+- Wrote tests.
+- Writing selection in right way.
+*stand-up meet*
+##### Task: [(Hotfix) neleisti pririšti to paties aseto prie skirtingų truckų tuo pat metu](https://bcline.lightning.force.com/lightning/r/a0NSZ00000HQEvB2AX/view)
+-  Wrote selectors and test case.
+- Forgot stop meet task and start this task.
+- Fixing gearset errors (flexipage Invalidnull property)
+##### Task: [bandant įkelti folderį, palūžta](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DW70U2AT/view)
+- Fixing code review.
+##### Task: [rodyti pagrindinis ar antrasis vairuotojas šiuo metu dirba](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DqFl32AF/view)
+- Edited tooltip and added copy buttons next to phone numbers.
+- Updated test case and PR.
+##### Task: [kai ateina taskas su 0 koord., tai pasiimti koordinates pgl adresą](https://bcline.lightning.force.com/lightning/r/a0NSZ00000HDN532AH/view)
+- Investigating how can task come with 0 lat and lng.
+- Checking navision and trigger handler.
+#### 08-26
+##### Task: [kai ateina taskas su 0 koord., tai pasiimti koordinates pgl adresą](https://bcline.lightning.force.com/lightning/r/a0NSZ00000HDN532AH/view)
+- Discussed with Paulius about this task solving process.
+- Updating task trigger to check if lat and lng are valid and if not then get latitude and longitude from customer account shipping address.
+*stand-up meet*
+##### Task: [kai ateina taskas su 0 koord., tai pasiimti koordinates pgl adresą](https://bcline.lightning.force.com/lightning/r/a0NSZ00000HDN532AH/view)
+- Wrote task trigger handler updates with task service layer. 
+- Wrote task domain layer.
+- Writing test case
+##### Task: [(Hotfix) išsilakstė Transfer Act front end'as](https://bcline.lightning.force.com/lightning/r/a0NSZ00000HPY7y2AH/view)
+- Updated console version.
+##### Task: [custom reportus padaryti pasiekiamus konsolėje](https://bcline.lightning.force.com/lightning/r/a0NSZ00000H1fLv2AJ/view)
+- Search for reason of lagging custom reports in console.
+- Try to calculate and check if refuel plan calculates right.
+#### 08-27
+##### Task: [custom reportus padaryti pasiekiamus konsolėje](https://bcline.lightning.force.com/lightning/r/a0NSZ00000H1fLv2AJ/view)
+- Fixed freeze error on several custom report reopening in console. Added check for default data and don't save in wrapper same data again.
+##### Task: [Pigiausios degalinės patobulinimai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000EpmAb2AJ/view "Pigiausios degalinės patobulinimai")
+- Checking saving calculation in refuel planner.
+*stand-up meet*
+##### Task: [(Hotfix) neleisti pririšti to paties aseto prie skirtingų truckų tuo pat metu](https://bcline.lightning.force.com/lightning/r/a0NSZ00000HQEvB2AX/view)
+- Added tablet field lookup check. Updated test case.
+##### Task: [Pigiausios degalinės patobulinimai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000EpmAb2AJ/view)
+- Switch to previous task, fixing gearset build error.
+##### Task: [(Hotfix) neleisti pririšti to paties aseto prie skirtingų truckų tuo pat metu](https://bcline.lightning.force.com/lightning/r/a0NSZ00000HQEvB2AX/view)
+- Fixed gearset error, removed tabs label from asset flexi page.
+##### Task: [Pigiausios degalinės patobulinimai](https://bcline.lightning.force.com/lightning/r/a0NSZ00000EpmAb2AJ/view)
+- Checking saving calculation.
+*1-on-1 meet*
+- Added pointer-events: none;
+- Tried to figure out why sandbox don't rendering last updates. Fixed by comment style loading in js and uncomment back.
+#### 08-28
+##### Task: [(Hotfix) neleisti pririšti to paties aseto prie skirtingų truckų tuo pat metu](https://bcline.lightning.force.com/lightning/r/a0NSZ00000HQEvB2AX/view)
+- Added check for records in one dml. Updated test case.
+##### Task: [kuro kainų atvaizdavimas, pigiausių rodymo update + konfigūruojama](https://bcline.lightning.force.com/lightning/r/a0NSZ00000E5T4X2AV/view "kuro kainų atvaizdavimas, pigiausių rodymo update + konfigūruojama")
+- Fixed PR build fail and started new functionality.
+*stand-up message + visit to doctor + lunch*
+- Investigating waypoint functionality.
+- Adding waypoint search from fuelWindow.js file.
+- Rewriting logic to reuse waypoint search.
+- Testing, seems like all works good, but checking and improving code and preparing to code review.
+#### 08-29
+##### Task: [kuro kainų atvaizdavimas, pigiausių rodymo update + konfigūruojama](https://bcline.lightning.force.com/lightning/r/a0NSZ00000E5T4X2AV/view "kuro kainų atvaizdavimas, pigiausių rodymo update + konfigūruojama")
+- Testing and try to fix add to route functionality.
+- In fuel window now waypoint are considering, but not appear in trip planning window. Also in planning and fuel window group location items are adding differently. Checking and fixing it.
+- Fixed 
+##### Task: [NLM342 06.13-06.17 histograma neužkrauna](https://bcline.lightning.force.com/lightning/r/a0NSZ00000HFIZ72AP/view)
+- Checking error, try debugging with chrome dev tools.
+*stand-up meet*
+##### Task: [NLM342 06.13-06.17 histograma neužkrauna](https://bcline.lightning.force.com/lightning/r/a0NSZ00000HFIZ72AP/view)
+- Debugged an error in Chrome DevTools. Found the cause and added a small check to prevent it.
+- Not sure how to test this in the sandbox since the data comes from the histogram and is case-specific. After deployment to production, select the truck from the task description and choose the date range 2025-06-13 to 2025-06-14 in the histogram.
+- Discussed with Paulius how to test it in the sandbox. I just need to use the IMEI of that truck and check both in sandbox and partial.
+- Wrote test case.
+##### Task: [Paupdate'inti queuable, kad visur naudotų Queue Caller](https://bcline.lightning.force.com/lightning/r/a0NSZ00000HXZej2AH/view)
+- Pulled changes from RFRS-1192 eta calc update branch.
+- Checking how are implemented schedulers with new queue caller.
+- After investigating scheduler jobs in production, I found no changes are needed for the schedule runner.
+- My bad, I misunderstood the task requirements.
+- Deployed mtd layout.
+### 11
+#### 11-03
+**Try to setup all apps, updates and preparing to be ready**
+Started bug task, solving problems with initial data. 
+##### Task: [(Bug) (Postponed) Deleted Trips lieka matomos Consolėje, kol nerefreshinamas pag](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DB0bV2AT/view)
+- Setup sandbox and preparing to solve bug.
+- Exploring current novision code, compare with changes PR.
+*stand-up meet*
+##### Task: [(Bug) (Postponed) Deleted Trips lieka matomos Consolėje, kol nerefreshinamas pag](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DB0bV2AT/view)
+- Waited for max time increase for testing failed task.
+- Keep exploring code of novision api.
+*lunch time*
+##### Task: [kai ateina taskas su 0 koord., tai pasiimti koordinates pgl adresą](https://bcline.lightning.force.com/lightning/r/a0NSZ00000HDN532AH/view)
+- Discussed trip display in console task with Paulius.
+- Updating sf cli and node.js, installing new version. 
+- 
