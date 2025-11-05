@@ -2085,6 +2085,4 @@ Started bug task, solving problems with initial data.
 - Prepare sandbox and code environment to start task.
 - Investigating task scale and planning step by step and estimate time of work.
 - Learning how cursor's browser tab works and useful use cases to use it.
-#### 11-05
-##### Task: [Tripų skaidymas, kad būtų matomi taskai iš karto ir kad nereikėtų papildomo clic](https://bcline.lightning.force.com/lightning/r/a0NSZ00000FKsgL2AT/view)
-- Starting adding changes and according to the figma design. Trips and Tasks component updates.
+[[2025-11-05]]
