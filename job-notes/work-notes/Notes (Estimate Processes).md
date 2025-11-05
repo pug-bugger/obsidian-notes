@@ -1,10 +1,4 @@
 
-**Today Plans**
-
-
-**Now:**
-
-
 ### 01,02
 #### 01-29
 ##### Task: [Trigeris ant Service Exchange Rate'ams nustatyti](https://bcline.lightning.force.com/lightning/r/Task__c/a0NSZ00000AgMPl2AN/view)
@@ -2085,4 +2079,5 @@ Started bug task, solving problems with initial data.
 - Prepare sandbox and code environment to start task.
 - Investigating task scale and planning step by step and estimate time of work.
 - Learning how cursor's browser tab works and useful use cases to use it.
+#### New method (from 11-05)
 [[2025-11-05]]
