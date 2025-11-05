@@ -8,8 +8,9 @@ Canvas: [[trip-display cmp structure.canvas|trip-display cmp structure]]
 
 ### Notes
 Canvas contains current/old design version and new from figma.
+Experimenting with this noting structure.
 ### Differences
-- [ ] replace trip status display order (~0.5)
+- [x] replace trip status display order (~0.5)
 - [ ] headers always on top (~5)
 - [ ] add "Expand all Trips" switch button (~4)
 - [ ] hide/show task list on click on trip row (~4)
@@ -20,4 +21,4 @@ Canvas contains current/old design version and new from figma.
 - [ ] zoom to selected task mark point (~10)
 ### To-do
 - [x] Detect differences and list them in Differences section
-- [ ] Estimate each step time before start do anything
+- [x] Estimate each step time before start do anything

@@ -2080,4 +2080,4 @@ Started bug task, solving problems with initial data.
 - Investigating task scale and planning step by step and estimate time of work.
 - Learning how cursor's browser tab works and useful use cases to use it.
 #### New method (from 11-05)
-[[2025-11-05]]
+[[Tracking Tasks (New)]]
