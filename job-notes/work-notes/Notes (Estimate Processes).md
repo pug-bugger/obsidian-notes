@@ -332,7 +332,7 @@ Answer: 2h to try @container.
 * Fixed devbug task. 
 * Tested and deployed to PR.
 ##### Task: [Kuro kainos ir kiti papildymai adresų grupėms](https://bcline.lightning.force.com/lightning/r/a0NSZ00000BnKGz2AN/view "Kuro kainos ir kiti papildymai adresų grupėms")
-Schema of request body and map to sf records: [[grou-items-request.canvas]]
+Schema of request body and map to sf records: [[group-items-request.canvas]]
 * Writing logic to create Account, Location_Group__c and Location_Group_Item__c records.
 * It seems I need to create many of fflib layers during completing this task.
 * Drawing canvas for own task explanation
@@ -2068,4 +2068,23 @@ Started bug task, solving problems with initial data.
 ##### Task: [kai ateina taskas su 0 koord., tai pasiimti koordinates pgl adresą](https://bcline.lightning.force.com/lightning/r/a0NSZ00000HDN532AH/view)
 - Discussed trip display in console task with Paulius.
 - Updating sf cli and node.js, installing new version. 
-- 
+- Remembering how to deploy all changes from comparing old master and current code.
+- Check for 0,0 was written but overridden letter. 
+- Testing and checking testing failed records. Waiting for gearset build status.
+#### 11-04
+##### Task: [kai ateina taskas su 0 koord., tai pasiimti koordinates pgl adresą](https://bcline.lightning.force.com/lightning/r/a0NSZ00000HDN532AH/view)
+- Checking code and prepare to code review.
+##### Task: [(Bug) (Postponed) Deleted Trips lieka matomos Consolėje, kol nerefreshinamas pag](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DB0bV2AT/view)
+- Testing novision endpoint and try to reproduce bug.
+- Searched for the cancellation logic code and, with Eligijus’s help, refined the search for more precision.
+*stand-up meet*
+##### Task: [(Bug) (Postponed) Deleted Trips lieka matomos Consolėje, kol nerefreshinamas pag](https://bcline.lightning.force.com/lightning/r/a0NSZ00000DB0bV2AT/view)
+- Checking how works refresh data display updates. Try to integrate check for deleted trips from canceled trip list.
+- Added platform event listener on trip delete trigger event.
+##### Task: [Tripų skaidymas, kad būtų matomi taskai iš karto ir kad nereikėtų papildomo clic](https://bcline.lightning.force.com/lightning/r/a0NSZ00000FKsgL2AT/view)
+- Prepare sandbox and code environment to start task.
+- Investigating task scale and planning step by step and estimate time of work.
+- Learning how cursor's browser tab works and useful use cases to use it.
+#### 11-05
+##### Task: [Tripų skaidymas, kad būtų matomi taskai iš karto ir kad nereikėtų papildomo clic](https://bcline.lightning.force.com/lightning/r/a0NSZ00000FKsgL2AT/view)
+- Starting adding changes and according to the figma design. Trips and Tasks component updates.
