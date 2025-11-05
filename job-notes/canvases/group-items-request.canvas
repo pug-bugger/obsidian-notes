@@ -1,0 +1,13 @@
+{
+	"nodes":[
+		{"id":"345bdae3a5776911","x":78,"y":-245,"width":382,"height":249,"type":"text","text":"**Account**\n```\nLatitude__c = item.lat\nLongitude__c = item.lat\nFuel_Price__c = item.price\nType__c = item.type | def:Other\nAddress__c = item.address\n```"},
+		{"id":"bbd4c08a37bf3296","x":78,"y":40,"width":382,"height":176,"type":"text","text":"**Location_Group_Item__c**\n```\nLocation_Group__c = (item.groupId | item.groupName)\nAccount__c = new:account\n```"},
+		{"id":"f821c99b868ccada","x":78,"y":260,"width":382,"height":155,"type":"text","text":"**Location_Group__c**\n```\nId = item.groupId\nName = item.groupName\n```"},
+		{"id":"193c925bb090cd6e","x":-500,"y":-42,"width":420,"height":340,"type":"text","text":"**Request Body**\n```\n\"id\": {{c_group_item_id}},\n\"name\": \"Test Group Item Old\",\n\"lat\": \"1.11111\",\n\"lng\": \"2.22222\",\n\"price\": 1.5,\n\"groupId\": null,\n\"groupName\": \"Test Group\",\n\"addressType\": \"test\",\n\"address\": \"Test Address\"\n```"}
+	],
+	"edges":[
+		{"id":"19fee41e0c710fa4","fromNode":"193c925bb090cd6e","fromSide":"right","toNode":"345bdae3a5776911","toSide":"left"},
+		{"id":"c56d7c4b702a941f","fromNode":"193c925bb090cd6e","fromSide":"right","toNode":"f821c99b868ccada","toSide":"left"},
+		{"id":"e5a3d515fb51b74a","fromNode":"193c925bb090cd6e","fromSide":"right","toNode":"bbd4c08a37bf3296","toSide":"left"}
+	]
+}
