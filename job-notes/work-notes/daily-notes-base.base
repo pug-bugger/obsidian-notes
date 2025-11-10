@@ -1,0 +1,12 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.folder == "obsidian-notes/job-notes/work-notes/daily-notes"
+    order:
+      - file.name
+      - date
+      - file.mtime
+    columnSize:
+      note.date: 122
