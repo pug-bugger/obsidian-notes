@@ -1,0 +1,15 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.folder.startsWith("obsidian-notes/dev-notes")
+    order:
+      - file.ctime
+      - file.name
+      - date
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.ctime: 176
