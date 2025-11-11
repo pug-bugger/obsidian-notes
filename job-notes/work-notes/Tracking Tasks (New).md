@@ -1,2 +1,2 @@
-[[2025-11-05]]
-[[2025-11-06]]
+[[daily-notes-base.base|Daily notes base]]
+
