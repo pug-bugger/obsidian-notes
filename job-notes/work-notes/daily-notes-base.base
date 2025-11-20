@@ -1,6 +1,6 @@
 views:
   - type: table
-    name: Table
+    name: daily-notes-base
     filters:
       and:
         - file.folder == "obsidian-notes/job-notes/work-notes/daily-notes"
@@ -10,3 +10,4 @@ views:
       - file.mtime
     columnSize:
       note.date: 122
+    cardSize: 200

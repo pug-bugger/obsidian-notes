@@ -15,14 +15,18 @@ Experimenting with this noting structure.
 - [x] section headers always on top (~5)
 - [x] redirect to selected section list top
 - [x] add "Expand all Trips" switch button (~4)
+- [ ] expand all map display updates
+- [x] selected trip/task row hover style
 - [x] hide/show task list on click on trip row (~4)
-- [ ] implement "Reorder Upcoming Trips" switch button in Upcoming Trips section (~10)
-- [ ] confirmation modal card to reorder Upcoming Trips (~3)
+- [x] implement "Reorder Upcoming Trips" switch button in Upcoming Trips section (~10)
+- [x] confirmation modal card to reorder Upcoming Trips (~3)
 - [x] display tasks next to trip below (~15)
-- [ ] task details column (~15)
-- [ ] zoom to selected task mark point (~10)
+- [x] task details column (~15)
+- [x] zoom to selected task mark point (~10)
+- [ ] restrictions toggle fn in task details window
 - [ ] storage expanded trip ids, remember in current session, helper field expandedTripIds and add and remove methods.
 - [ ] task progress style update
+- [ ] task row details parameters in custom settings
 ### To-do
 - [x] Detect differences and list them in Differences section
 - [x] Estimate each step time before start do anything
