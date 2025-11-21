@@ -15,7 +15,7 @@ Experimenting with this noting structure.
 - [x] section headers always on top (~5)
 - [x] redirect to selected section list top
 - [x] add "Expand all Trips" switch button (~4)
-- [ ] expand all map display updates
+- [x] expand all map display updates
 - [x] selected trip/task row hover style
 - [x] hide/show task list on click on trip row (~4)
 - [x] implement "Reorder Upcoming Trips" switch button in Upcoming Trips section (~10)
@@ -30,3 +30,15 @@ Experimenting with this noting structure.
 ### To-do
 - [x] Detect differences and list them in Differences section
 - [x] Estimate each step time before start do anything
+- [x] Note QA comments #1
+
+### QA Comments #1
+- [ ] When no Finished/Current trips, sections headers should stay
+- [ ] Scroll to selected section of current and upcomming trips hides part of first trip row
+- [ ] On reordering mode turn of selection fn
+- [ ] According to the figma, task row have padding in left side ==(discuss)==
+- [ ] After cancel trip edit all trips are collapsed, but task stay selected, fix
+- [ ] Confirmation question ==discuss==
+- [ ] Accepted task are editable, fix
+- [ ] On top of the all trips section Upcomming trips are not visible ==(discuss)==
+- [ ] Trip selection discuss (to select another expanded trip, first collapse and then select/expand again to select - current implementation) ==(discuss)==
