@@ -10,6 +10,7 @@ Canvas: [[trip-display cmp structure.canvas|trip-display cmp structure]]
 ### Notes
 Canvas contains current/old design version and new from figma.
 Experimenting with this noting structure.
+- [ ] scroll smoothy
 ### Differences
 - [x] replace trip status display order (~0.5)
 - [x] section headers always on top (~5)
@@ -24,20 +25,28 @@ Experimenting with this noting structure.
 - [x] task details column (~15)
 - [x] zoom to selected task mark point (~10)
 - [ ] restrictions toggle fn in task details window
-- [ ] storage expanded trip ids, remember in current session, helper field expandedTripIds and add and remove methods.
+- [x] storage expanded trip ids, remember in current session, helper field expandedTripIds and add and remove methods.
 - [ ] task progress style update
 - [ ] task row details parameters in custom settings
+
+- [ ] scroll to current trip circle button
+- [ ] link truck from refuel plan
+- [ ] histogram icon in finish trip/task row
+- [ ] truck trip icon click handler
+- [ ] display edited trip view after finish editing
+- [ ] trip and task name linked to salesforce record page
+- [x] update design according to new figma
 ### To-do
 - [x] Detect differences and list them in Differences section
 - [x] Estimate each step time before start do anything
 - [x] Note QA comments #1
 
 ### QA Comments #1
-- [ ] When no Finished/Current trips, sections headers should stay
+- [x] When no Finished/Current trips, sections headers should stay
 - [ ] Scroll to selected section of current and upcomming trips hides part of first trip row
-- [ ] On reordering mode turn of selection fn
-- [ ] According to the figma, task row have padding in left side ==(discuss)==
-- [ ] After cancel trip edit all trips are collapsed, but task stay selected, fix
+- [x] On reordering mode turn of selection fn
+- [x] According to the figma (frame 1910), task row without padding in left side ==(discuss)==
+- [x] After cancel trip edit all trips are collapsed, but task stay selected, fix
 - [ ] Confirmation question ==discuss==
 - [ ] Accepted task are editable, fix
 - [ ] On top of the all trips section Upcomming trips are not visible ==(discuss)==
