@@ -24,17 +24,17 @@ Experimenting with this noting structure.
 - [x] display tasks next to trip below (~15)
 - [x] task details column (~15)
 - [x] zoom to selected task mark point (~10)
-- [ ] restrictions toggle fn in task details window
+- [x] restrictions toggle fn in task details window
 - [x] storage expanded trip ids, remember in current session, helper field expandedTripIds and add and remove methods.
 - [ ] task progress style update
 - [ ] task row details parameters in custom settings
 
-- [ ] scroll to current trip circle button
-- [ ] link truck from refuel plan
+- [x] scroll to current trip circle button
+- [x] link truck from refuel plan
 - [ ] histogram icon in finish trip/task row
-- [ ] truck trip icon click handler
-- [ ] display edited trip view after finish editing
-- [ ] trip and task name linked to salesforce record page
+- [x] truck trip icon click handler
+- [x] display edited trip view after finish editing
+- [x] trip and task name linked to salesforce record page
 - [x] update design according to new figma
 ### To-do
 - [x] Detect differences and list them in Differences section
@@ -43,11 +43,13 @@ Experimenting with this noting structure.
 
 ### QA Comments #1
 - [x] When no Finished/Current trips, sections headers should stay
-- [ ] Scroll to selected section of current and upcomming trips hides part of first trip row
+- [x] Scroll to selected section of current and upcomming trips hides part of first trip row
 - [x] On reordering mode turn of selection fn
 - [x] According to the figma (frame 1910), task row without padding in left side ==(discuss)==
 - [x] After cancel trip edit all trips are collapsed, but task stay selected, fix
-- [ ] Confirmation question ==discuss==
-- [ ] Accepted task are editable, fix
-- [ ] On top of the all trips section Upcomming trips are not visible ==(discuss)==
-- [ ] Trip selection discuss (to select another expanded trip, first collapse and then select/expand again to select - current implementation) ==(discuss)==
+- [x] Confirmation question ==discuss== (CANCELED)
+- [x] Accepted task are editable, fix
+- [x] On top of the all trips section Upcomming trips are not visible ==(discuss)==
+- [x] Trip selection discuss (to select another expanded trip, first collapse and then select/expand again to select - current implementation) ==(discuss)== (CANCELED)
+
+#### task display
