@@ -1,2 +1,0 @@
-
-Started from linear.
