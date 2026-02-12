@@ -25,13 +25,13 @@ Experimenting with this noting structure.
 - [x] task details column (~15)
 - [x] zoom to selected task mark point (~10)
 - [x] restrictions toggle fn in task details window
-- [x] storage expanded trip ids, remember in current session, helper field expandedTripIds and add and remove methods.
-- [ ] task progress style update
-- [ ] task row details parameters in custom settings
+- [ ] storage expanded trip ids, remember in current session, helper field expandedTripIds and add and remove methods.
+- [x] task progress style update
+- [x] task row details parameters in custom settings
 
 - [x] scroll to current trip circle button
 - [x] link truck from refuel plan
-- [ ] histogram icon in finish trip/task row
+- [x] histogram icon in finish trip/task row
 - [x] truck trip icon click handler
 - [x] display edited trip view after finish editing
 - [x] trip and task name linked to salesforce record page
