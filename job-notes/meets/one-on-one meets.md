@@ -1,0 +1,3 @@
+- Before start new big task, set aside an hour of time to describe and plan steps of completing the task.
+	- Create new note file with task batch name.
+	- Push note to remote and ask TL check the steps and confirm if I have understood the task correctly.
