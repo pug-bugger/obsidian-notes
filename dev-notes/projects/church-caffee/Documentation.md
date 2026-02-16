@@ -218,7 +218,7 @@ Updated david user password to keypug911.
 
 Logged to server by ssh
 
-```jsx
+```sql
 CREATE DATABASE church_cafe_db; 
 CREATE USER 'david'@'localhost' IDENTIFIED BY 'keypug911';
 GRANT ALL ON church_cafe_db.* TO 'david'@'localhost';
@@ -228,13 +228,13 @@ EXIT;
 
 then from local computer
 
-```jsx
+```bash
 scp backup.sql root@193.160.119.244:~
 ```
 
 then in ssh
 
-```jsx
+```bash
 mysql -u david -p church_cafe_db < backup.sql
 # I used sudo to execute this code
 ```
@@ -245,7 +245,7 @@ Added backend part ci/cd.
 
 Adding privilege to david user
 
-```jsx
+```sql
 GRANT ALL PRIVILEGES ON church_cafe_db.* TO 'david'@'localhost';
 FLUSH PRIVILEGES;
 ```
@@ -253,3 +253,4 @@ FLUSH PRIVILEGES;
 ALTER USER 'david'@'localhost' IDENTIFIED BY 'pugOk911';
 
 FLUSH PRIVILEGES;
+
