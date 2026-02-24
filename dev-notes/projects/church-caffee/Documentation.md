@@ -254,3 +254,13 @@ ALTER USER 'david'@'localhost' IDENTIFIED BY 'pugOk911';
 
 FLUSH PRIVILEGES;
 
+
+#Coding 
+## Day N 2026-02-19
+To do list:
+- [x] Add sound for order status updated to prepared
+	- Notification sound on change order status to "Ready"
+- [ ] "Make the design fun"
+- [x] Add menu page
+	- Need style updates/more readable and fun
+## Day N 2026-02-20
