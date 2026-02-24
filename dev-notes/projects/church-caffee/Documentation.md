@@ -263,4 +263,15 @@ To do list:
 - [ ] "Make the design fun"
 - [x] Add menu page
 	- Need style updates/more readable and fun
-## Day N 2026-02-20
+## Day N 2026-02-24
+notes:
+1. create all data to see all real drinks and deserts (use categories and an options - milk, take away, and etc.)
+	- make ability to make inactive products and hide from terminal, menu, but left in statistics
+2. Finish menu and order page design:
+	1. check if menu displays good
+	2. make design more friendly and modern
+	3. add an animation for order page
+3. Upgrade statistics:
+	1. make ability to export excel of selected date range
+	2. add ability to select statistic date and time and filter by category and something else 
+4. Improve accounts profiles hierarchy and write some tests maybe.
