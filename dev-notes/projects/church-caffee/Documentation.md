@@ -45,7 +45,7 @@ From david user server generated `github_actions` key. This is the key from `cat
 
 Testing my action fn.
 
-![Screenshot 2025-10-14 at 14.36.50.png](error-in-github-building.png)
+![Screenshot 2025-10-14 at 14.36.50.png](images/error-in-github-building.png)
 
 for now is failing.
 
