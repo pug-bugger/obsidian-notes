@@ -275,3 +275,17 @@ notes:
 	1. make ability to export excel of selected date range
 	2. add ability to select statistic date and time and filter by category and something else 
 4. Improve accounts profiles hierarchy and write some tests maybe.
+
+## Day N 2026-03-11
+Try to complete last things and make ready to use.
+To do:
+1. Complete products/categories data base. (2h)
+	1. add options for drinks (milk/take away)
+	2. deserts
+2. Make ui design better
+3. Create users:
+	1. Admin users
+		- Kotrina
+		- Akhsar
+	2. Volunteers users
+		- one general for now for barista
