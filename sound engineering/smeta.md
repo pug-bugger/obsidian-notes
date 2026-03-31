@@ -5,3 +5,4 @@ Total: 1770-2000$
 
 New mixer:
 1. Behringer Wing Full - 2600$
+2. 
