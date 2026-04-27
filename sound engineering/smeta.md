@@ -4,5 +4,5 @@ For Waves Superrack Performer:
 Total: 1770-2000$
 
 New mixer:
-1. Behringer Wing Full - 2600$
+1. Behringer Wing Full - 2500$
 2. 
