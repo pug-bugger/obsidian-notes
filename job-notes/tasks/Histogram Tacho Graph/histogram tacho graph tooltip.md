@@ -4,3 +4,6 @@ after update
 ![[Screen Recording 2026-06-09 at 16.23.19.mov]]
 - [ ] Fix display issue/bugs
 - [ ] Remove tooltip after scroll or zoom range
+
+[[histogram tacho graph doc|Histogram Tacho Graph (documentation)]]
+
