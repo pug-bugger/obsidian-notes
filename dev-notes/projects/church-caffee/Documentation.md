@@ -289,3 +289,27 @@ To do:
 		- Akhsar
 	2. Volunteers users
 		- one general for now for barista
+
+[[edits]]
+
+## Day N 2026-06-30
+about the printer:
+ I need to integrate check printer in this app. I imagine, i will use server to connect to check printer (like in groceries) and print orders customer name or number with all order information. Let discuse, what is the cheaper and easier way to implement that? It should work stable and easy to turn on.
+
+Receipt Printer Integration
+
+The cheapest and most stable path is a network ESC/POS thermal printer + node-thermal-printer npm package on your Express backend.
+
+How it works: When an order is created, the backend calls a printOrder() function that connects to the printer over TCP (port 9100) and sends ESC/POS commands — exactly how POS systems in cafes and restaurants work. No extra software, no browser involvement, no Java runtimes.
+
+Hardware to buy (~$40-80): Any ESC/POS-compatible thermal printer with an Ethernet port. Cheap reliable options: Xprinter XP-80C (~$45), Xprinter XP-Q800 (~$60), or a used Epson TM-T20 (~$60 on eBay). Avoid Bluetooth-only models — Ethernet is far more stable and the printer just sits on your LAN with a fixed IP.
+
+Integration points in your existing code:
+- Add PRINTER_HOST + PRINTER_PORT to the backend .env
+- Add a printOrder(order) helper using node-thermal-printer
+- Call it inside the order creation route (same place that emits order:created to Socket.IO)
+- Optionally expose a POST /api/print/:orderId endpoint so staff can reprint from the barista or terminal page
+
+The one tradeoff: The printer must be on the same LAN as the Express server (or the server machine must have the printer USB-connected). Since your backend is localhost:4000 this is likely already the case — the printer just needs to be on your cafe's Wi-Fi/LAN with a static IP.
+
+Want me to implement this? I'd need to know: (1) do you have a printer already or are you buying one, and (2) will it connect via Ethernet/Wi-Fi or USB?
