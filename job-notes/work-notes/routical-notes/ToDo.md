@@ -15,4 +15,8 @@
 	- tacholist
 	- vehicle/polyline
 	- vehicle/odometer
+- Need to remove/clean:
+	- ConsoleController.insertFiles
+	- think about isTelematicsFileUrl...
+	- maybe deprecate Preview_Url__c field in console file object
 	- 
